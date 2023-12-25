@@ -98,7 +98,7 @@ function Navbar(props) {
     <Section bgColor={props.bgColor}>
       <div className="container py-6">
         <div className="flex justify-between">
-          <Brand fill="#fff" width="160" className='lg:mb-2 pl-8 cursor-pointer' />
+          <Brand fill="#fff" width="160" className='lg:mb-2 ml-48 cursor-pointer' />
           <div className="flex items-center ml-auto space-x-1 lg:space-x-4">
             <ul className="hidden lg:flex items-center ml-auto">
             <li className="relative group">

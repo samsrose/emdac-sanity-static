@@ -1,6 +1,6 @@
 export const post = {
   name: 'post',
-  title: 'Post',
+  title: 'In The News',
   type: 'document',
   fields: [
     {
@@ -37,6 +37,7 @@ export const post = {
       options: {
         hotspot: true,
       },
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'date',

@@ -6,10 +6,19 @@ import { unsplashImageAsset } from 'sanity-plugin-asset-source-unsplash'
 import { resolveProductionUrl } from './resolveProductionUrl'
 import { author } from './schemas/author'
 import { post } from './schemas/post'
+import { meetings } from './schemas/meetings'
+import { committees } from './schemas/committees'
+import { directory } from './schemas/directory'
+import { evidence } from './schemas/evidence'
+import { documents } from './schemas/documents'
+import { legislative } from './schemas/legislative'
+import { minutes } from './schemas/minutes'
+import { positions } from './schemas/positions'
+import { protocols } from './schemas/protocols'
 
 const title =
   import.meta.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE ||
-  'Next.js Blog with Sanity.io'
+  'EMDAC with Sanity.io'
 const projectId = import.meta.env.NEXT_PUBLIC_SANITY_PROJECT_ID
 const dataset = import.meta.env.NEXT_PUBLIC_SANITY_DATASET
 
@@ -20,7 +29,7 @@ export default defineConfig({
   title,
   schema: {
     // If you want more content types, you can add them to this array
-    types: [author, post],
+    types: [author, post, committees, directory, documents, evidence, legislative, meetings, minutes, positions, protocols],
   },
   document: {
     productionUrl: resolveProductionUrl,

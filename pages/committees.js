@@ -24,7 +24,7 @@ const data = {
     ]
 }
 
-export default function committees() {
+export default function Committees() {
     return (
       <>
         <div className="w-full px-8 text-center">
@@ -35,33 +35,38 @@ export default function committees() {
           </div>
         </div>
         <div className='py-4 w-full container mx-auto mb-12'>
-          <h2 className='text-white text-3xl font-bold py-4 text-center'>Officers</h2>
-          <div className='grid grid-cols-2'>
+          <h2 className='text-white text-2xl font-normal pt-8 pb-4 text-left px-2'>Officers</h2>
+          <div className='border-b border-gray-700 border-4 rounded mx-2'/>
+          <div className='grid sm:grid-cols-2 grid-cols-1'>
             {data['Officers'].map((item, index) => {
               // console.log(item)
-              return <OfficersMappedItems item={item} key={index} />
+              return <Officers item={item} key={index} />
             })}
           </div>
-          <h2 className='text-white text-3xl font-bold py-8 text-center'>Scope of Practice Committee</h2>
-          <div className='grid grid-cols-2'>
+          <h2 className='text-white text-2xl font-normal pt-8 pb-4 text-left px-2'>Scope of Practice Committee</h2>
+          <div className='border-b border-gray-700 border-4 rounded mx-2'/>
+          <div className='grid md:grid-cols-4 sm:grid-cols-2'>
             {data['Scope of Practice'].map((item, index) => {
               return <DataMappedItems item={item} key={index} />
             })}
           </div>
-          <h2 className='text-white text-3xl font-bold py-8 text-center'>Legislative Committee</h2>
-          <div className='grid grid-cols-2'>
+          <h2 className='text-white text-2xl font-normal pt-8 pb-4 text-left px-2'>Legislative Committee</h2>
+          <div className='border-b border-gray-700 border-4 rounded mx-2'/>
+          <div className='grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1'>
             {data['Legislative'].map((item, index) => {
               return <DataMappedItems item={item} key={index} />
             })}
           </div>
-          <h2 className='text-white text-3xl font-bold py-8 text-center'>Medical Advisory Committee</h2>
-          <div className='grid grid-cols-2'>
+          <h2 className='text-white text-2xl font-normal pt-8 pb-4 text-left px-2'>Medical Advisory Committee</h2>
+          <div className='border-b border-gray-700 border-4 rounded mx-2'/>
+          <div className='grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1'>
             {data['Medical Advisory'].map((item, index) => {
               return <DataMappedItems item={item} key={index} />
             })}
           </div>
-          <h2 className='text-white text-3xl font-bold py-8 text-center'>Nominating Committee</h2>
-          <div className='grid grid-cols-2'>
+          <h2 className='text-white text-2xl font-normal pt-8 pb-4 text-left px-2'>Nominating Committee</h2>
+          <div className='border-b border-gray-700 border-4 rounded mx-2'/>
+          <div className='grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1'>
             {data['Nominating'].map((item, index) => {
               return <DataMappedItems item={item} key={index} />
             })}
@@ -72,33 +77,33 @@ export default function committees() {
   }
   
   
-  function DataMappedItems({ item }) {
+  function Officers({ item }) {
     return (
-      <div className="py-4 px-2 sm:py-3 w-full " >
-        <div className="p-4 shadow-md sm:flex-row border border-1 border-gray-600 rounded-sm rounded-md grid bg-gray-800" >
-          <div className="flex-grow">
-            <div className="flex flex-col align-center justify-center" >
-              <h1 className="text-gray-200 md:text-xl sm:text-4xl title-font text-center font-normal">
-                {item}
+      <div className="py-4 px-2 sm:py-2 w-full mt-2">
+        <div className="shadow-md sm:flex-row border border-1 border-gray-800 rounded-lg grid bg-gray-800" >
+          <div className="flex-grow p-4">
+            <div className="flex flex-col align-start justify-start" >
+              <h1 className="text-gray-200 md:text-2xl text-xl title-font font-normal">
+                {item.name}
               </h1>
+              <p className='text-gray-200 my-2 text-md title-font font-normal'>
+                {item.role}
+              </p>
             </div>
           </div>
         </div>
       </div>
     )
   }
-  function OfficersMappedItems({ item }) {
+  function DataMappedItems({ item }) {
     return (
-      <div className="py-4 px-2 sm:py-3 w-full " >
-        <div className="p-4 shadow-md sm:flex-row border border-1 border-gray-600 rounded-sm rounded-md grid bg-gray-800" >
-          <div className="flex-grow">
+      <div className="py-4 px-2 sm:py-2 w-full mt-2" >
+        <div className="shadow-md sm:flex-row border border-1 border-gray-800 rounded-lg grid bg-gray-800" >
+          <div className="flex-grow p-4">
             <div className="flex flex-col align-center justify-center" >
-              <h1 className="text-gray-200 md:text-xl sm:text-4xl title-font text-center font-normal">
-                {item.name}
+              <h1 className="text-gray-200 text-xl title-font font-normal">
+                {item}
               </h1>
-              <p className='text-gray-200 my-2 md:text-sm title-font text-center font-normal'>
-                {item.role}
-              </p>
             </div>
           </div>
         </div>

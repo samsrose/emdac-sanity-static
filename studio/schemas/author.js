@@ -1,6 +1,6 @@
 export const author = {
   name: 'author',
-  title: 'Author',
+  title: 'ITN Author',
   type: 'document',
   fields: [
     {

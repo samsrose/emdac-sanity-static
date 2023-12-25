@@ -11,7 +11,7 @@ export default function MoreStories({ posts }) {
               Events and updates curated by EMDAC
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-4 lg:gap-x-8 gap-y-12 md:gap-y-16 mb-12">
             {posts.map((post) => (
               <PostPlug
                 key={post.slug}
