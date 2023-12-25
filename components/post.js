@@ -1,8 +1,7 @@
 import { useRouter } from 'next/router'
 import { urlForImage } from '../lib/sanity'
 import ErrorPage from 'next/error'
-import Layout from './layout'
-import Container from './container'
+import Layout from './Layout'
 import Header from './header'
 import PostTitle from './post-title'
 import Head from 'next/head'
@@ -24,17 +23,13 @@ export default function Post({ data = {}, preview = false }) {
 
   return (
     <Layout preview={preview}>
-      <Container>
-        <Header />
+      <>
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
             <article>
               <Head>
-                <title>
-                  {`${post.title} | Next.js Blog Example with ${CMS_NAME}`}
-                </title>
                 {post.coverImage?.asset?._ref && (
                   <meta
                     key="ogImage"
@@ -59,7 +54,7 @@ export default function Post({ data = {}, preview = false }) {
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           </>
         )}
-      </Container>
+      </>
     </Layout>
   )
 }

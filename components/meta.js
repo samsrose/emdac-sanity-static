@@ -1,42 +1,63 @@
-import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
+import React from "react";
+import Head from "next/head";
+import { useRouter } from "next/router";
 
-export default function Meta() {
+function Meta(props) {
+  const { children, ...customPageMeta } = props;
+  const router = useRouter();
+
+  // Meta values that are the same across all pages
+  const globalMeta = {
+    // Site name
+    siteName: "EMDAC",
+    // Your production domain (example: https://myapp.com)
+    description: "Emergency Medical Services Directors\' Association of California",
+
+    domain: "",
+    twitterHandle: "",
+  };
+
+  // Default meta values for current page (override with props)
+  const defaultPageMeta = {
+    // Page title
+    title: "EMDAC",
+    // Page description
+    description: "Emergency Medical Services Directors\' Association of California",
+    // Social share image (create this file in /public/images/)
+    image: "/images/apple-touch-icon.png",
+    // Page type (see https://ogp.me/#types)
+    type: "website",
+  };
+
+  // Construct meta object from global, default, and custom meta
+  const meta = { ...globalMeta, ...defaultPageMeta, ...customPageMeta };
+  const currentPath = router.asPath === "/" ? "Home" : router.pathname;
+
+  // Note: Each tag should have a unique `key` so that they are de-deduped if other
+  // `Meta` components are rendered on the same page or within nested components.
+  // prettier-ignore
   return (
     <Head>
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/favicon/apple-touch-icon.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="/favicon/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/favicon/favicon-16x16.png"
-      />
-      <link rel="manifest" href="/favicon/site.webmanifest" />
-      <link
-        rel="mask-icon"
-        href="/favicon/safari-pinned-tab.svg"
-        color="#000000"
-      />
-      <link rel="shortcut icon" href="/favicon/favicon.ico" />
-      <meta name="msapplication-TileColor" content="#000000" />
-      <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
-      <meta name="theme-color" content="#000" />
-      <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <meta
-        name="description"
-        content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
-      />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} key="ogImage" />
+      <title>{meta.title} | {currentPath}</title>
+      <meta content={meta.description} name="description" key="description" />
+      {meta.domain && <link rel="canonical" href={`${meta.domain}${router.asPath}`} key="canonical" />}
+
+      {/* Open Graph */}
+      <meta property="og:title" content={meta.title} key="og-title" />
+      <meta property="og:description" content={meta.description} key="og-description" />
+      <meta property="og:site_name" content={meta.siteName} key="og-site-name" />
+      <meta property="og:type" content="website" key="og-type" />
+      {meta.domain && <meta property="og:url" content={`${meta.domain}${router.asPath}`} key="og-url" />}
+      {meta.domain && meta.image && <meta property="og:image" content={`${meta.domain}${meta.image}`} key="og-image" />}
+
+      {/* Twitter */}
+      <meta name="twitter:title" content={meta.title} key="twitter-title" />
+      <meta name="twitter:description" content={meta.description} key="twitter-description"/>
+      <meta name="twitter:card" content="summary_large_image" key="twitter-card" />
+      {meta.twitterHandle && <meta name="twitter:site" content={meta.twitterHandle} key="twitter-site" />}
+      {meta.domain && meta.image && <meta name="twitter:image" content={`${meta.domain}${meta.image}`} key="twitter-image" />}
     </Head>
-  )
+  );
 }
+
+export default Meta;

@@ -7,8 +7,6 @@ export default function PostPlug({
   title,
   coverImage,
   date,
-  excerpt,
-  author,
   slug,
 }) {
   return (
@@ -16,16 +14,14 @@ export default function PostPlug({
       <div className="mb-5">
         <CoverImage slug={slug} title={title} image={coverImage} />
       </div>
-      <h3 className="mb-3 text-3xl leading-snug">
+      <h3 className="mb-3 text-3xl leading-snug text-gray-200">
         <Link href={`/posts/${slug}`} className="hover:underline">
           {title}
         </Link>
       </h3>
-      <div className="mb-4 text-lg">
+      <div className="mb-4 text-lg text-gray-200">
         <Date dateString={date} />
       </div>
-      <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
-      {author && <Avatar name={author.name} picture={author.picture} />}
     </div>
   )
 }
