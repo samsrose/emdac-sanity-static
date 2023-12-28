@@ -1,5 +1,6 @@
 import Script from 'next/script'
 import CountyMobile from "../components/map/CountyMobile";
+import Counties from "../components/map/Counties";
 import response from "../components/map/response";
 import SideItems from '../components/map/SideItems';
 
@@ -22,7 +23,8 @@ const Lemsas = () => {
       </div>
       <section className="text-gray-100 body-font w-full relative container-fluid px-4 mx-auto h-screen bg-gray-900 flex lg:hidden">
         <ul className="w-full">
-            <CountyMobile data={response}/>
+            {/* <CountyMobile data={response}/> */}
+            <Counties counties={response} />
         </ul>
       </section>
       

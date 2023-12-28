@@ -4,8 +4,14 @@ export const protocols = {
     type: 'document',
     fields: [
       {
-        name: 'title',
-        title: 'Title',
+        name: 'name',
+        title: 'Name',
+        type: 'string',
+        validation: (Rule) => Rule.required(),
+      },
+      {
+        name: 'protocol',
+        title: 'Protocol',
         type: 'string',
         validation: (Rule) => Rule.required(),
       },
@@ -16,35 +22,12 @@ export const protocols = {
         validation: (Rule) => Rule.required(),
       },
       {
-        name: 'location',
-        title: 'Location Name',
-        type: 'string',
+        name: 'file',
+        title: 'File',
+        type: 'file',
         validation: (Rule) => Rule.required(),
       },
-      {
-        name: 'venue',
-        title: 'Venue Name',
-        type: 'string',
-        validation: (Rule) => Rule.required(),
-      },
-      {
-        name: 'description',
-        title: 'Description of meeting',
-        type: 'string',
-        validation: (Rule) => Rule.required(),
-      },
-      {
-        name: 'voucherLink',
-        title: 'Voucher URL',
-        type: 'string',
-        validation: (Rule) => Rule.required(),
-      },
-      {
-        name: 'venueLink',
-        title: 'Venue URL',
-        type: 'string',
-        validation: (Rule) => Rule.required(),
-      },
+      
     ],
   }
   

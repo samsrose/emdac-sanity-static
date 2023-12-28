@@ -10,18 +10,18 @@ export default function PostPlug({
   slug,
 }) {
   return (
-    <div>
-      <div className="mb-5">
+    <div className='rounded-md'>
+      <div className="mb-4">
         <CoverImage slug={slug} title={title} image={coverImage} />
       </div>
-      <h3 className="mb-3 text-3xl leading-snug text-gray-200">
+      <div className="text-md text-gray-200">
+        <Date dateString={date} />
+      </div>
+      <h3 className="text-xl leading-snug text-gray-200">
         <Link href={`/posts/${slug}`} className="hover:underline">
           {title}
         </Link>
       </h3>
-      <div className="mb-4 text-lg text-gray-200">
-        <Date dateString={date} />
-      </div>
     </div>
   )
 }

@@ -31,14 +31,13 @@ function Meta(props) {
 
   // Construct meta object from global, default, and custom meta
   const meta = { ...globalMeta, ...defaultPageMeta, ...customPageMeta };
-  const currentPath = router.asPath === "/" ? "Home" : router.pathname;
 
   // Note: Each tag should have a unique `key` so that they are de-deduped if other
   // `Meta` components are rendered on the same page or within nested components.
   // prettier-ignore
   return (
     <Head>
-      <title>{meta.title} | {currentPath}</title>
+      <title>{meta.title}</title>
       <meta content={meta.description} name="description" key="description" />
       {meta.domain && <link rel="canonical" href={`${meta.domain}${router.asPath}`} key="canonical" />}
 

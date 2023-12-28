@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from "next/link"
+import { indexProtocols } from '../lib/queries'
+import { getClient, overlayDrafts } from '../lib/sanity.server'
 
 
 const protocols = [
@@ -15,7 +17,7 @@ export default function Protocols() {
           <div className="px-4 sm:px-6 lg:px-8">
             <div className="sm:flex sm:items-center">
               <div className="sm:flex-auto">
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-200 font-heading">Protocols Templates</h2>
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-200 font-heading mb-2">Protocols Templates</h2>
               <span className="text-red-500 text-xl font-normal">Protocol templates from EMDAC</span>
               </div>
             </div>
@@ -64,4 +66,13 @@ export default function Protocols() {
       </div>
     </div>
   )
+}
+
+export async function getStaticProps({ preview = false }) {
+  const allProtcols = overlayDrafts(await getClient(preview).fetch(indexProtocols))
+  return {
+    props: { allProtcols, preview },
+    // If webhooks isn't setup then attempt to re-generate in 1 minute intervals
+    revalidate: process.env.SANITY_REVALIDATE_SECRET ? undefined : 30,
+  }
 }

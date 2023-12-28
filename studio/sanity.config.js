@@ -8,6 +8,7 @@ import { author } from './schemas/author'
 import { post } from './schemas/post'
 import { meetings } from './schemas/meetings'
 import { committees } from './schemas/committees'
+import { subcommittees } from './schemas/subcommittees'
 import { directory } from './schemas/directory'
 import { evidence } from './schemas/evidence'
 import { documents } from './schemas/documents'
@@ -29,7 +30,7 @@ export default defineConfig({
   title,
   schema: {
     // If you want more content types, you can add them to this array
-    types: [author, post, committees, directory, documents, evidence, legislative, meetings, minutes, positions, protocols],
+    types: [author, post, subcommittees, committees, directory, documents, evidence, legislative, meetings, minutes, positions, protocols],
   },
   document: {
     productionUrl: resolveProductionUrl,

@@ -1,50 +1,32 @@
 export const minutes = {
-    name: 'minutes',
-    title: 'Minutes',
-    type: 'document',
-    fields: [
-      {
-        name: 'title',
-        title: 'Title',
-        type: 'string',
-        validation: (Rule) => Rule.required(),
-      },
-      {
-        name: 'date',
-        title: 'Date',
-        type: 'date',
-        validation: (Rule) => Rule.required(),
-      },
-      {
-        name: 'location',
-        title: 'Location Name',
-        type: 'string',
-        validation: (Rule) => Rule.required(),
-      },
-      {
-        name: 'venue',
-        title: 'Venue Name',
-        type: 'string',
-        validation: (Rule) => Rule.required(),
-      },
-      {
-        name: 'description',
-        title: 'Description of meeting',
-        type: 'string',
-        validation: (Rule) => Rule.required(),
-      },
-      {
-        name: 'voucherLink',
-        title: 'Voucher URL',
-        type: 'string',
-        validation: (Rule) => Rule.required(),
-      },
-      {
-        name: 'venueLink',
-        title: 'Venue URL',
-        type: 'string',
-        validation: (Rule) => Rule.required(),
-      },
-    ],
-  }
-  
+  name: 'minutes',
+  title: 'Minutes',
+  type: 'document',
+  fields: [
+    {
+      name: 'name',
+      title: 'Name',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'venue',
+      title: 'Venue',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'date',
+      title: 'Date',
+      type: 'date',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'minutes',
+      title: 'Minutes',
+      type: 'file',
+      validation: (Rule) => Rule.required(),
+    },
+    
+  ],
+}
