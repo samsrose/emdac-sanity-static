@@ -10,8 +10,8 @@ export default function Directory({ allMembers, preview }) {
     <>
     <h1 className='p-4 text-gray-200 leading-4 text-3xl text-center mt-8'>EMDAC Directory</h1>
     <h1 className='p-4 text-gray-200 leading-4 text-2xl text-center mt-2'>Members</h1>
-    <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 py-8 px-8">
-      <DirectoryCards/>
+    <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 py-8 px-8">
+      <DirectoryCards allMembers={allMembers}/>
     </ul>
     {/* <h1 className='p-4 text-gray-200 leading-4 text-2xl text-center mt-2'>Associates</h1>
     <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 py-8 px-8">
@@ -55,26 +55,38 @@ function DirectoryCards({allMembers, preview}) {
   )
 }
 
-function DirectoryCard({ members }) {
+function DirectoryCard({ data }) {
   return (
     <section className='border border-gray-800'>
       <div className="bg-gradient-to-b from-gray-800/50 to-gray-900">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none py-16">
+        <div className="mx-auto px-6 lg:px-8">
+          <div className="mx-auto w-full lg:mx-0 py-16">
             <h2 className="text-4xl font-bold tracking-tight text-gray-200 sm:text-5xl">In The News</h2>
             <p className="mt-4 text-xl leading-4 text-gray-300">
               Events and updates curated by EMDAC
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-4 lg:gap-x-8 gap-y-12 md:gap-y-16 mb-12">
-            {members.map((post, index) => (
-               <li key={index} className="col-span-1 divide-y divide-gray-900 rounded-lg bg-gray-700 shadow">
+          <div className="grid grid-cols-1 md:gap-x-4 lg:gap-x-8 gap-y-12 md:gap-y-16 mb-12">
+            {data.map((post, index) => (
+               <IsMember post={post} index={index} />
+             ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function IsMember({post, index}) {
+  return (
+    <>
+      <li key={index} className="col-span-3 divide-y divide-gray-900 rounded-lg bg-gray-700 shadow">
                <div className="flex w-full items-center justify-between space-x-6 p-6">
                  <div className="flex-1 truncate">
                    <div className="flex items-center space-x-3">
-                     <h3 className="truncate text-sm font-medium text-gray-200">{post.name || "=== NAME MISSING ==="}</h3>
+                     <h3 className="truncate text-xl font-medium text-gray-200">{post.firstName} {post.lastName}</h3>
                    </div>
-                   <p className="mt-1 truncate text-sm text-gray-300">{post.title}</p>
+                   <p className="mt-1 truncate text-sm text-gray-300">{post.position}</p>
                  </div>
                </div>
                <div>
@@ -91,13 +103,42 @@ function DirectoryCard({ members }) {
                  </div>
                </div>
              </li>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
+    </>
   )
 }
+
+function IsAssociate({post, index}) {
+  return (
+    <>
+      <li key={index} className="col-span-3 divide-y divide-gray-900 rounded-lg bg-gray-500 shadow">
+               <div className="flex w-full items-center justify-between space-x-6 p-6">
+                 <div className="flex-1 truncate">
+                   <div className="flex items-center space-x-3">
+                     <h3 className="truncate text-xl font-medium text-gray-200">{post.firstName} {post.lastName}</h3>
+                   </div>
+                   <p className="mt-1 truncate text-sm text-gray-300">{post.position}</p>
+                 </div>
+               </div>
+               <div>
+                 <div className="-mt-px flex divide-x divide-gray-900">
+                   <div className="flex w-0 flex-1">
+                     <a
+                       href={`mailto:${post.email}`}
+                       className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-b-lg border border-transparent py-4 text-sm font-semibold text-gray-300 hover:bg-gray-900/40 transition"
+                     >
+                       <EnvelopeIcon className="h-4 w-4 text-gray-400" aria-hidden="true" />
+                       Email
+                     </a>
+                   </div>
+                 </div>
+               </div>
+             </li>
+    </>
+  )
+}
+
+
+
 
 export async function getStaticProps({ preview = false }) {
   const allMembers = overlayDrafts(await getClient(preview).fetch(directoryQuery))

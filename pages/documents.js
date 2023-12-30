@@ -1,62 +1,13 @@
 import React from 'react'
 import Link from "next/link"
-// import Minutes from "../components/Minutes"
-// import Templates from "../components/Templates"
-// import Positions from "../components/Positions"
-// import Reviews from "../components/Reviews"
-// import Legislative from "../components/Legislative"
+import { documentsQuery } from '../lib/queries'
+import { getClient, overlayDrafts } from '../lib/sanity.server'
+import DocumentsItem from "../components/DocumentsItem";
 
-// const Documents = () => {
-//   return (
-//     <>
-//     <div className='w-full py-12' >
-//       <div className="flex flex-wrap bg-gray-900 sm:mx-auto pt-4 px-2">
-//         <div className="my-4 pr-4 text-center mx-auto">
-//           <h2 className="text-4xl lg:text-5xl font-bold text-gray-200 font-heading">Documents</h2>
-//           <span className="text-red-500 text-xl font-normal">Papers, documents and templates</span>
-//         </div>
-//       </div>
-//       <div className='mx-auto w-full'>
-//         <Minutes/>
-//       </div>
-//       <div className='mx-auto w-full'>
-//         <Templates/>
-//       </div>
-//       <div className='mx-auto w-full'>
-//         <Positions/>
-//       </div>
-//       <div className='mx-auto w-full'>
-//         <Reviews/>
-//       </div>
-//       <div className='mx-auto w-full'>
-//         <Legislative/>
-//       </div>
-//     </div>
-//     </>
-//   )
-// }
+export default function Documents({ allDocuments, preview }) {
 
-// export default Documents;
+  const [...moreDocuments] = allDocuments || []
 
-
-const minutes = [
-  { name: 'Spring 2023', venue: 'Anaheim', date: '03/14/2023', link: 'url' },
-  { name: 'Winter 2022', venue: 'Alameda', date: '12/12/2022', link: 'url' },
-  { name: 'Fall 2022', venue: 'San Diego', date: '09/20/2022', link: 'url' },
-  { name: 'Summer 2022', venue: 'Virtual', date: '06/14/2022', link: 'url' },
-  { name: 'Spring 2022', venue: 'Virtual', date: '03/15/2022', link: 'url' },
-  { name: 'Winter 2021', venue: 'Virtual', date: '07/12/2021', link: 'url' },
-  { name: 'Fall 2021', venue: 'Virtual', date: '09/21/2021', link: 'url' },
-  { name: 'Summer 2021', venue: 'Virtual', date: '06/15/2021', link: 'url' },
-  { name: 'Spring 2021', venue: 'Virtual', date: '03/16/2021', link: 'url' },
-  { name: 'Winter 2020', venue: 'Marines\' Memorial Club & Hotel', date: '12/08/2020', link: 'url' },
-  { name: 'Fall 2020', venue: 'Holiday Inn Bayside Hotel', date: '09/15/2020', link: 'url' },
-  { name: 'Summer 2020', venue: 'Sacramento', date: '06/16/2020', link: 'url' },
-  { name: 'Spring 2020', venue: 'Embassy Suites by Hilton Anaheim South', date: '03/17/2020', link: 'url' },
-  
-]
-
-export default function Documents() {
   return (
     <div className="bg-gray-900">
       <div className="mx-auto max-w-7xl">
@@ -78,7 +29,7 @@ export default function Documents() {
                           Name
                         </th>
                         <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">
-                          Venue
+                          Topic
                         </th>
                         <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">
                           Date
@@ -89,20 +40,7 @@ export default function Documents() {
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-800">
-                      {minutes.map((content, index) => (
-                        <tr key={index}>
-                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-white sm:pl-0">
-                            {content.name}
-                          </td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300">{content.venue}</td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300">{content.date}</td>
-                          <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-left text-sm font-medium sm:pr-0">
-                            <Link href={content.link} className="text-indigo-400 hover:text-indigo-300">
-                              Download
-                            </Link>
-                          </td>
-                        </tr>
-                      ))}
+                      <DocumentsItem data={...moreDocuments} />
                     </tbody>
                   </table>
                 </div>
@@ -113,4 +51,15 @@ export default function Documents() {
       </div>
     </div>
   )
+}
+
+
+export async function getStaticProps({ preview = false }) {
+  const allDocuments = overlayDrafts(await getClient(preview).fetch(documentsQuery))
+  
+  return {
+    props: { allDocuments, preview },
+    // If webhooks isn't setup then attempt to re-generate in 30 second intervals
+    revalidate: process.env.SANITY_REVALIDATE_SECRET ? undefined : 30,
+  }
 }

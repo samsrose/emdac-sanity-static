@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from "next/link"
+import { evidenceQuery } from '../lib/queries'
+import { getClient, overlayDrafts } from '../lib/sanity.server'
+import EvidenceItem from "../components/EvidenceItem";
 
+export default function Evidence({ allEvidence, preview }) {
 
-const evidence = [
-  { name: 'Spring 2023', venue: 'Anaheim', date: '03/14/2023', link: 'url' },
-  
-]
+  const [...moreEvidence] = allEvidence || []
 
-export default function Evidence() {
   return (
     <div className="bg-gray-900">
       <div className="mx-auto max-w-7xl">
@@ -15,8 +15,8 @@ export default function Evidence() {
           <div className="px-4 sm:px-6 lg:px-8">
             <div className="sm:flex sm:items-center">
               <div className="sm:flex-auto">
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-200 font-heading">Evidentiary Reviews</h2>
-              <span className="text-red-500 text-xl font-normal">Evidentiary Reviews from EMDAC</span>
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-200 font-heading">Evidence</h2>
+              <span className="text-red-500 text-xl font-normal">Evidentiary reviews by EMDAC</span>
               </div>
             </div>
             <div className="mt-8 flow-root">
@@ -29,31 +29,18 @@ export default function Evidence() {
                           Name
                         </th>
                         <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">
-                          Venue
+                          Topic
                         </th>
                         <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">
                           Date
                         </th>
                         <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">
-                          Minutes
+                          Attachment
                         </th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-800">
-                      {evidence.map((content, index) => (
-                        <tr key={index}>
-                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-white sm:pl-0">
-                            {content.name}
-                          </td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300">{content.venue}</td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300">{content.date}</td>
-                          <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-left text-sm font-medium sm:pr-0">
-                            <Link href={content.link} className="text-indigo-400 hover:text-indigo-300">
-                              Download
-                            </Link>
-                          </td>
-                        </tr>
-                      ))}
+                      <EvidenceItem data={...moreEvidence} />
                     </tbody>
                   </table>
                 </div>
@@ -64,4 +51,15 @@ export default function Evidence() {
       </div>
     </div>
   )
+}
+
+
+export async function getStaticProps({ preview = false }) {
+  const allEvidence = overlayDrafts(await getClient(preview).fetch(evidenceQuery))
+  
+  return {
+    props: { allEvidence, preview },
+    // If webhooks isn't setup then attempt to re-generate in 30 second intervals
+    revalidate: process.env.SANITY_REVALIDATE_SECRET ? undefined : 30,
+  }
 }

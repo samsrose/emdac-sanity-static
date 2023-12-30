@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from "next/link"
+import { legislativeQuery } from '../lib/queries'
+import { getClient, overlayDrafts } from '../lib/sanity.server';
+import LegislativeItem from "../components/LegislativeItem";
 
+export default function Legislative({ allLegislative, preview }) {
 
-const legislative = [
-  { name: 'Spring 2023', venue: 'Anaheim', date: '03/14/2023', link: 'url' },
-  
-]
+  const [...moreLegislative] = allLegislative || []
 
-export default function Legislative() {
   return (
     <div className="bg-gray-900">
       <div className="mx-auto max-w-7xl">
@@ -29,31 +29,18 @@ export default function Legislative() {
                           Name
                         </th>
                         <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">
-                          Venue
+                          Topic
                         </th>
                         <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">
                           Date
                         </th>
                         <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">
-                          Minutes
+                          File
                         </th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-800">
-                      {legislative.map((content, index) => (
-                        <tr key={index}>
-                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-white sm:pl-0">
-                            {content.name}
-                          </td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300">{content.venue}</td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300">{content.date}</td>
-                          <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-left text-sm font-medium sm:pr-0">
-                            <Link href={content.link} className="text-indigo-400 hover:text-indigo-300">
-                              Download
-                            </Link>
-                          </td>
-                        </tr>
-                      ))}
+                        <LegislativeItem data={...moreLegislative} />
                     </tbody>
                   </table>
                 </div>
@@ -64,4 +51,14 @@ export default function Legislative() {
       </div>
     </div>
   )
+}
+
+export async function getStaticProps({ preview = false }) {
+  const allLegislative = overlayDrafts(await getClient(preview).fetch(legislativeQuery))
+  
+  return {
+    props: { allLegislative, preview },
+    // If webhooks isn't setup then attempt to re-generate in 30 second intervals
+    revalidate: process.env.SANITY_REVALIDATE_SECRET ? undefined : 30,
+  }
 }

@@ -16,6 +16,12 @@ export const directory = {
         validation: (Rule) => Rule.required(),
       },
       {
+        name: 'position',
+        title: 'Position',
+        type: 'string',
+        validation: (Rule) => Rule.required(),
+      },
+      {
         name: 'email',
         title: 'Email',
         type: 'string',
