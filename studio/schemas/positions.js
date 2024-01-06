@@ -1,6 +1,6 @@
 export const positions = {
   name: 'positions',
-  title: 'Positions',
+  title: 'Medical Positions',
   type: 'document',
   fields: [
     {

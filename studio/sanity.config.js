@@ -7,8 +7,6 @@ import { resolveProductionUrl } from './resolveProductionUrl'
 import { author } from './schemas/author'
 import { post } from './schemas/post'
 import { meetings } from './schemas/meetings'
-import { committees } from './schemas/committees'
-import { subcommittees } from './schemas/subcommittees'
 import { directory } from './schemas/directory'
 import { evidence } from './schemas/evidence'
 import { documents } from './schemas/documents'
@@ -16,6 +14,11 @@ import { legislative } from './schemas/legislative'
 import { minutes } from './schemas/minutes'
 import { positions } from './schemas/positions'
 import { protocols } from './schemas/protocols'
+import { officers } from './schemas/officers'
+import { scopeofpractice } from './schemas/scopeofpractice'
+import { legislativec } from './schemas/legislativec'
+import { medicaladvisory } from './schemas/medicaladvisory'
+import { nominating } from './schemas/nominating'
 
 const title =
   import.meta.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE ||
@@ -30,7 +33,22 @@ export default defineConfig({
   title,
   schema: {
     // If you want more content types, you can add them to this array
-    types: [author, post, subcommittees, committees, directory, documents, evidence, legislative, meetings, minutes, positions, protocols],
+    types: [
+      post, 
+      author,
+      officers, 
+      scopeofpractice, 
+      legislativec, 
+      medicaladvisory, 
+      nominating, 
+      directory, 
+      documents, 
+      evidence, 
+      legislative, 
+      meetings, 
+      minutes, 
+      positions, 
+      protocols],
   },
   document: {
     productionUrl: resolveProductionUrl,

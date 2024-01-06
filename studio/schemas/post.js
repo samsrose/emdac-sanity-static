@@ -20,15 +20,20 @@ export const post = {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: 'content',
-      title: 'Content',
-      type: 'array',
-      of: [{ type: 'block' }],
+      name: 'date',
+      title: 'Date (section organized by date)',
+      type: 'datetime',
     },
     {
       name: 'excerpt',
       title: 'Excerpt',
       type: 'string',
+    },
+    {
+      name: 'content',
+      title: 'Content',
+      type: 'array',
+      of: [{ type: 'block' }],
     },
     {
       name: 'coverImage',
@@ -38,11 +43,6 @@ export const post = {
         hotspot: true,
       },
       validation: (Rule) => Rule.required(),
-    },
-    {
-      name: 'date',
-      title: 'Date',
-      type: 'datetime',
     },
     {
       name: 'author',

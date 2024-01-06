@@ -6,7 +6,7 @@ export default function Meetings({ data }) {
             {data.map((action, index) => (
                 <div
                     key={index}
-                    style={{minWidth: '400px'}}
+                    style={{minWidth: '450px'}}
                     className="rounded-lg bg-gray-800 mb-4 sm:mb-0"
                 >
                     <div className="sm:m-4 p-4">

@@ -21,7 +21,7 @@ export default function MeetingPage({ allMeetings, preview }) {
       <div className="h-screen bg-gray-900 w-full">
         <div className="py-4 px-4 grid mx-auto max-w-7xl">
         <div className='bg-gradient-to-br from-gray-900 to-gray-800 flex align-center justify-center h-full max-w-7xl mx-auto'>
-            <div className="divide-y divide-gray-900 overflow-hidden rounded-lg bg-gray-900 shadow sm:grid grid-cols-1 md:grid-cols-2 sm:gap-4 sm:divide-y-0">
+            <div className="divide-y divide-gray-900 overflow-hidden rounded-lg bg-gray-900 shadow sm:grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 sm:gap-4 sm:divide-y-0">
               <MeetingItem data={...moreMeetings} />
             </div>
           </div>

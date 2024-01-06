@@ -1,4 +1,7 @@
 import React from 'react'
+import Link from "next/link"
+import { officersQuery, scopeofpracticeQuery, legislativecQuery, advisoryQuery, nominatingQuery } from '../lib/queries'
+import { getClient, overlayDrafts } from '../lib/sanity.server'
 
 const data = {
     "Officers": [
@@ -24,7 +27,16 @@ const data = {
     ]
 }
 
-export default function Committees() {
+
+
+export default function Committees({allAdvisory, allLegislative, allNominating, allOfficers, allScopeofPractice, preview}) {
+    
+  const [...moreAdvisory] = allAdvisory || []
+  const [...moreLegislative] = allLegislative || []
+  const [...moreNominating] = allNominating || []
+  const [...moreOfficers] = allOfficers || []
+  const [...moreScopeofPractice] = allScopeofPractice || []
+  
     return (
       <>
         <div className="w-full px-8 text-center">
@@ -38,38 +50,27 @@ export default function Committees() {
           <h2 className='text-white text-2xl font-normal pt-8 pb-4 text-left px-2'>Officers</h2>
           <div className='border-b border-gray-700 border-4 rounded mx-2'/>
           <div className='grid sm:grid-cols-2 grid-cols-1'>
-            {data['Officers'].map((item, index) => {
-              // console.log(item)
-              return <Officers item={item} key={index} />
-            })}
+            <Officers data={moreOfficers} />
           </div>
           <h2 className='text-white text-2xl font-normal pt-8 pb-4 text-left px-2'>Scope of Practice Committee</h2>
           <div className='border-b border-gray-700 border-4 rounded mx-2'/>
-          <div className='grid md:grid-cols-4 sm:grid-cols-2'>
-            {data['Scope of Practice'].map((item, index) => {
-              return <DataMappedItems item={item} key={index} />
-            })}
+          <div className='grid md:grid-cols-4 lg:grid-cols-2 grid-cols-1'>
+            <CommitteesItem data={moreScopeofPractice} />
           </div>
           <h2 className='text-white text-2xl font-normal pt-8 pb-4 text-left px-2'>Legislative Committee</h2>
           <div className='border-b border-gray-700 border-4 rounded mx-2'/>
-          <div className='grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1'>
-            {data['Legislative'].map((item, index) => {
-              return <DataMappedItems item={item} key={index} />
-            })}
+          <div className='grid md:grid-cols-4 lg:grid-cols-2 grid-cols-1'>
+            <CommitteesItem data={moreLegislative} />
           </div>
           <h2 className='text-white text-2xl font-normal pt-8 pb-4 text-left px-2'>Medical Advisory Committee</h2>
           <div className='border-b border-gray-700 border-4 rounded mx-2'/>
-          <div className='grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1'>
-            {data['Medical Advisory'].map((item, index) => {
-              return <DataMappedItems item={item} key={index} />
-            })}
+          <div className='grid md:grid-cols-4 lg:grid-cols-2 grid-cols-1'>
+            <CommitteesItem data={moreAdvisory} />
           </div>
           <h2 className='text-white text-2xl font-normal pt-8 pb-4 text-left px-2'>Nominating Committee</h2>
           <div className='border-b border-gray-700 border-4 rounded mx-2'/>
-          <div className='grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1'>
-            {data['Nominating'].map((item, index) => {
-              return <DataMappedItems item={item} key={index} />
-            })}
+          <div className='grid md:grid-cols-4 lg:grid-cols-2 grid-cols-1'>
+            <CommitteesItem data={moreNominating} />
           </div>
         </div>
     </>
@@ -77,9 +78,11 @@ export default function Committees() {
   }
   
   
-  function Officers({ item }) {
+  function Officers({ data }) {
     return (
-      <div className="py-4 px-2 sm:py-2 w-full mt-2">
+      <>
+      {data.map((item,index) =>
+        <div key={index} className="py-4 px-2 sm:py-2 w-full mt-2">
         <div className="shadow-md sm:flex-row border border-1 border-gray-800 rounded-lg grid bg-gray-800" >
           <div className="flex-grow p-4">
             <div className="flex flex-col align-start justify-start" >
@@ -93,20 +96,40 @@ export default function Committees() {
           </div>
         </div>
       </div>
+      )}
+      </>
     )
   }
-  function DataMappedItems({ item }) {
+  function CommitteesItem({ data }) {
+    console.log(data)
     return (
-      <div className="py-4 px-2 sm:py-2 w-full mt-2" >
+      <>
+      {data.map((item,index) =>
+        <div key={index} className="py-4 px-2 sm:py-2 w-full mt-2">
         <div className="shadow-md sm:flex-row border border-1 border-gray-800 rounded-lg grid bg-gray-800" >
           <div className="flex-grow p-4">
-            <div className="flex flex-col align-center justify-center" >
-              <h1 className="text-gray-200 text-xl title-font font-normal">
-                {item}
+            <div className="flex flex-col align-start justify-start" >
+              <h1 className="text-gray-200 text-lg title-font font-normal">
+                {item.name}
               </h1>
             </div>
           </div>
         </div>
       </div>
+      )}
+      </>
     )
+  }
+
+  export async function getStaticProps({ preview = false }) {
+    const allOfficers = overlayDrafts(await getClient(preview).fetch(officersQuery))
+    const allScopeofPractice = overlayDrafts(await getClient(preview).fetch(scopeofpracticeQuery))
+    const allLegislative = overlayDrafts(await getClient(preview).fetch(legislativecQuery))
+    const allAdvisory = overlayDrafts(await getClient(preview).fetch(advisoryQuery))
+    const allNominating = overlayDrafts(await getClient(preview).fetch(nominatingQuery))
+    return {
+      props: { allOfficers, allScopeofPractice, allLegislative, allAdvisory, allNominating, preview },
+      // If webhooks isn't setup then attempt to re-generate in 1 minute intervals
+      revalidate: process.env.SANITY_REVALIDATE_SECRET ? undefined : 30,
+    }
   }

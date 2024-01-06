@@ -1,6 +1,6 @@
 export const directory = {
     name: 'directory',
-    title: 'Directory',
+    title: 'EMDAC Directory',
     type: 'document',
     fields: [
       {
@@ -29,7 +29,7 @@ export const directory = {
       },
       {
         name: 'isAssociate',
-        title: 'Toggle on for member, off for associate',
+        title: 'ON = Member, OFF = Associate',
         type: 'boolean',
         initialValue: false,
         validation: (Rule) => Rule.required(),

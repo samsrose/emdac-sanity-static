@@ -1,15 +1,13 @@
 import React from 'react'
 import Link from "next/link"
-import { indexProtocols } from '../lib/queries'
+import { protocolsQuery } from '../lib/queries'
 import { getClient, overlayDrafts } from '../lib/sanity.server'
+import ProtocolItem from "../components/ProtocolItem";
 
 
-const protocols = [
-  { name: 'Spring 2023', venue: 'Anaheim', date: '03/14/2023', link: 'url' },
-  
-]
+export default function Protocols({ allProtocols, preview }) {
+  const [...moreProtocols] = allProtocols || []
 
-export default function Protocols() {
   return (
     <div className="bg-gray-900">
       <div className="mx-auto max-w-7xl">
@@ -17,8 +15,8 @@ export default function Protocols() {
           <div className="px-4 sm:px-6 lg:px-8">
             <div className="sm:flex sm:items-center">
               <div className="sm:flex-auto">
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-200 font-heading mb-2">Protocols Templates</h2>
-              <span className="text-red-500 text-xl font-normal">Protocol templates from EMDAC</span>
+                <h2 className="text-4xl lg:text-5xl font-bold text-gray-200 font-heading">Protocols Templates</h2>
+                <span className="text-red-500 text-xl font-normal">Protocol templates from EMDAC</span>
               </div>
             </div>
             <div className="mt-8 flow-root">
@@ -31,7 +29,7 @@ export default function Protocols() {
                           Name
                         </th>
                         <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">
-                          Venue
+                          Protocol
                         </th>
                         <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">
                           Date
@@ -42,20 +40,7 @@ export default function Protocols() {
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-800">
-                      {protocols.map((content, index) => (
-                        <tr key={index}>
-                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-white sm:pl-0">
-                            {content.name}
-                          </td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300">{content.venue}</td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300">{content.date}</td>
-                          <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-left text-sm font-medium sm:pr-0">
-                            <Link href={content.link} className="text-indigo-400 hover:text-indigo-300">
-                              Download
-                            </Link>
-                          </td>
-                        </tr>
-                      ))}
+                      <ProtocolItem data={...moreProtocols} />
                     </tbody>
                   </table>
                 </div>
@@ -69,9 +54,9 @@ export default function Protocols() {
 }
 
 export async function getStaticProps({ preview = false }) {
-  const allProtcols = overlayDrafts(await getClient(preview).fetch(indexProtocols))
+  const allProtocols = overlayDrafts(await getClient(preview).fetch(protocolsQuery))
   return {
-    props: { allProtcols, preview },
+    props: { allProtocols, preview },
     // If webhooks isn't setup then attempt to re-generate in 1 minute intervals
     revalidate: process.env.SANITY_REVALIDATE_SECRET ? undefined : 30,
   }

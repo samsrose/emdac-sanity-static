@@ -1,6 +1,6 @@
-export const subcommittees = {
-    name: 'subcommittees',
-    title: '- Subcommittees',
+export const officers = {
+    name: 'officers',
+    title: 'Officers Committee',
     type: 'document',
     fields: [
       {
@@ -8,6 +8,11 @@ export const subcommittees = {
         title: 'Name',
         type: 'string',
         validation: (Rule) => Rule.required(),
+      },
+      {
+        name: 'role',
+        title: 'Role (optional)',
+        type: 'string',
       },
     ],
   }

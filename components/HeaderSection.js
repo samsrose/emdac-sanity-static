@@ -16,11 +16,11 @@ export default function HeroSection() {
 
           <main className="mx-auto max-w-7xl px-4 sm:px-6 md:mb-8 lg:mt-2 lg:px-8 xl:my-4">
             <div className="sm:text-left">
-              <h1 className="text-6xl pl-6 md:p-0 tracking-loose font-extrabold text-gray-200 sm:text-5xl md:text-6xl">
+              <h1 className="pl-6 md:p-0 tracking-loose font-extrabold text-gray-200 text-6xl sm:text-5xl sm:max-w-xl sm:mx-auto">
                 <span className="block text-red-600 xl:inline">Emergency Medical Services</span>{' '}
                 <span className="block xl:inline">Directors' Association of California</span>
               </h1>
-              <p className="mt-3 pl-6 md:pl-0 pt-4 text-xl text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 pl-6 md:pl-0 pt-1 text-xl text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               The Mission of EMDAC is to provide leadership and expert opinion in the medical oversight, direction and coordination of Emergency Medical Services for the people of the State of California
               </p>
             </div>

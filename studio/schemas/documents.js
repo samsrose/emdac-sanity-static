@@ -1,6 +1,6 @@
 export const documents = {
   name: 'documents',
-  title: 'Documents',
+  title: 'General Documents',
   type: 'document',
   fields: [
     {

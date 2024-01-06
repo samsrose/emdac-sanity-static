@@ -98,7 +98,7 @@ function Navbar(props) {
     <Section bgColor={props.bgColor}>
       <div className="container py-6">
         <div className="flex justify-center">
-          <Brand fill="#fff" width="160" className='lg:mb-2 lg:ml-72 sm:ml-auto ml-0 cursor-pointer' />
+          <Brand fill="#fff" width="160" className='lg:mb-2 lg:ml-12 sm:ml-48 ml-8 ml-0 cursor-pointer' />
           <div className="flex items-center ml-auto space-x-1 lg:space-x-4">
             <ul className="hidden lg:flex items-center ml-auto">
             <li className="relative group">
@@ -246,8 +246,8 @@ function Navbar(props) {
           </div>
         </div>
         {/* Mobile dropdown */}
-        <div className={"lg:hidden" + (!mobileNavOpen ? " hidden" : "")}>
-          <div className="grid grid-cols-1 sm:grid-cols-3 my-4 bg-gradient-to-b from-gray-900 to-gray-800">
+        <div className={"lg:hidden w-full" + (!mobileNavOpen ? " hidden" : "")}>
+          <div className="w-full grid grid-cols-1 sm:grid-cols-3 my-4 bg-gray-800">
           <div className="p-8 space-y-6">
               <h4 className={`${classes.dropdown.title}`}>Content Areas</h4>
               <nav className="flex flex-col space-y-3">
@@ -290,7 +290,7 @@ function Navbar(props) {
                       <Image src={item.uri} alt="county" width="75" height="75" />
                     </div>
                     <div className="ml-4">
-                      <p className={`${classes.dropdown.mobileLink} md:text-sm font-medium text-gray-200`}>
+                      <p className={`${classes.dropdown.mobileLink} md:text-lg text-sm font-medium text-gray-200`}>
                         {item.title}
                       </p>
                     </div>

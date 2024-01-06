@@ -1,6 +1,6 @@
 export const minutes = {
   name: 'minutes',
-  title: 'Minutes',
+  title: 'Meeting Minutes',
   type: 'document',
   fields: [
     {

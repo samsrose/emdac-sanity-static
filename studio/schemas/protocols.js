@@ -1,6 +1,6 @@
 export const protocols = {
     name: 'protocols',
-    title: 'Protocols',
+    title: 'Protocol Statements',
     type: 'document',
     fields: [
       {
