@@ -7,7 +7,7 @@ import { resolveProductionUrl } from './resolveProductionUrl'
 import { author } from './schemas/author'
 import { post } from './schemas/post'
 import { meetings } from './schemas/meetings'
-import { directory } from './schemas/directory'
+// import { directory } from './schemas/directory'
 import { evidence } from './schemas/evidence'
 import { documents } from './schemas/documents'
 import { legislative } from './schemas/legislative'
@@ -19,6 +19,8 @@ import { scopeofpractice } from './schemas/scopeofpractice'
 import { legislativec } from './schemas/legislativec'
 import { medicaladvisory } from './schemas/medicaladvisory'
 import { nominating } from './schemas/nominating'
+import { associates } from './schemas/associates'
+import { members } from './schemas/members'
 
 const title =
   import.meta.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE ||
@@ -41,7 +43,8 @@ export default defineConfig({
       legislativec, 
       medicaladvisory, 
       nominating, 
-      directory, 
+      members,
+      associates, 
       documents, 
       evidence, 
       legislative, 

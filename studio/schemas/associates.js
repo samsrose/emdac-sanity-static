@@ -1,6 +1,6 @@
-export const directory = {
-    name: 'directory',
-    title: 'EMDAC Directory',
+export const associates = {
+    name: 'associates',
+    title: 'Directory Associates',
     type: 'document',
     fields: [
       {
@@ -25,13 +25,6 @@ export const directory = {
         name: 'email',
         title: 'Email',
         type: 'string',
-        validation: (Rule) => Rule.required(),
-      },
-      {
-        name: 'isAssociate',
-        title: 'ON = Member, OFF = Associate',
-        type: 'boolean',
-        initialValue: false,
         validation: (Rule) => Rule.required(),
       },
     ],
