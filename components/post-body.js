@@ -3,7 +3,7 @@ import { PortableText } from '@portabletext/react'
 
 export default function PostBody({ content }) {
   return (
-    <div className={`max-w-2xl mx-auto ${markdownStyles.markdown}`}>
+    <div className={`max-w-2xl mt-0 pt-0 mb-12 mx-auto text-white ${markdownStyles.markdown}`}>
       <PortableText value={content} />
     </div>
   )

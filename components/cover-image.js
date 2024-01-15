@@ -11,11 +11,11 @@ export default function CoverImage({ title, slug, image: source, priority }) {
       })}
     >
       <Image
-        className="w-full h-auto rounded"
-        width={2000}
-        height={1000}
+        className="w-full h-auto rounded-lg"
+        width={1000}
+        height={500}
         alt={`Cover Image for ${title}`}
-        src={urlForImage(source).height(1000).width(2000).url()}
+        src={urlForImage(source).height(500).width(1000).url()}
         sizes="100vw"
         priority={priority}
       />

@@ -9,10 +9,10 @@ import SideItems from '../components/map/SideItems';
 const Lemsas = () => {
   return (
     <>
-      <Script src="https://cdn.jsdelivr.net/gh/samsrose/emdac-public@c11ca60/libraries/mapdata.js" strategy="afterInteractive" onLoad={() => {
+      <Script src="/lib/mapdata.js" strategy="lazyOnload" onLoad={() => {
           console.log('Metadata initialized.')
         }} />
-      <Script src="https://cdn.jsdelivr.net/gh/samsrose/emdac-public@c11ca60/libraries/statemap.js" strategy="lazyOnload" onLoad={() => {
+      <Script src="/lib/statemap.js" strategy="lazyOnload" onLoad={() => {
           console.log('Map initialized.')
         }} />
       <div className="flex flex-wrap bg-gray-900 sm:mx-auto pt-12 pb-12 px-2">

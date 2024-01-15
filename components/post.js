@@ -50,7 +50,6 @@ export default function Post({ data = {}, preview = false }) {
               />
               <PostBody content={post.content} />
             </article>
-            <SectionSeparator />
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           </>
         )}
