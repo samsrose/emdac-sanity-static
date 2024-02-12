@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from "next/link"
-import response from './api/response';
+import response from './map/response';
 const data = response;
 
 const CountyItem = ({ data }) => {

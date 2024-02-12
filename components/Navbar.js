@@ -64,7 +64,7 @@ function Navbar(props) {
     navLinkIcon:
       "transform transition duration-200 ease-out group-hover:rotate-180 inline-block w-4 h-4",
     dropdown: {
-      base: "absolute top-19 pt-1 z-50 border-2 rounded-lg border-zinc-900 invisible group-hover:visible transform transition duration-800 ease-in opacity-0 group-hover:opacity-100",
+      base: "absolute top-19 pt-1 z-50 border rounded border-zinc-900 invisible group-hover:visible transform transition duration-800 ease-in opacity-0 group-hover:opacity-100",
       left: "right-0",
       center: "left-1/2 -translate-x-3/4",
       right: "left-0",
@@ -149,46 +149,6 @@ function Navbar(props) {
                         </nav>
                       </div>
                     </div>
-                    <div className="grid grid-cols-2 bg-gray-700">
-                      <nav className="p-6 flex flex-col space-y-4">
-                        <Link href="/minutes" className={`${classes.dropdown.link}`}>
-
-                          <ClipboardDocumentListIcon className={classes.dropdown.icon} />
-                          <span className="text-xs">Meeting Minutes</span>
-
-                        </Link>
-                        <Link href="/protocols" className={`text-sm ${classes.dropdown.link}`}>
-
-                          <RectangleGroupIcon className={classes.dropdown.icon} />
-                          <span className="text-xs">Protocol Templates</span>
-
-                        </Link>
-                      </nav>
-                      <nav className="p-6 flex flex-col space-y-4">
-                        <Link href="/positions" className={`text-sm ${classes.dropdown.link}`}>
-
-                          <DocumentTextIcon className={classes.dropdown.icon} />
-                          <span className="text-xs">Position Papers</span>
-
-                        </Link>
-                        <Link href="/evidence" className={`text-sm ${classes.dropdown.link}`}>
-
-                          <DocumentMagnifyingGlassIcon
-                            className={classes.dropdown.icon}
-                          />
-                          <span className="text-xs">Evidence Reviews</span>
-
-                        </Link>
-                        <Link href="/legislative" className={`text-sm ${classes.dropdown.link}`}>
-
-                          <ClipboardDocumentCheckIcon
-                            className={classes.dropdown.icon}
-                          />
-                          <span className="text-xs">Legislative Reviews</span>
-
-                        </Link>
-                      </nav>
-                    </div>
                   </div>
                 </div>
               </li>
@@ -207,10 +167,9 @@ function Navbar(props) {
                         <h4 className={`${classes.dropdown.title}`}>
                           Related Agencies
                         </h4>
-                        <h6 className="text-gray-200 text-sm mt-0 pt-0 pb-1">
+                        <h6 className="text-gray-400 text-sm mt-0 pt-0 pb-1">
                           External links to related agengies
                         </h6>
-                        <div className="border-b border-2 mb-3 rounded-xl border-gray-700"/>
                       </div>
                       <nav className="flex flex-col space-y-1">
                         {linksData.map((item, index) => (
@@ -276,7 +235,6 @@ function Navbar(props) {
                 <h6 className="text-gray-200 text-sm mt-0 pt-0 pb-4">
                   External links to related agengies
                 </h6>
-                <div className="border-b border-4 rounded-xl border-gray-700"/>
               </div>
               <nav className="flex flex-col space-y-1">
                 {linksData.map((item, index) => (

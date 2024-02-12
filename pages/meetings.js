@@ -2,6 +2,7 @@ import Link from "next/link"
 import { meetingsQuery } from '../lib/queries'
 import { getClient, overlayDrafts } from '../lib/sanity.server';
 import MeetingItem from "../components/MeetingItem";
+import Footer from "../components/Footer";
 
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ')

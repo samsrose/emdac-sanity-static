@@ -48,9 +48,9 @@ export default function Post({ data = {}, preview = false }) {
                 date={post.date}
                 author={post.author}
               />
-              <PostBody content={post.content} />
+              <PostBody content={post.content} buttonLink={post.buttonLink} />
             </article>
-            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+            {morePosts.length > 0 && <MoreStories posts={morePosts} buttonLink={post.buttonLink} />}
           </>
         )}
       </>

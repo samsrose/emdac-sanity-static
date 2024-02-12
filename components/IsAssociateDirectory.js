@@ -6,8 +6,8 @@ export default function IsAssociateDirectory({ data }) {
     return (
       <>
       {data.map((post, index) => (
-        <li key={index} className="divide-y divide-gray-900 rounded-lg bg-gray-800 shadow">
-          <div className="flex w-full items-center justify-between space-x-6 p-6">
+        <li key={index} className="divide-y divide-gray-900 rounded-lg bg-gray-700/80 shadow">
+          <div className="flex w-full items-center justify-between space-x-6 px-6 py-4">
             <div className="flex-1 truncate">
               <div className="flex items-center space-x-3">
                 <h3 className="truncate text-xl font-medium text-gray-200">{post.firstName} {post.lastName}</h3>
@@ -20,7 +20,7 @@ export default function IsAssociateDirectory({ data }) {
               <div className="flex w-0 flex-1">
                 <Link
                   href={`mailto:${post.email}`}
-                  className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-b-lg border border-transparent py-4 text-sm font-semibold text-gray-300 hover:bg-gray-900/40 transition"
+                  className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-b-lg border border-transparent py-2 text-sm font-semibold text-gray-300 hover:bg-gray-800/40 transition"
                 >
                   <EnvelopeIcon className="h-4 w-4 text-gray-400" aria-hidden="true" />
                   Email

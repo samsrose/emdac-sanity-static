@@ -13,7 +13,7 @@ export default function Landing({ allPosts, preview }) {
       <Layout preview={preview}>
         <>
           <HeaderSection />
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          {morePosts.length > 0 && <MoreStories posts={morePosts} buttonLink={allPosts.buttonLink} />}
         </>
       </Layout>
     </>

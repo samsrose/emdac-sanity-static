@@ -3,6 +3,7 @@ import { getClient, overlayDrafts } from '../lib/sanity.server'
 import { PreviewSuspense } from 'next-sanity/preview'
 import { lazy } from 'react'
 import Landing from '../components/landing'
+import Footer from "../components/Footer";
 
 const LandingPreview = lazy(() => import('../components/landing-preview'))
 

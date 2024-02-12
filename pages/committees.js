@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from "next/link"
+import Footer from "../components/Footer";
 import { officersQuery, scopeofpracticeQuery, legislativecQuery, advisoryQuery, nominatingQuery } from '../lib/queries'
 import { getClient, overlayDrafts } from '../lib/sanity.server'
 
@@ -79,9 +80,20 @@ export default function Committees({allAdvisory, allLegislative, allNominating, 
   
   
   function Officers({ data }) {
+    const info = data;
+    
+    info.sort(function(a, b) {
+      var keyA = new Date(a.order),
+      keyB = new Date(b.order);
+      // Compare the 2 orders
+      if (keyA < keyB) return -1;
+      if (keyA > keyB) return 1;
+      return 0;
+    });
+
     return (
       <>
-      {data.map((item,index) =>
+      {info.map((item,index) =>
         <div key={index} className="py-4 px-2 sm:py-2 w-full mt-2">
         <div className="shadow-md sm:flex-row border border-1 border-gray-800 rounded-lg grid bg-gray-800" >
           <div className="flex-grow p-4">
@@ -101,7 +113,6 @@ export default function Committees({allAdvisory, allLegislative, allNominating, 
     )
   }
   function CommitteesItem({ data }) {
-    console.log(data)
     return (
       <>
       {data.map((item,index) =>

@@ -1,6 +1,6 @@
 import PostPlug from './post-plug'
 
-export default function MoreStories({ posts }) {
+export default function MoreStories({ posts, buttonLink }) {
   return (
     <section>
       <div className="bg-gradient-to-b from-gray-800/50 to-gray-900">
@@ -21,6 +21,7 @@ export default function MoreStories({ posts }) {
                 author={post.author}
                 slug={post.slug}
                 excerpt={post.excerpt}
+                buttonLink={buttonLink}
               />
             ))}
           </div>

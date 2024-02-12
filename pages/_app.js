@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/global.css";
 import Meta from "../components/Meta";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -13,7 +13,6 @@ function MyApp({ Component, pageProps }) {
     
       <Component {...pageProps} />
 
-      <Footer/>
     </>
   );
 }

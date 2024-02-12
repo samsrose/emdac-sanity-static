@@ -30,6 +30,11 @@ export const post = {
       type: 'string',
     },
     {
+      name: 'buttonLink',
+      title: 'Button Link (url)',
+      type: 'string',
+    },
+    {
       name: 'content',
       title: 'Content',
       type: 'array',

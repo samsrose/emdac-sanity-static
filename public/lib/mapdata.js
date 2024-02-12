@@ -61,8 +61,8 @@ var simplemaps_statemap_mapdata={
       popup_nocss: "no",
       
       //Advanced settings
-      div: "map",
-      auto_load: "yes",
+      div: "lemsas",
+      auto_load: "no",
       rotate: "0",
       url_new_tab: "yes",
       images_directory: "default",

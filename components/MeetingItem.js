@@ -40,6 +40,7 @@ export default function Meetings({ data }) {
                                     <Link
                                         title="stripe voucher"
                                         href={action.voucherLink}
+                                        target="_blank"
                                         className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border-r border-gray-700 bg-gray-800 hover:bg-purple-900 py-4 text-sm font-semibold text-gray-400 hover:text-gray-200"
                                     >
                                         Purchase Voucher
@@ -66,6 +67,7 @@ export default function Meetings({ data }) {
                                     <Link
                                         title="venue info"
                                         href={action.venueLink}
+                                        target="_blank"
                                         className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm font-semibold text-gray-400 hover:text-gray-200"
                                     >
                                         Venue Info

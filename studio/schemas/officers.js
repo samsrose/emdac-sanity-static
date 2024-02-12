@@ -14,6 +14,11 @@ export const officers = {
         title: 'Role (optional)',
         type: 'string',
       },
+      {
+        name: 'order',
+        title: 'Order (1-10)',
+        type: 'number',
+      },
     ],
   }
   
