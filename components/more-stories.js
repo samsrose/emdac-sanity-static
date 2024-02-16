@@ -21,7 +21,7 @@ export default function MoreStories({ posts, buttonLink }) {
                 author={post.author}
                 slug={post.slug}
                 excerpt={post.excerpt}
-                buttonLink={buttonLink}
+                buttonLink={post.buttonLink}
               />
             ))}
           </div>

@@ -26,7 +26,7 @@ const datas = {
 export default function Lemsas() {
   return (
     <>
-      <div className="flex flex-wrap sm:mx-auto pt-12 pb-12 px-2">
+      <div className="flex flex-wrap sm:mx-auto pt-12 pb-12 px-2 bg-gray-900">
         <div className="my-8 max-w-xl pr-4 text-center mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-200 font-heading">
             California LEMSAs
@@ -36,7 +36,7 @@ export default function Lemsas() {
           </span>
         </div>
       </div>
-      <section className="text-gray-100 body-font lg:w-2/3 w-full px-4 mb-24 relative container-fluid px-4 mx-auto h-screen flex">
+      <section className="text-gray-100 body-font lg:w-2/3 w-full px-4 mb-24 relative container-fluid px-4 mx-auto h-full flex">
         <ul className="w-full">
           <CountyMobile data={response} />
         </ul>
@@ -45,10 +45,10 @@ export default function Lemsas() {
   );
 }
 
-function Tooltip({ title, children }) {
+function Tooltip({ title, children, tooltipDirection }) {
   return (
     <>
-  <div className="tooltip tooltip-right" data-tip={`${title}`}>
+  <div className={`tooltip tooltip-right`} data-tip={`${title}`}>
     {children}
   </div>
   </>
@@ -73,15 +73,15 @@ function Dropdown({
       >
         <input type="checkbox" />
         <div className="collapse-title text-md font-medium flex align-center justify-between">
-          <span className="my-1 text-lg">{title}</span>
+          <span className="mt-1 text-lg">{title}</span>
         </div>
         <div className="collapse-content">
-          <p className="text-md">{name}</p>
-          <p className="text-md">{position}</p>
-          <p className="text-md mb-2">{locale}</p>
-          <Tooltip title="Click to open link in new window">
-            <Link href={uri} target="_blank" className="py-1 text-sm border-b border-b-2">
-              Link to agency
+          {/* <p className="text-md">Error parsing lemsa data</p> */}
+          {/* <p className="text-md">{position}</p>
+          <p className="text-md mb-2">{locale}</p> */}
+          <Tooltip tooltipDirection="right" title="Click to open link in new window">
+            <Link href={uri} target="_blank" className="pb-1 text-sm border-b border-b-2">
+              View agency website
             </Link>
           </Tooltip>
         </div>

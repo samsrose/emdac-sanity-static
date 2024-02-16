@@ -42,34 +42,34 @@ export default function Committees({allAdvisory, allLegislative, allNominating, 
       <>
         <div className="w-full px-8 text-center">
           <div className="flex flex-wrap bg-gray-900 lg:w-full sm:mx-auto pt-12 px-2">
-            <div className="my-8 max-w-xl pr-4 text-center mx-auto">
-              <h2 className="text-2xl lg:text-4xl font-bold text-gray-100 font-heading mb-2">EMDAC Committees</h2>
+            <div className="my-4 max-w-xl pr-4 text-center mx-auto">
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-100 font-heading">EMDAC Committees</h2>
             </div>
           </div>
         </div>
-        <div className='py-4 w-full container mx-auto mb-12'>
-          <h2 className='text-white text-2xl font-normal pt-8 pb-4 text-left px-2'>Officers</h2>
-          <div className='border-b border-gray-700 border-4 rounded mx-2'/>
+        <div className='py-4 w-full container mx-auto mb-6'>
+          <h2 className='text-white text-3xl font-bold pt-8 pb-4 text-left px-2'>Officers</h2>
+          {/* <div className='border-b border-gray-700 border-4 rounded mx-2'/> */}
           <div className='grid sm:grid-cols-2 grid-cols-1'>
             <Officers data={moreOfficers} />
           </div>
-          <h2 className='text-white text-2xl font-normal pt-8 pb-4 text-left px-2'>Scope of Practice Committee</h2>
-          <div className='border-b border-gray-700 border-4 rounded mx-2'/>
+          <h2 className='text-white text-3xl font-bold pt-8 pb-4 text-left px-2'>Scope of Practice Committee</h2>
+          {/* <div className='border-b border-gray-700 border-4 rounded mx-2'/> */}
           <div className='grid md:grid-cols-4 lg:grid-cols-2 grid-cols-1'>
             <CommitteesItem data={moreScopeofPractice} />
           </div>
-          <h2 className='text-white text-2xl font-normal pt-8 pb-4 text-left px-2'>Legislative Committee</h2>
-          <div className='border-b border-gray-700 border-4 rounded mx-2'/>
+          <h2 className='text-white text-3xl font-bold pt-8 pb-4 text-left px-2'>Legislative Committee</h2>
+          {/* <div className='border-b border-gray-700 border-4 rounded mx-2'/> */}
           <div className='grid md:grid-cols-4 lg:grid-cols-2 grid-cols-1'>
             <CommitteesItem data={moreLegislative} />
           </div>
-          <h2 className='text-white text-2xl font-normal pt-8 pb-4 text-left px-2'>Medical Advisory Committee</h2>
-          <div className='border-b border-gray-700 border-4 rounded mx-2'/>
+          <h2 className='text-white text-3xl font-bold pt-8 pb-4 text-left px-2'>Medical Advisory Committee</h2>
+          {/* <div className='border-b border-gray-700 border-4 rounded mx-2'/> */}
           <div className='grid md:grid-cols-4 lg:grid-cols-2 grid-cols-1'>
             <CommitteesItem data={moreAdvisory} />
           </div>
-          <h2 className='text-white text-2xl font-normal pt-8 pb-4 text-left px-2'>Nominating Committee</h2>
-          <div className='border-b border-gray-700 border-4 rounded mx-2'/>
+          <h2 className='text-white text-3xl font-bold pt-8 pb-4 text-left px-2'>Nominating Committee</h2>
+          {/* <div className='border-b border-gray-700 border-4 rounded mx-2'/> */}
           <div className='grid md:grid-cols-4 lg:grid-cols-2 grid-cols-1'>
             <CommitteesItem data={moreNominating} />
           </div>
@@ -94,8 +94,8 @@ export default function Committees({allAdvisory, allLegislative, allNominating, 
     return (
       <>
       {info.map((item,index) =>
-        <div key={index} className="py-4 px-2 sm:py-2 w-full mt-2">
-        <div className="shadow-md sm:flex-row border border-1 border-gray-800 rounded-lg grid bg-gray-800" >
+        <div key={index} className="py-2 px-2 sm:py-2 w-full mt-2">
+        <div className="shadow-md sm:flex-row border border-1 border-gray-800 rounded grid bg-gray-800" >
           <div className="flex-grow p-4">
             <div className="flex flex-col align-start justify-start" >
               <h1 className="text-gray-200 md:text-2xl text-xl title-font font-normal">
@@ -116,8 +116,8 @@ export default function Committees({allAdvisory, allLegislative, allNominating, 
     return (
       <>
       {data.map((item,index) =>
-        <div key={index} className="py-4 px-2 sm:py-2 w-full mt-2">
-        <div className="shadow-md sm:flex-row border border-1 border-gray-800 rounded-lg grid bg-gray-800" >
+        <div key={index} className="py-2 px-2 sm:py-2 w-full mt-2">
+        <div className="shadow-md sm:flex-row border border-1 border-gray-800 rounded grid bg-gray-800" >
           <div className="flex-grow p-4">
             <div className="flex flex-col align-start justify-start" >
               <h1 className="text-gray-200 text-lg title-font font-normal">
