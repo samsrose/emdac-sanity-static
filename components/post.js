@@ -6,10 +6,11 @@ import Header from './header'
 import PostTitle from './post-title'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
-import PostHeader from './post-header'
+// import PostHeader from './post-header'
 import PostBody from './post-body'
 import SectionSeparator from './section-separator'
 import MoreStories from './more-stories'
+import BlogSections from './blog-sections'
 
 export default function Post({ data = {}, preview = false }) {
   const router = useRouter()
@@ -42,15 +43,16 @@ export default function Post({ data = {}, preview = false }) {
                   />
                 )}
               </Head>
-              <PostHeader
+              {/* <PostHeader
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
                 author={post.author}
-              />
-              <PostBody content={post.content} buttonLink={post.buttonLink} />
+              /> */}
+              <BlogSections date={post.date} title={post.title} content={post.content} buttonLink={post.buttonLink} buttonName={post.buttonName} />
+              {/* <PostBody content={post.content} buttonLink={post.buttonLink} /> */}
             </article>
-            {morePosts.length > 0 && <MoreStories posts={morePosts} buttonLink={post.buttonLink} />}
+            {morePosts.length > 0 && <MoreStories posts={morePosts} buttonName={post.buttonName} buttonLink={post.buttonLink} />}
           </>
         )}
       </>

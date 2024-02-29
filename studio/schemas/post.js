@@ -35,6 +35,11 @@ export const post = {
       type: 'string',
     },
     {
+      name: 'buttonName',
+      title: 'Button Name (Default: Learn More)',
+      type: 'string',
+    },
+    {
       name: 'content',
       title: 'Content',
       type: 'array',

@@ -77,8 +77,8 @@ function Dropdown({
         </div>
         <div className="collapse-content">
           {/* <p className="text-md">Error parsing lemsa data</p> */}
-          {/* <p className="text-md">{position}</p>
-          <p className="text-md mb-2">{locale}</p> */}
+          {/* <p className="text-md">{position}</p> */}
+          {/* <p className="text-md mb-2">{name}</p> */}
           <Tooltip tooltipDirection="right" title="Click to open link in new window">
             <Link href={uri} target="_blank" className="pb-1 text-sm border-b border-b-2">
               View agency website
