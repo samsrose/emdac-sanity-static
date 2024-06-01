@@ -5,46 +5,46 @@ const response = [
         {
           id: "uscajsvn2",
           transform: "matrix(1 0 0 1 330 301)",
-          name: "Kim Freeman MD",
+          name: "Kim Freeman MD/MBA",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Alpine",
           uri: "https://www.mvemsa.org/",
-          fill: "rgba(244, 114, 182,1)",
+          fill: "rgb(224,130,63)",
           d: "M324,290.338c0,0,0,9,0,16s1.75,2.5,4.75,5c13.207,11.006,12.75,0,18.5,1.25c3.917,0.852,0,5.25,7,6.5c0.25-8.25,3.75-2,4.25-10s-7.75-11.75-2.5-20.75l-18-14C338,274.338,334,285.838,324,290.338z",
         },
         {
           id: "uscajsvn3",
           transform: "matrix(1 0 0 1 263 318)",
-          name: "John Doe",
+          name: "Kim Freeman MD/MBA",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Amador",
           uri: "https://www.mvemsa.org/",
-          fill: "rgba(244, 114, 182,1)",
+          fill: "rgb(224,130,63)",
           d: "M262,322.838c2.167,1.833-0.169,5.997,3.667,6c6.5,0.004,8.5-4.5,11.167-5.167s2.667-2.167,5.5-2.833c2.833-0.667,4.333,0.191,6.5-3.654s4.833-4.013,8-6.346c3.167-2.334,3.972-1.502,8-1.667c8.167-0.333,7.833-2.5,19.167-2.833c0-7,0-16,0-16h-2.5c-0.5,6.375-3.75,4.5-6.25,6.375s-0.75,5.125-5.5,5.375s-10.687,2.617-15.5,3.25c-8.75,1.148-10-3.25-16.75-3.25s-3,2.633-15.5,3.441C263.833,314.184,261.979,317.999,262,322.838z",
   
         },
         {
           id: "uscajsvn5",
           transform: "matrix(1 0 0 1 267 336)",
-          name: "John Doe",
+          name: "Kim Freeman MD/MBA",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Calaveras",
           uri: "https://www.mvemsa.org/",
-          fill: "rgba(244, 114, 182,1)",
+          fill: "rgb(224,130,63)",
           d: "M296.833,310.838c-3.167,2.333-5.833,2.5-8,6.346s-3.667,2.987-6.5,3.654c-2.833,0.666-2.833,2.166-5.5,2.833s-4.667,5.171-11.167,5.167c-0.167,5.166,0.833,8.332,3.5,11.5c2.667,3.166,16.333,16.834,18.333,19.666c0.667-2.666,4.333-7,6.5-7.666c2.167-0.667-0.833-5.5,1.833-6.334c2.667-0.833,6.452-6.142,12.167-15c13.333-20.666,14.5-15.666,20.75-19.666c-3-2.5-4.75,2-4.75-5c-11.333,0.333-11,2.5-19.167,2.833C300.806,309.336,300,308.504,296.833,310.838z",
         },
         {
           id: "uscajsvn22",
           transform: "matrix(1 0 0 1 316 382)",
-          name: "John Doe",
+          name: "Kim Freeman MD/MBA",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Mariposa",
           uri: "https://www.mvemsa.org/",
-          fill: "rgba(244, 114, 182,1)",
+          fill: "rgb(224,130,63)",
           d: "M352.167,391.504v-3.166h2.667v-2.667l2-0.167v-4.833l17.833-16.587c-5.5-8.088-8.333-6.913-11.833-7.58s-3.5-3.333-4.667-3.166c-1.167,0.166-1.167,3.833-7.5,6.345c-2.967,1.177-2.833,4.488-11.542,4.821c-8.708,0.334-8.958-3.5-11.958-4.5s-4.5,0.5-5.5,2.167s0,0-3.333,0.5S315,366.338,308,367.421c-2.504,0.388,3.167,4.417,1,5.917s-2.5-2.667-3.833-2.667s-0.833,4.167-0.833,4.167c3,4.5,4.833,10.832,6.333,12.666s0,4.833,2.167,7c3.818,3.818,4.548,8.602,5.333,9.693c2.5,3.473,7.167,3.307,7.667,6.473l19-19.332L352.167,391.504z",
         },
       ],
@@ -55,7 +55,7 @@ const response = [
         {
           id: "uscajsvn53",
           transform: "matrix(1 0 0 1 109 141)",
-          name: "John Doe",
+          name: "Miranda Lewis MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Tulare",
@@ -66,7 +66,7 @@ const response = [
         {
           id: "uscajsvn10",
           transform: "matrix(1 0 0 1 327 454)",
-          name: "Jane Doe",
+          name: "Miranda Lewis MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Fresno",
@@ -77,7 +77,7 @@ const response = [
         {
           id: "uscajsvn16",
           transform: "matrix(1 0 0 1 330 504)",
-          name: "John Doe",
+          name: "Miranda Lewis MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Kings",
@@ -89,7 +89,7 @@ const response = [
         {
           id: "uscajsvn20",
           transform: "matrix(1 0 0 1 323 420)",
-          name: "John Doe",
+          name: "Miranda Lewis MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Madera",
@@ -104,7 +104,7 @@ const response = [
         {
           id: "uscajsvn4",
           transform: "matrix(1 0 0 1 212 218)",
-          name: "Jane Doe",
+          name: "Troy Falck MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Butte",
@@ -115,7 +115,7 @@ const response = [
         {
           id: "uscajsvn6",
           transform: "matrix(1 0 0 1 174 258)",
-          name: "Jane Doe",
+          name: "Troy Falck MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Colusa",
@@ -126,7 +126,7 @@ const response = [
         {
           id: "uscajsvn29",
           transform: "matrix(1 0 0 1 269 240)",
-          name: "Jane Doe",
+          name: "Troy Falck MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Nevada",
@@ -138,7 +138,7 @@ const response = [
         {
           id: "uscajsvn11",
           transform: "matrix(1 0 0 1 162 222)",
-          name: "Jane Doe",
+          name: "Troy Falck MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Glenn",
@@ -149,7 +149,7 @@ const response = [
         {
           id: "uscajsvn47",
           transform: "matrix(1 0 0 1 139 60)",
-          name: "Jane Doe",
+          name: "Troy Falck MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Siskiyou",
@@ -161,7 +161,7 @@ const response = [
         {
           id: "uscajsvn45",
           transform: "matrix(1 0 0 1 184 129)",
-          name: "Jane Doe",
+          name: "Troy Falck MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Shasta",
@@ -173,7 +173,7 @@ const response = [
         {
           id: "uscajsvn51",
           transform: "matrix(1 0 0 1 210 276)",
-          name: "John Doe",
+          name: "Troy Falck MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Sutter",
@@ -185,7 +185,7 @@ const response = [
         {
           id: "uscajsvn58",
           transform: "matrix(1 0 0 1 223 252)",
-          name: "Jane Doe",
+          name: "Troy Falck MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Yuba",
@@ -196,7 +196,7 @@ const response = [
         {
           id: "uscajsvn31",
           transform: "matrix(1 0 0 1 286 257)",
-          name: "Jane Doe",
+          name: "Troy Falck MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Placer",
@@ -208,7 +208,7 @@ const response = [
         {
           id: "uscajsvn51",
           transform: "matrix(1 0 0 1 286 257)",
-          name: "Jane Doe",
+          name: "Troy Falck MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Tahema",
@@ -219,12 +219,40 @@ const response = [
         }]
     },
     {
+      name: "Coastal Valley",
+      data: [
+        {
+          id: "uscajsvn23",
+          transform: "matrix(1 0 0 1 87 222)",
+          name: "Mark Luoto MD",
+          position: "EMS Medical Director",
+          locale: "Hospital",
+          countyName: "Mendocino",
+          uri: "https://www.coastalvalleysems.org/",
+          fill: "rgb(25,145,166)",
+          d: "M108.827,282.102L123,282.088l0.5-3h21.25c-12.25-4-8.75-8.5-11-11s-6.25,0.25-6.75-8s4.5-7,5.5-12.25s-6.25-13.75-4.5-18.25s12-2.75,12-8c0-9.75-1.647-13.529-2.75-17.25c-2-6.75,2.75-10,0-13.25H96.5v-3l-30.25,0.25c24.028,25.996,11.75,36.75,12.25,48.5s8.75,22.25,9.25,27.5s-4.25,4.25-3,8s5.75,7.75,13,13.25h11.021L108.827,282.102z",
+        },
+        {
+          id: "uscajsvn49",
+          transform: "matrix(1 0 0 1 113 302)",
+          name: "Mark Luoto MD",
+          position: "EMS Medical Director",
+          locale: "Hospital",
+          countyName: "Sonoma",
+          uri: "https://www.coastalvalleysems.org/",
+          fill: "rgb(25,145,166)",
+          d: "M174.833,331.004c-1.802-2.027,0.167-5.166-1.667-6.166s0-5.667-4.5-8.667c-3.042-2.027-1.333-6.167-5.833-9.833c-2.564-2.09-7.5-4.834-5.5-12.834c0.813-3.25-7.833-7.916-12.583-14.416H123.5l-0.5,3l-14.173,0.014l-0.056,3.486H97.75c7.25,5.5,13.5,19.25,26.25,25.25c6.24,2.936,4,10.25,4,10.25c20.375-1.625,15.625,8.042,25.75,9.625c4.215,0.658,7.625-0.75,12.75,6.625c3.086-0.735,3.926-3.631,6.33-3.453C172.83,333.885,175.5,331.754,174.833,331.004z",
+
+        },
+      ]
+    },
+    {
       name: "North Coast",
       data: [
         {
           id: "uscajsvn8",
           transform: "matrix(1 0 0 1 67 48)",
-          name: "Jane Doe",
+          name: "Matt Karp MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Del Norte",
@@ -232,11 +260,11 @@ const response = [
           fill: "rgba(239, 68, 68,1)",
           d: "M81.75,79.338H90c-0.75-3.25,3.281-3.336,2.25-4.75c-2.371-3.25-0.991-6.25-2.371-7s-3.379-1-3.629-4.75s3.25-2.5,3-9s-3.726-5.986-1.75-9.5c4.5-8,10-4.629,10.25-13.064H53.179c0.179,16.186-3.679,12.314-2.429,17.314s12,1,12,24l19,0.324V79.338z",
         },
-  
+
         {
           id: "uscajsvn12",
           transform: "matrix(1 0 0 1 51 143)",
-          name: "John Doe",
+          name: "Matt Karp MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Humboldt",
@@ -247,7 +275,7 @@ const response = [
         {
           id: "uscajsvn17",
           transform: "matrix(1 0 0 1 139 266)",
-          name: "Jane Doe",
+          name: "Matt Karp MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Lake",
@@ -262,7 +290,7 @@ const response = [
         {
           id: "uscajsvn26",
           transform: "matrix(1 0 0 1 395 360)",
-          name: "John Doe",
+          name: "Reza Vaezazizi MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Mono",
@@ -274,7 +302,7 @@ const response = [
         {
           id: "uscajsvn14",
           transform: "matrix(1 0 0 1 483 460)",
-          name: "John Doe",
+          name: "Reza Vaezazizi MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Inyo",
@@ -286,7 +314,7 @@ const response = [
         {
           id: "uscajsvn36",
           transform: "matrix(1 0 0 1 530 595)",
-          name: "John Doe",
+          name: "Reza Vaezazizi MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "San Bernardino",
@@ -303,7 +331,7 @@ const response = [
         {
           id: "uscajsvn18",
           transform: "matrix(1 0 0 1 275 131)",
-          name: "John Doe",
+          name: "Jeffery Kepple MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Lassen",
@@ -314,7 +342,7 @@ const response = [
         {
           id: "uscajsvn25",
           transform: "matrix(1 0 0 1 270 64)",
-          name: "Jane Doe",
+          name: "Jeffery Kepple MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Modoc",
@@ -323,9 +351,21 @@ const response = [
           d: "M234.25,95.338V31.273h94.686l0.125,64.064H242.75H234.25z",
         },
         {
+          id: "uscajsvn54",
+          transform: "matrix(1 0 0 1 390 487)",
+          name: "Jeffery Kepple MD",
+          position: "EMS Medical Director",
+          locale: "Hospital",
+          countyName: "Trinity",
+          uri: "https://trinityems.com/",
+          fill: "rgba(245, 158, 11,1)",
+          d: "M308,331.004c-5.715,8.858-9.5,14.167-12.167,15c-2.667,0.834,0.333,5.667-1.833,6.334c-2.167,0.666-5.833,5-6.5,7.666l16.833,14.834c0,0-0.5-4.167,0.833-4.167s1.667,4.167,3.833,2.667s-3.504-5.529-1-5.917c7-1.083,7-4.25,10.333-4.75s2.333,1.167,3.333-0.5s2.5-3.167,5.5-2.167s3.25,4.834,11.958,4.5c8.708-0.333,8.575-3.645,11.542-4.821c6.333-2.512,6.333-6.179,7.5-6.345c1.167-0.167,1.167,2.499,4.667,3.166s6.333-0.508,11.833,7.58c0,0,1.03,1.254,2.894,2.754c-1.061-4.25,5.189-1,3.939-9s-7-5.25-7-9.5s4.174,3.391,5.75,1.5c2.5-3-1.11-2.75-2.306-5.25c-1.194-2.5,1.556-5.5-0.444-6s-5.5-0.75-9-4.75s-0.5-9.5-4.5-9.5s0.25,11.25-2,11s-5.25-2.5-7.75-6s-0.114-6.494,0-10.25c-7-1.25-3.083-5.648-7-6.5c-5.75-1.25-5.293,9.756-18.5-1.25C322.5,315.338,321.333,310.338,308,331.004z",
+
+        },
+        {
           id: "uscajsvn32",
           transform: "matrix(1 0 0 1 265 192)",
-          name: "John Doe",
+          name: "Jeffery Kepple MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Plumas",
@@ -337,7 +377,7 @@ const response = [
         {
           id: "uscajsvn46",
           transform: "matrix(1 0 0 1 291 222)",
-          name: "John Doe",
+          name: "Jeffery Kepple MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Sierra",
@@ -352,7 +392,7 @@ const response = [
         {
           id: "uscajsvn1",
           transform: "matrix(1 0 0 1 181 379)",
-          name: "John Doe",
+          name: "Zita Konik MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Alameda",
@@ -364,7 +404,7 @@ const response = [
         {
           id: "uscajsvn7",
           transform: "matrix(1 0 0 1 170 353)",
-          name: "John Doe",
+          name: "Senai Kidane MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Contra Costa",
@@ -376,7 +416,7 @@ const response = [
         {
           id: "uscajsvn9",
           transform: "matrix(1 0 0 1 272 287)",
-          name: "John Doe",
+          name: "David Duncan MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "El Dorado",
@@ -387,7 +427,7 @@ const response = [
         {
           id: "uscajsvn13",
           transform: "matrix(1 0 0 1 616 739)",
-          name: "Jane Doe",
+          name: "Kathy Staats MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Imperial",
@@ -396,11 +436,10 @@ const response = [
           d: "M585.75,770.088c0,0,84-6.75,90.5-7.75c3.787-0.584,12.5,0,12.5-3.5c0-6.006,6.546-4.818,4.5-13c-3.25-13-10-6.5-14.5-11.5s4.5-9-1.75-19.25c-2.567-4.211,2.75-8,5.5-10l-95.167,1.75L585.75,770.088z",
   
         },
-  
         {
           id: "uscajsvn15",
           transform: "matrix(1 0 0 1 400 561)",
-          name: "Jane Doe",
+          name: "Kristopher Lyons MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Kern",
@@ -409,33 +448,20 @@ const response = [
           d: "M360.5,520.088l-44.5,0.27v13.814h8.166v6.166l6.5,7.168h7.167l-0.667,7h4.5v6.5h9.5v7.332h7v7.5h6v14.334h2c3.167,0,7.999,1,10.333,2s1.833,4.5,4.5,4.666s21.334,0,21.334,0H482.5h2.075v-77.5l-23.825,0.143L360.5,520.088z",
         },
         {
-          id: "uscajsvn54",
-          transform: "matrix(1 0 0 1 390 487)",
-          name: "Jane Doe",
-          position: "EMS Medical Director",
-          locale: "Hospital",
-          countyName: "Trinity",
-          uri: "https://trinityems.com/",
-          fill: "rgb(59, 130, 246)",
-          d: "M308,331.004c-5.715,8.858-9.5,14.167-12.167,15c-2.667,0.834,0.333,5.667-1.833,6.334c-2.167,0.666-5.833,5-6.5,7.666l16.833,14.834c0,0-0.5-4.167,0.833-4.167s1.667,4.167,3.833,2.667s-3.504-5.529-1-5.917c7-1.083,7-4.25,10.333-4.75s2.333,1.167,3.333-0.5s2.5-3.167,5.5-2.167s3.25,4.834,11.958,4.5c8.708-0.333,8.575-3.645,11.542-4.821c6.333-2.512,6.333-6.179,7.5-6.345c1.167-0.167,1.167,2.499,4.667,3.166s6.333-0.508,11.833,7.58c0,0,1.03,1.254,2.894,2.754c-1.061-4.25,5.189-1,3.939-9s-7-5.25-7-9.5s4.174,3.391,5.75,1.5c2.5-3-1.11-2.75-2.306-5.25c-1.194-2.5,1.556-5.5-0.444-6s-5.5-0.75-9-4.75s-0.5-9.5-4.5-9.5s0.25,11.25-2,11s-5.25-2.5-7.75-6s-0.114-6.494,0-10.25c-7-1.25-3.083-5.648-7-6.5c-5.75-1.25-5.293,9.756-18.5-1.25C322.5,315.338,321.333,310.338,308,331.004z",
-  
-        },
-        {
           id: "uscajsvn55",
           transform: "matrix(1 0 0 1 312 345)",
-          name: "John Doe",
+          name: "Kim Freeman MD/MBA",
           position: "EMS Medical Director",
-          locale: "Hospital",
+          locale: "Kim Freeman MD/MBA",
           countyName: "Tuolumne",
           uri: "https://www.tuolumnecounty.ca.gov/302/Emergency-Medical-Services",
           fill: "rgb(59, 130, 246)",
           d: "M398.75,656.338c-4-1-11.5-1.5-16.75-7c-8.335-8.732-7.105-11.039-16.5-16.5c1-2.002,0.667-5.834,0.667-5.834v-36.832c3.167,0,7.999,1,10.333,2s1.833,4.5,4.5,4.666s21.334,0,21.334,0l16.499,41.5v3.834h-2.167v5.666c0,0-4.666-0.166-7.333,0S401.334,652.336,398.75,656.338z M357.099,717.963c-2.196,1.41,5.802,6.213,7.776,5.125C371,719.713,359.295,716.551,357.099,717.963z",
-  
         },
         {
           id: "uscajsvn56",
           transform: "matrix(1 0 0 1 368 632)",
-          name: "Jane Doe",
+          name: "Daniel Shepard MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Ventura",
@@ -446,7 +472,7 @@ const response = [
         {
           id: "uscajsvn57",
           transform: "matrix(1 0 0 1 191 293)",
-          name: "John Doe",
+          name: "John Rose MD/MPH",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Yolo",
@@ -457,7 +483,7 @@ const response = [
         {
           id: "uscajsvn19",
           transform: "matrix(1 0 0 1 437 625)",
-          name: "Jane Doe",
+          name: "Nichole Bosson MD/MPH",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Los Angeles",
@@ -469,7 +495,7 @@ const response = [
         {
           id: "uscajsvn21",
           transform: "matrix(1 0 0 1 137 340)",
-          name: "Jane Doe",
+          name: "Dustin Ballard MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Marin",
@@ -477,22 +503,10 @@ const response = [
           fill: "rgb(59, 130, 246)",
           d: "M153.75,330.713c-10.125-1.583-5.375-11.25-25.75-9.625l3.5,1.5c6.25,6.5,2.75,15,0.5,21s3.75,1,4-2.5s3.25,2.25,7.25,5.25s5.25,7.75,13,7c2.538-0.246,12,10.25,10,4.5s9,1.5-0.25-5.5c-3.947-2.987,2.5-4,2.5-5.75s-6.5-1.25-2-9.25C161.375,329.963,157.965,331.371,153.75,330.713z",
         },
-  
-        {
-          id: "uscajsvn23",
-          transform: "matrix(1 0 0 1 87 222)",
-          name: "Jane Doe",
-          position: "EMS Medical Director",
-          locale: "Hospital",
-          countyName: "Mendocino",
-          uri: "https://www.coastalvalleysems.org/",
-          fill: "rgb(59, 130, 246)",
-          d: "M108.827,282.102L123,282.088l0.5-3h21.25c-12.25-4-8.75-8.5-11-11s-6.25,0.25-6.75-8s4.5-7,5.5-12.25s-6.25-13.75-4.5-18.25s12-2.75,12-8c0-9.75-1.647-13.529-2.75-17.25c-2-6.75,2.75-10,0-13.25H96.5v-3l-30.25,0.25c24.028,25.996,11.75,36.75,12.25,48.5s8.75,22.25,9.25,27.5s-4.25,4.25-3,8s5.75,7.75,13,13.25h11.021L108.827,282.102z",
-        },
         {
           id: "uscajsvn24",
           transform: "matrix(1 0 0 1 270 408)",
-          name: "John Doe",
+          name: "Ajinder Singh MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Merced",
@@ -503,7 +517,7 @@ const response = [
         {
           id: "uscajsvn27",
           transform: "matrix(1 0 0 1 228 494)",
-          name: "Jane Doe",
+          name: "John Beuerle MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Monterey",
@@ -515,7 +529,7 @@ const response = [
         {
           id: "uscajsvn28",
           transform: "matrix(1 0 0 1 165 304)",
-          name: "John Doe",
+          name: "Karl Sporer MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Napa",
@@ -528,7 +542,7 @@ const response = [
         {
           id: "uscajsvn30",
           transform: "matrix(1 0 0 1 444 695)",
-          name: "John Doe",
+          name: "Karl Schultz MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Orange",
@@ -540,7 +554,7 @@ const response = [
         {
           id: "uscajsvn33",
           transform: "matrix(1 0 0 1 557 687)",
-          name: "Jane Doe",
+          name: "Reza Vaezazizi MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Riverside",
@@ -552,7 +566,7 @@ const response = [
         {
           id: "uscajsvn34",
           transform: "matrix(1 0 0 1 214 307)",
-          name: "John Doe",
+          name: "Greg Kann MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Sacramento",
@@ -564,7 +578,7 @@ const response = [
         {
           id: "uscajsvn35",
           transform: "matrix(1 0 0 1 252 452)",
-          name: "Jane Doe",
+          name: "David Ghilarducci MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "San Benito",
@@ -577,7 +591,7 @@ const response = [
         {
           id: "uscajsvn37",
           transform: "matrix(1 0 0 1 534 738)",
-          name: "Jane Doe",
+          name: "Kristi Koenig MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "San Diego",
@@ -589,7 +603,7 @@ const response = [
         {
           id: "uscajsvn38",
           transform: "matrix(1 0 0 1 79 367)",
-          name: "John Doe",
+          name: "John Brown MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "San Francisco",
@@ -601,7 +615,7 @@ const response = [
         {
           id: "uscajsvn39",
           transform: "matrix(1 0 0 1 238 349)",
-          name: "Jane Doe",
+          name: "Kathryn Schaffer MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "San Joaquin",
@@ -613,7 +627,7 @@ const response = [
         {
           id: "uscajsvn40",
           transform: "matrix(1 0 0 1 283 551)",
-          name: "John Doe",
+          name: "Tom Ronay MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "San Luis Obispo",
@@ -625,7 +639,7 @@ const response = [
         {
           id: "uscajsvn41",
           transform: "matrix(1 0 0 1 108 395)",
-          name: "Jane Doe",
+          name: "Greg Gilbert MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "San Mateo",
@@ -637,7 +651,7 @@ const response = [
         {
           id: "uscajsvn42",
           transform: "matrix(1 0 0 1 292 609)",
-          name: "John Doe",
+          name: "Daniel Shepard MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Santa Barbara",
@@ -649,7 +663,7 @@ const response = [
         {
           id: "uscajsvn43",
           transform: "matrix(1 0 0 1 198 401)",
-          name: "Jane Doe",
+          name: "Kennith Miller MD/PhD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Santa Clara",
@@ -661,7 +675,7 @@ const response = [
         {
           id: "uscajsvn44",
           transform: "matrix(1 0 0 1 144 438)",
-          name: "John Doe",
+          name: "David Ghilarducci MD",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Santa Cruz",
@@ -673,7 +687,7 @@ const response = [
         {
           id: "uscajsvn48",
           transform: "matrix(1 0 0 1 187 330)",
-          name: "John Doe",
+          name: "Pranavi Shetti MD, MPH",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Solano",
@@ -682,26 +696,15 @@ const response = [
           d: "M189.167,345.17c1.333-0.166,6.833-2.666,11.5-3.166s8.667,0.833,10.333,1.5c-0.167-1.667,0.167-1.334,3.333-3.834s2.653-6.737,5.667-7.833c5.5-2,4.5-10.933,4.5-10.933h-5.833v-17.4h-4v1.333l-6.333-0.333v-1h-3.167c0,0-4.666,0.55-5.333,2.025c-0.667,1.475-3.363-1.959-8.167,0c-2.347,0.957-2.166,5.808-1,8.141c1.167,2.334,5,7.135,2,7.234s-8,0.766-8,0.766v11.5l-5.167,0.715l2,6.703C188.5,340.672,187.833,345.337,189.167,345.17z M194.167,335.671c0,0,6-1.833,5.333,0s-3.333,1.519-3.25,2.676s7.417,0.93,7.083,2.241c-0.334,1.311-4.5,0.582-7.083,1.249s-6.565,2.101-6.75,0C189.338,340.004,193.5,340.588,194.167,335.671z",
   
         },
-        {
-          id: "uscajsvn49",
-          transform: "matrix(1 0 0 1 113 302)",
-          name: "Jane Doe",
-          position: "EMS Medical Director",
-          locale: "Hospital",
-          countyName: "Sonoma",
-          uri: "https://www.coastalvalleysems.org/",
-          fill: "rgb(59, 130, 246)",
-          d: "M174.833,331.004c-1.802-2.027,0.167-5.166-1.667-6.166s0-5.667-4.5-8.667c-3.042-2.027-1.333-6.167-5.833-9.833c-2.564-2.09-7.5-4.834-5.5-12.834c0.813-3.25-7.833-7.916-12.583-14.416H123.5l-0.5,3l-14.173,0.014l-0.056,3.486H97.75c7.25,5.5,13.5,19.25,26.25,25.25c6.24,2.936,4,10.25,4,10.25c20.375-1.625,15.625,8.042,25.75,9.625c4.215,0.658,7.625-0.75,12.75,6.625c3.086-0.735,3.926-3.631,6.33-3.453C172.83,333.885,175.5,331.754,174.833,331.004z",
-  
-        },
+
         {
           id: "uscajsvn50",
           transform: "matrix(1 0 0 1 238 386)",
-          name: "John Doe",
+          name: "Alex Schmalz MD, MPH",
           position: "EMS Medical Director",
           locale: "Hospital",
           countyName: "Stanislaus",
-          uri: "https://www.stanems.org/",
+          uri: "https://www.stanems.com/",
           fill: "rgb(59, 130, 246)",
           d: "M225,274.338c0.833-7.834,0.167-12.667,0-16.834c-0.167-4.166-2.333-5.5-2.333-14.333h-18.333c-5.667,10.167,2,15.833,4.5,21s0,3.667,0,9.158c0,0,1.93-0.659,2.132,1.009c0.202,1.666-0.804,4.72,1.702,4.206c5-1.024,2.166,3.294,4.333,3.294s0.834,5,2.667,5s4.666-6.335,4.5,1.499l9.75,0.001v-15.167h2.417v-6.421C233.5,267.496,228.667,268.504,225,274.338z",
 
