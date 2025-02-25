@@ -22,10 +22,25 @@ export const documents = {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'info',
+      title: 'Either "File" or "Link"',
+      readonly: true,
+      description:'Use either "File" or "Link" fields. Not both.',
+      initialValue: {
+        title: 'Do not edit this field'
+      },
+      type: 'string',
+      validation: Rule => Rule.max(0).warning(`This field cannot be edited.`)
+    },
+    {
       name: 'file',
-      title: 'File',
+      title: 'File (download)',
       type: 'file',
-      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'link',
+      title: 'Link (external url)',
+      type: 'url',
     },
     
   ],

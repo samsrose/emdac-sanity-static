@@ -15,9 +15,26 @@ function TableItem({ data }) {
               <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300">{content.topic}</td>
               <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300">{content.date}</td>
               <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-left text-sm font-medium sm:pr-0">
-                  <Link href={content.file || ''} className="text-indigo-400 hover:text-indigo-300">
+                  {content.file ? (
+                    <>
+                      <Link href={content.file || ''} className="text-indigo-400 hover:text-indigo-300">
                       Download
                   </Link>
+                    </>
+                  ):(
+                    <>
+                    </>
+                  )}
+                  {content.link ? (
+                    <>
+                      <Link href={content.link || ''} className="text-indigo-400 hover:text-indigo-300">
+                      External Link
+                  </Link>
+                    </>
+                  ):(
+                    <>
+                    </>
+                  )}
               </td>
           </tr>
       ))}

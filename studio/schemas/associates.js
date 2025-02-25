@@ -24,7 +24,7 @@ export const associates = {
       {
         name: 'email',
         title: 'Email',
-        type: 'string',
+        type: 'url',
         validation: (Rule) => Rule.required(),
       },
     ],

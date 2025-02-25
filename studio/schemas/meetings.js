@@ -36,13 +36,13 @@ export const meetings = {
       {
         name: 'voucherLink',
         title: 'Voucher URL',
-        type: 'string',
+        type: 'url',
         validation: (Rule) => Rule.required(),
       },
       {
         name: 'venueLink',
         title: 'Venue URL',
-        type: 'string',
+        type: 'url',
         validation: (Rule) => Rule.required(),
       },
     ],
