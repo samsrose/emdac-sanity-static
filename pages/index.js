@@ -1,21 +1,9 @@
 import { indexQuery } from '../lib/queries'
 import { getClient, overlayDrafts } from '../lib/sanity.server'
-import { PreviewSuspense } from 'next-sanity/preview'
-import { lazy } from 'react'
 import Landing from '../components/landing'
 import Footer from "../components/Footer";
 
-const LandingPreview = lazy(() => import('../components/landing-preview'))
-
 export default function IndexPage({ allPosts, preview }) {
-  if (preview) {
-    return (
-      <PreviewSuspense fallback="Fetching Posts...">
-        <LandingPreview allPosts={allPosts} />
-      </PreviewSuspense>
-    )
-  }
-
   return <Landing allPosts={allPosts} />
 }
 

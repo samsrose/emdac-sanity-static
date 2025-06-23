@@ -37,7 +37,7 @@ function Navbar(props) {
       url: 'https://legislativecounsel.ca.gov/'
     },
     {
-      title: 'Amierican College of Emergency Physicians',
+      title: 'American College of Emergency Physicians',
       uri: '/links/acep.png',
       url: 'https://www.acep.org/'
     },

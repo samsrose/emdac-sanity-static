@@ -1,4 +1,4 @@
-// import { visionTool } from '@sanity/vision'
+import { visionTool } from '@sanity/vision'
 import { defineConfig } from 'sanity'
 import { deskTool } from 'sanity/desk'
 import { unsplashImageAsset } from 'sanity-plugin-asset-source-unsplash'
@@ -22,11 +22,9 @@ import { nominating } from './schemas/nominating'
 import { associates } from './schemas/associates'
 import { members } from './schemas/members'
 
-const title =
-  import.meta.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE ||
-  'EMDAC with Sanity.io'
-const projectId = import.meta.env.NEXT_PUBLIC_SANITY_PROJECT_ID
-const dataset = import.meta.env.NEXT_PUBLIC_SANITY_DATASET
+const title = process.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE || 'EMDAC with Sanity.io'
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID
+const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET
 
 export default defineConfig({
   basePath: '/',
@@ -51,17 +49,18 @@ export default defineConfig({
       meetings, 
       minutes, 
       positions, 
-      protocols],
+      protocols
+    ],
   },
   document: {
     productionUrl: resolveProductionUrl,
   },
   plugins: [
-    deskTool({}),
+    deskTool(),
     // Add an image asset source for Unsplash
     unsplashImageAsset(),
     // Vision lets you query your content with GROQ in the studio
     // https://www.sanity.io/docs/the-vision-plugin
-    // visionTool(),
+    visionTool(),
   ],
 })
