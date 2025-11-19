@@ -1,0 +1,12 @@
+2025-11-19 - Configured sanity-plugin-vercel-deploy
+- Installed sanity-plugin-vercel-deploy@4.0.0 in studio directory (with --legacy-peer-deps due to React version conflict)
+- Added vercelDeployTool import to studio/sanity.config.js
+- Added vercelDeployTool() to plugins array in studio/sanity.config.js
+- Note: Plugin is deprecated/unmaintained but configured as requested
+
+2025-11-19 - Configured @multidots/sanity-plugin-workflow-manager
+- Installed @multidots/sanity-plugin-workflow-manager@1.0.5 in studio directory (with --legacy-peer-deps due to Sanity version conflict - plugin requires v4, project uses v3.35.0)
+- Added workflowManager import to studio/sanity.config.js
+- Added workflowManager() to plugins array in studio/sanity.config.js
+- Note: Plugin provides advanced content workflow management features (drag-and-drop, user assignments, publishing calendar, state management)
+

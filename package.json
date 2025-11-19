@@ -4,8 +4,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "studio:dev": "npm --prefix studio run start",
-    "studio:deploy": "npx vercel env pull && npm --prefix studio run deploy"
+    "studio:dev": "pnpm --prefix studio run start",
+    "studio:deploy": "npx vercel env pull && pnpm --prefix studio run deploy"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",

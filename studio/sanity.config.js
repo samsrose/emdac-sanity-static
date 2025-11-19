@@ -2,6 +2,8 @@ import { visionTool } from '@sanity/vision'
 import { defineConfig } from 'sanity'
 import { deskTool } from 'sanity/desk'
 import { unsplashImageAsset } from 'sanity-plugin-asset-source-unsplash'
+import { vercelDeployTool } from 'sanity-plugin-vercel-deploy'
+import { workflowManager } from '@multidots/sanity-plugin-workflow-manager'
 
 import { resolveProductionUrl } from './resolveProductionUrl'
 import { author } from './schemas/author'
@@ -62,5 +64,9 @@ export default defineConfig({
     // Vision lets you query your content with GROQ in the studio
     // https://www.sanity.io/docs/the-vision-plugin
     visionTool(),
+    // Vercel Deploy tool for deploying from Sanity Studio
+    vercelDeployTool(),
+    // Workflow Manager for advanced content workflow management
+    workflowManager(),
   ],
 })
