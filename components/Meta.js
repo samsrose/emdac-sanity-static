@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 function Meta(props) {
   const { children, ...customPageMeta } = props;

@@ -10,3 +10,9 @@
 - Added workflowManager() to plugins array in studio/sanity.config.js
 - Note: Plugin provides advanced content workflow management features (drag-and-drop, user assignments, publishing calendar, state management)
 
+2025-11-19 - Fixed environment variable loading in sanity.config.js
+- Added manual environment variable loading function to studio/sanity.config.js
+- Function loads from .env.development, .env.local, or parent .env files
+- Fixes issue where projectId, dataset, and other env vars were showing as undefined
+- Uses Node.js built-in fs and path modules to read and parse .env files
+

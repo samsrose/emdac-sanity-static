@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import { urlForImage } from '../lib/sanity'
 import ErrorPage from 'next/error'
 import Layout from './Layout'

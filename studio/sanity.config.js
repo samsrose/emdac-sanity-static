@@ -1,9 +1,12 @@
 import { visionTool } from '@sanity/vision'
 import { defineConfig } from 'sanity'
-import { deskTool } from 'sanity/desk'
+// import { deskTool } from 'sanity/desk'
 import { unsplashImageAsset } from 'sanity-plugin-asset-source-unsplash'
 import { vercelDeployTool } from 'sanity-plugin-vercel-deploy'
 import { workflowManager } from '@multidots/sanity-plugin-workflow-manager'
+import { readFileSync } from 'fs'
+import { join, dirname } from 'path'
+import { fileURLToPath } from 'url'
 
 import { resolveProductionUrl } from './resolveProductionUrl'
 import { author } from './schemas/author'
@@ -24,7 +27,42 @@ import { nominating } from './schemas/nominating'
 import { associates } from './schemas/associates'
 import { members } from './schemas/members'
 
-const title = process.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE || 'EMDAC with Sanity.io'
+// Load environment variables from .env.development or parent .env
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+const rootDir = join(__dirname, '..')
+
+function loadEnv() {
+  const envFiles = [
+    join(__dirname, '.env.development'),
+    join(__dirname, '.env.local'),
+    join(rootDir, '.env.local'),
+    join(rootDir, '.env'),
+  ]
+
+  for (const envFile of envFiles) {
+    try {
+      const content = readFileSync(envFile, 'utf-8')
+      content.split('\n').forEach((line) => {
+        const match = line.match(/^([^=:#]+)=(.*)$/)
+        if (match) {
+          const key = match[1].trim()
+          const value = match[2].trim().replace(/^["']|["']$/g, '')
+          if (!process.env[key]) {
+            process.env[key] = value
+          }
+        }
+      })
+      break
+    } catch (err) {
+      // File doesn't exist, try next
+    }
+  }
+}
+
+loadEnv()
+
+const title = process.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE || 'EMDAC'
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET
 
@@ -58,7 +96,8 @@ export default defineConfig({
     productionUrl: resolveProductionUrl,
   },
   plugins: [
-    deskTool(),
+    // deskTool(), // disabled for now
+
     // Add an image asset source for Unsplash
     unsplashImageAsset(),
     // Vision lets you query your content with GROQ in the studio
