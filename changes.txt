@@ -12,6 +12,7 @@
    - Integrates with Sentry for error reporting
    - Includes user-friendly error display with retry functionality
 
+<<<<<<< Updated upstream
 2. **hooks/useSentry.js**
    - Custom React hook for Sentry integration
    - Automatic navigation tracking
@@ -95,3 +96,24 @@ trackAction('button-click', { buttonId: 'submit' });
 - Performance tracking demonstrations
 
 This implementation follows security-first principles and provides comprehensive error tracking and monitoring capabilities for the EMDAC Sanity Static site.
+=======
+2025-12-03 - Fixed "Module 'fs' has been externalized for browser compatibility" error
+- Removed Node.js fs, path, and url module imports from studio/sanity.config.js
+- Removed manual loadEnv() function that used fs.readFileSync
+- Switched to using Vite's import.meta.env for environment variables
+- Environment variables now loaded automatically by Vite from .env.development (copied by copyEnv.js prestart script)
+- Updated to support both VITE_ and NEXT_PUBLIC_ prefixed environment variables
+
+2025-12-03 - Fixed "Workflow plugin: Missing 'schemaTypes' in config" error
+- Added schemaTypes configuration to workflowManager plugin in studio/sanity.config.js
+- Configured workflow management for document types: post, documents, evidence, legislative, meetings, minutes, positions, protocols
+- Plugin now properly initialized with the document types it should manage
+
+2025-12-03 - Fixed "Configuration must contain `projectId`" error
+- Updated studio/copyEnv.js to transform NEXT_PUBLIC_SANITY_* variables to SANITY_STUDIO_* format
+- Sanity Studio v3 with Vite requires SANITY_STUDIO_ prefix for environment variables to be exposed
+- copyEnv.js now reads parent .env file and creates both NEXT_PUBLIC_ and SANITY_STUDIO_ versions in .env.development
+- Updated studio/sanity.config.js to use import.meta.env.SANITY_STUDIO_* variables
+- Added fallback values for dataset (production) to ensure studio can run even if env vars missing
+
+>>>>>>> Stashed changes

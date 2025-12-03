@@ -1,0 +1,15 @@
+2025-12-03 - Fix Sanity Studio Browser Compatibility and Configuration Issues
+
+User Prompt 1: "Uncaught error: Module 'fs' has been externalized for browser compatibility. Cannot access 'fs.readFileSync' in client code. See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details."
+
+Restructured: "Fix the Node.js module usage in Sanity Studio configuration that causes browser compatibility errors. Remove fs.readFileSync and other Node.js-specific modules from client-side code bundled by Vite. Switch to Vite's native environment variable handling using import.meta.env."
+
+User Prompt 2: "Uncaught error: Workflow plugin: Missing 'schemaTypes' in config"
+
+Restructured: "Configure the @multidots/sanity-plugin-workflow-manager plugin with required schemaTypes array. Identify appropriate document types from the schema configuration that should be managed by the workflow system."
+
+User Prompt 3: "getting error: 'Configuration must contain `projectId`'"
+
+Restructured: "Fix Sanity Studio v3 environment variable loading issue where projectId is undefined. Transform NEXT_PUBLIC_SANITY_* environment variables to SANITY_STUDIO_* prefix format that Vite-based Sanity Studio v3 expects. Update the copyEnv.js script to perform this transformation and ensure import.meta.env can access the required configuration values."
+
+

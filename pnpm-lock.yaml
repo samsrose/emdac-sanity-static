@@ -31,6 +31,7 @@ importers:
         version: 10.10.0
       '@tailwindcss/aspect-ratio':
         specifier: ^0.4.2
+<<<<<<< Updated upstream
         version: 0.4.2(tailwindcss@3.4.17)
       '@tailwindcss/forms':
         specifier: ^0.5.7
@@ -44,6 +45,21 @@ importers:
       '@vercel/speed-insights':
         specifier: ^1.0.10
         version: 1.2.0(next@15.3.3(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+=======
+        version: 0.4.2(tailwindcss@3.4.18(yaml@2.8.2))
+      '@tailwindcss/forms':
+        specifier: ^0.5.7
+        version: 0.5.10(tailwindcss@3.4.18(yaml@2.8.2))
+      '@tailwindcss/typography':
+        specifier: ^0.5.10
+        version: 0.5.19(tailwindcss@3.4.18(yaml@2.8.2))
+      '@vercel/analytics':
+        specifier: ^1.2.2
+        version: 1.6.1(next@16.0.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      '@vercel/speed-insights':
+        specifier: ^1.0.10
+        version: 1.3.1(next@16.0.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+>>>>>>> Stashed changes
       classnames:
         specifier: ^2.3.1
         version: 2.5.1
@@ -58,10 +74,17 @@ importers:
         version: 14.2.30(eslint@8.57.1)(typescript@5.8.3)
       next:
         specifier: latest
+<<<<<<< Updated upstream
         version: 15.3.3(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-sanity:
         specifier: ^7.0.0
         version: 7.1.4(@sanity/client@7.6.0)(@sanity/icons@3.7.0(react@18.3.1))(@sanity/types@3.93.0(@types/react@19.1.8)(debug@4.4.1))(@sanity/ui@2.16.0(@emotion/is-prop-valid@1.3.1)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)))(next@15.3.3(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(sanity@3.93.0(@emotion/is-prop-valid@1.3.1)(@types/node@24.0.3)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))(terser@5.44.0)(typescript@5.8.3)(yaml@2.8.0))(styled-components@5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))
+=======
+        version: 16.0.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      next-sanity:
+        specifier: ^7.0.0
+        version: 7.1.4(@sanity/client@7.13.1)(@sanity/icons@3.7.4(react@18.3.1))(@sanity/types@3.99.0(@types/react@19.2.7))(@sanity/ui@2.16.22(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)))(next@16.0.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(sanity@3.99.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.10.1)(@types/react@19.2.7)(immer@10.2.0)(jiti@2.6.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3)(yaml@2.8.2))(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+>>>>>>> Stashed changes
       react:
         specifier: ^18
         version: 18.3.1
@@ -70,6 +93,7 @@ importers:
         version: 18.3.1(react@18.3.1)
       react-hook-form:
         specifier: ^7.49.2
+<<<<<<< Updated upstream
         version: 7.58.1(react@18.3.1)
       sanity:
         specifier: ^3.35.0
@@ -77,6 +101,15 @@ importers:
       sanity-plugin-asset-source-unsplash:
         specifier: ^1.1.2
         version: 1.1.2(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(sanity@3.93.0(@emotion/is-prop-valid@1.3.1)(@types/node@24.0.3)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))(terser@5.44.0)(typescript@5.8.3)(yaml@2.8.0))(styled-components@5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))
+=======
+        version: 7.67.0(react@18.3.1)
+      sanity:
+        specifier: ^3.35.0
+        version: 3.99.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.10.1)(@types/react@19.2.7)(immer@10.2.0)(jiti@2.6.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3)(yaml@2.8.2)
+      sanity-plugin-asset-source-unsplash:
+        specifier: ^1.1.2
+        version: 1.1.2(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(sanity@3.99.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.10.1)(@types/react@19.2.7)(immer@10.2.0)(jiti@2.6.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3)(yaml@2.8.2))(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+>>>>>>> Stashed changes
     devDependencies:
       autoprefixer:
         specifier: ^10.4.16
@@ -89,10 +122,20 @@ importers:
         version: 8.5.6
       tailwindcss:
         specifier: ^3.4.0
+<<<<<<< Updated upstream
         version: 3.4.17
 
 packages:
 
+=======
+        version: 3.4.18(yaml@2.8.2)
+
+packages:
+
+  '@acemir/cssom@0.9.24':
+    resolution: {integrity: sha512-5YjgMmAiT2rjJZU7XK1SNI7iqTy92DpaYVgG6x63FxkJ11UpYfLndHJATtinWJClAXiOlW9XWaUyAQf8pMrQPg==}
+
+>>>>>>> Stashed changes
   '@actions/core@1.11.1':
     resolution: {integrity: sha512-hXJCSrkwfA46Vd9Z3q4cpEpHB1rL5NG04+/rbqW9d3+CSvtB1tYe8UTpAlixa1vj0m/ULglfEK2UKxMGxCxv5A==}
 
@@ -119,9 +162,36 @@ packages:
   '@asamuzakjp/css-color@3.2.0':
     resolution: {integrity: sha512-K1A6z8tS3XsmCMM86xoWdn7Fkdn9m6RSVtocUrJYIwZnFVkng/PvkEoWtOWmP+Scc6saYWHWZYbndEEXxl24jw==}
 
+<<<<<<< Updated upstream
   '@asamuzakjp/dom-selector@2.0.2':
     resolution: {integrity: sha512-x1KXOatwofR6ZAYzXRBL5wrdV0vwNxlTCK9NCuLqAzQYARqGcvFwiJA6A1ERuh+dgeA4Dxm3JBYictIes+SqUQ==}
 
+=======
+  '@asamuzakjp/css-color@4.1.0':
+    resolution: {integrity: sha512-9xiBAtLn4aNsa4mDnpovJvBn72tNEIACyvlqaNJ+ADemR+yeMJWnBudOi2qGDviJa7SwcDOU/TRh5dnET7qk0w==}
+
+  '@asamuzakjp/dom-selector@2.0.2':
+    resolution: {integrity: sha512-x1KXOatwofR6ZAYzXRBL5wrdV0vwNxlTCK9NCuLqAzQYARqGcvFwiJA6A1ERuh+dgeA4Dxm3JBYictIes+SqUQ==}
+
+  '@asamuzakjp/dom-selector@6.7.5':
+    resolution: {integrity: sha512-Eks6dY8zau4m4wNRQjRVaKQRTalNcPcBvU1ZQ35w5kKRk1gUeNCkVLsRiATurjASTp3TKM4H10wsI50nx3NZdw==}
+
+  '@asamuzakjp/nwsapi@2.3.9':
+    resolution: {integrity: sha512-n8GuYSrI9bF7FFZ/SjhwevlHc8xaVlb/7HmHelnc/PZXBD2ZR49NnN9sMMuDdEGPeeRQ5d0hqlSlEpgCX3Wl0Q==}
+
+  '@aws-lite/client@0.21.10':
+    resolution: {integrity: sha512-fOn3lg1ynBAxqcELRf084bNJ6gu+GGoNyC+hwitW/hg3Vc1z1ZbK5HWWTrDw8HdM/fEQ0UN++g7GXVN1GVctdQ==}
+    engines: {node: '>=16'}
+
+  '@aws-lite/s3@0.1.22':
+    resolution: {integrity: sha512-9OL95fTvHV80JvFTxLx8hhWQ6DgwHUts02KpXITA8syCDnYgua2rNcpwQ5b6GZzpL7yNXU0dud/Y6edThbffig==}
+    engines: {node: '>=16'}
+
+  '@aws-lite/ssm@0.2.5':
+    resolution: {integrity: sha512-1B8mZ79ySqlTEfSQ87KZ0XkmTOKQFMO3lUYUGUtwNTUncJINr6nhRWEjk128oBWwEQnpJ7NfpDPjdfg1ICe3xw==}
+    engines: {node: '>=16'}
+
+>>>>>>> Stashed changes
   '@babel/code-frame@7.27.1':
     resolution: {integrity: sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==}
     engines: {node: '>=6.9.0'}
@@ -703,6 +773,13 @@ packages:
     peerDependencies:
       '@csstools/css-tokenizer': ^3.0.4
 
+<<<<<<< Updated upstream
+=======
+  '@csstools/css-syntax-patches-for-csstree@1.0.20':
+    resolution: {integrity: sha512-8BHsjXfSciZxjmHQOuVdW2b8WLUPts9a+mfL13/PzEviufUEW2xnvQuOlKs9dRBHgRqJ53SF/DUoK9+MZk72oQ==}
+    engines: {node: '>=18'}
+
+>>>>>>> Stashed changes
   '@csstools/css-tokenizer@3.0.4':
     resolution: {integrity: sha512-Vd/9EVDiu6PPJt9yAh6roZP6El1xHrdvIVGjyBsHR0RYwNHgL7FJPyIIW4fANJNG6FtyZfvlRPpFI4ZM/lubvw==}
     engines: {node: '>=18'}
@@ -1269,6 +1346,7 @@ packages:
   '@napi-rs/wasm-runtime@0.2.11':
     resolution: {integrity: sha512-9DPkXtvHydrcOsopiYpUgPHpmj0HWZKMUnL2dZqpvC42lsratuBG06V5ipyno0fUek5VlFsNQ+AcFATSrJXgMA==}
 
+<<<<<<< Updated upstream
   '@next/env@15.3.3':
     resolution: {integrity: sha512-OdiMrzCl2Xi0VTjiQQUK0Xh7bJHnOuET2s+3V+Y40WJBAXrJeGA3f+I8MZJ/YQ3mVGi5XGR1L66oFlgqXhQ4Vw==}
 
@@ -1277,48 +1355,118 @@ packages:
 
   '@next/swc-darwin-arm64@15.3.3':
     resolution: {integrity: sha512-WRJERLuH+O3oYB4yZNVahSVFmtxRNjNF1I1c34tYMoJb0Pve+7/RaLAJJizyYiFhjYNGHRAE1Ri2Fd23zgDqhg==}
+=======
+  '@mux/mux-player-react@3.9.2':
+    resolution: {integrity: sha512-BzTQEpjNdxyL2hlbZaUKZmSdw7m6YS00zzmrnuBAxnFDZ3m9z45lo3GrtRmnuy3v30gO0faQ1S34BTRLxGNRLQ==}
+    peerDependencies:
+      '@types/react': ^17.0.0 || ^17.0.0-0 || ^18 || ^18.0.0-0 || ^19 || ^19.0.0-0
+      '@types/react-dom': '*'
+      react: ^17.0.2 || ^17.0.0-0 || ^18 || ^18.0.0-0 || ^19 || ^19.0.0-0
+      react-dom: ^17.0.2 || ^17.0.2-0 || ^18 || ^18.0.0-0 || ^19 || ^19.0.0-0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@mux/mux-player@3.9.2':
+    resolution: {integrity: sha512-QK7y1fYoxR2XHc5GO2owfpClsb94hN7k+bTNKp2+oolTAfc2PT1ygGVDq7RFUPz6VNTiZUBvDlRn62CylfxTFw==}
+
+  '@mux/mux-video@0.28.2':
+    resolution: {integrity: sha512-+ij1EOI7Tx2zYAzIXAIbZJzxqISmIIz3f7aE/R5JFt9dcPxCNIN6/iXGJikiD1JQ4S3T7Mco8bHXaf1S0CJbIQ==}
+
+  '@mux/playback-core@0.31.4':
+    resolution: {integrity: sha512-qQrNAAdJ7vjr1XEObE1hOUmuYngk/fjwmtYhpzkX4jJZwUC8I0rHjeFv7LXuCQD1D/mYJlWEpuyA0gPd6Y2eQw==}
+
+  '@napi-rs/wasm-runtime@0.2.12':
+    resolution: {integrity: sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ==}
+
+  '@next/env@16.0.7':
+    resolution: {integrity: sha512-gpaNgUh5nftFKRkRQGnVi5dpcYSKGcZZkQffZ172OrG/XkrnS7UBTQ648YY+8ME92cC4IojpI2LqTC8sTDhAaw==}
+
+  '@next/eslint-plugin-next@14.2.33':
+    resolution: {integrity: sha512-DQTJFSvlB+9JilwqMKJ3VPByBNGxAGFTfJ7BuFj25cVcbBy7jm88KfUN+dngM4D3+UxZ8ER2ft+WH9JccMvxyg==}
+
+  '@next/swc-darwin-arm64@16.0.7':
+    resolution: {integrity: sha512-LlDtCYOEj/rfSnEn/Idi+j1QKHxY9BJFmxx7108A6D8K0SB+bNgfYQATPk/4LqOl4C0Wo3LACg2ie6s7xqMpJg==}
+>>>>>>> Stashed changes
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
+<<<<<<< Updated upstream
   '@next/swc-darwin-x64@15.3.3':
     resolution: {integrity: sha512-XHdzH/yBc55lu78k/XwtuFR/ZXUTcflpRXcsu0nKmF45U96jt1tsOZhVrn5YH+paw66zOANpOnFQ9i6/j+UYvw==}
+=======
+  '@next/swc-darwin-x64@16.0.7':
+    resolution: {integrity: sha512-rtZ7BhnVvO1ICf3QzfW9H3aPz7GhBrnSIMZyr4Qy6boXF0b5E3QLs+cvJmg3PsTCG2M1PBoC+DANUi4wCOKXpA==}
+>>>>>>> Stashed changes
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
+<<<<<<< Updated upstream
   '@next/swc-linux-arm64-gnu@15.3.3':
     resolution: {integrity: sha512-VZ3sYL2LXB8znNGcjhocikEkag/8xiLgnvQts41tq6i+wql63SMS1Q6N8RVXHw5pEUjiof+II3HkDd7GFcgkzw==}
+=======
+  '@next/swc-linux-arm64-gnu@16.0.7':
+    resolution: {integrity: sha512-mloD5WcPIeIeeZqAIP5c2kdaTa6StwP4/2EGy1mUw8HiexSHGK/jcM7lFuS3u3i2zn+xH9+wXJs6njO7VrAqww==}
+>>>>>>> Stashed changes
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
+<<<<<<< Updated upstream
   '@next/swc-linux-arm64-musl@15.3.3':
     resolution: {integrity: sha512-h6Y1fLU4RWAp1HPNJWDYBQ+e3G7sLckyBXhmH9ajn8l/RSMnhbuPBV/fXmy3muMcVwoJdHL+UtzRzs0nXOf9SA==}
+=======
+  '@next/swc-linux-arm64-musl@16.0.7':
+    resolution: {integrity: sha512-+ksWNrZrthisXuo9gd1XnjHRowCbMtl/YgMpbRvFeDEqEBd523YHPWpBuDjomod88U8Xliw5DHhekBC3EOOd9g==}
+>>>>>>> Stashed changes
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
+<<<<<<< Updated upstream
   '@next/swc-linux-x64-gnu@15.3.3':
     resolution: {integrity: sha512-jJ8HRiF3N8Zw6hGlytCj5BiHyG/K+fnTKVDEKvUCyiQ/0r5tgwO7OgaRiOjjRoIx2vwLR+Rz8hQoPrnmFbJdfw==}
+=======
+  '@next/swc-linux-x64-gnu@16.0.7':
+    resolution: {integrity: sha512-4WtJU5cRDxpEE44Ana2Xro1284hnyVpBb62lIpU5k85D8xXxatT+rXxBgPkc7C1XwkZMWpK5rXLXTh9PFipWsA==}
+>>>>>>> Stashed changes
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
+<<<<<<< Updated upstream
   '@next/swc-linux-x64-musl@15.3.3':
     resolution: {integrity: sha512-HrUcTr4N+RgiiGn3jjeT6Oo208UT/7BuTr7K0mdKRBtTbT4v9zJqCDKO97DUqqoBK1qyzP1RwvrWTvU6EPh/Cw==}
+=======
+  '@next/swc-linux-x64-musl@16.0.7':
+    resolution: {integrity: sha512-HYlhqIP6kBPXalW2dbMTSuB4+8fe+j9juyxwfMwCe9kQPPeiyFn7NMjNfoFOfJ2eXkeQsoUGXg+O2SE3m4Qg2w==}
+>>>>>>> Stashed changes
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
+<<<<<<< Updated upstream
   '@next/swc-win32-arm64-msvc@15.3.3':
     resolution: {integrity: sha512-SxorONgi6K7ZUysMtRF3mIeHC5aA3IQLmKFQzU0OuhuUYwpOBc1ypaLJLP5Bf3M9k53KUUUj4vTPwzGvl/NwlQ==}
+=======
+  '@next/swc-win32-arm64-msvc@16.0.7':
+    resolution: {integrity: sha512-EviG+43iOoBRZg9deGauXExjRphhuYmIOJ12b9sAPy0eQ6iwcPxfED2asb/s2/yiLYOdm37kPaiZu8uXSYPs0Q==}
+>>>>>>> Stashed changes
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
+<<<<<<< Updated upstream
   '@next/swc-win32-x64-msvc@15.3.3':
     resolution: {integrity: sha512-4QZG6F8enl9/S2+yIiOiju0iCTFd93d8VC1q9LZS4p/Xuk81W2QDjCFeoogmrWWkAD59z8ZxepBQap2dKS5ruw==}
+=======
+  '@next/swc-win32-x64-msvc@16.0.7':
+    resolution: {integrity: sha512-gniPjy55zp5Eg0896qSrf3yB1dw4F/3s8VK1ephdsZZ129j2n6e1WqCbE2YgcKhW9hPB9TVZENugquWJD5x0ug==}
+>>>>>>> Stashed changes
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -1794,8 +1942,13 @@ packages:
     resolution: {integrity: sha512-BQRCMeDlBxwnMbFtB61HUxFf9aSb4HNVrpfrC7IFVqFf4cwcc3o5H8/nlrL9U3cDFedbe4W0AXt1mQzwbY/ljw==}
     engines: {node: '>=14.18'}
 
+<<<<<<< Updated upstream
   '@sanity/client@7.6.0':
     resolution: {integrity: sha512-bNgqWkKzzbAh2qDKHK0IYgR+7TaRsmk6rCpeX+kwIJ6J8ot8ZnZxzRgwfPmBztOQu8YfahQ6t90giT4uVhQNEg==}
+=======
+  '@sanity/client@7.13.1':
+    resolution: {integrity: sha512-Bs+Bg5Fd/2tSR7AYS3+ehUlHtHjrXgH9MwNfTaKUfke158KjAQ4jw1mJVX+jp+171BLwlaaVKYw+mfRkmOCvHw==}
+>>>>>>> Stashed changes
     engines: {node: '>=20'}
 
   '@sanity/codegen@3.93.0':
@@ -1813,8 +1966,13 @@ packages:
     resolution: {integrity: sha512-aYdqV8pJ6UT/3WucER5PBMGIlAt26wKiVYcmFSA7k3dmcEaPOd8tib93bwHfQsVXzGGnUaf0e8IacKYoyTwzCw==}
     engines: {node: '>=18'}
 
+<<<<<<< Updated upstream
   '@sanity/descriptors@1.0.0':
     resolution: {integrity: sha512-Gxp/N1GHkteSALUkURxMXZdKxl8LzUqfYMk0vq37Z4YznMs7wMDNHIgD5SwL3E3w6rQkALz69xki8hUBa23GsA==}
+=======
+  '@sanity/descriptors@1.3.0':
+    resolution: {integrity: sha512-S2KYYGRUVZy+FDjPp3meoyczbCjobSQvZcgNayo3oYlYS9Qz0E+6RezGxi/KOb6iF52Oir3LEXp9SVfIgEwNjg==}
+>>>>>>> Stashed changes
     engines: {node: '>=18.0.0'}
 
   '@sanity/diff-match-patch@3.2.0':
@@ -1836,8 +1994,8 @@ packages:
     resolution: {integrity: sha512-IbuC5/FP4LlbZOpQtWyechkOjgr0TA7blRNET4n255A5Kdnze6byIC8qftbtOJSWd3NO39j4cqI4mLmnyA+ZFA==}
     engines: {node: '>=18'}
 
-  '@sanity/generate-help-url@3.0.0':
-    resolution: {integrity: sha512-wtMYcV5GIDIhVyF/jjmdwq1GdlK07dRL40XMns73VbrFI7FteRltxv48bhYVZPcLkRXb0SHjpDS/icj9/yzbVA==}
+  '@sanity/generate-help-url@3.0.1':
+    resolution: {integrity: sha512-bKqCEqFP7qXpNcHxJZnXFLrti8/HYQhhJtMRYFSNJ8bkUXCuUmhHKckzoyiH1n1WAZpI2Y05z2h5yZWbi3gThQ==}
 
   '@sanity/icons@2.11.8':
     resolution: {integrity: sha512-C4ViXtk6eyiNTQ5OmxpfmcK6Jw+LLTi9zg9XBUD15DzC4xTHaGW9SVfUa43YtPGs3WC3M0t0K59r0GDjh52HIg==}
@@ -1924,11 +2082,26 @@ packages:
       react:
         optional: true
 
+<<<<<<< Updated upstream
   '@sanity/preview-url-secret@2.1.11':
     resolution: {integrity: sha512-kMxOvXARbDZ8g8vWPjCBJ+QYaPXoOYXlsHfh727mzl/Ibmvlh9F9fLuyAwxSvq4J2VWXZegb8kmKlEakgld0dg==}
     engines: {node: '>=18'}
     peerDependencies:
       '@sanity/client': ^7.1.0
+=======
+  '@sanity/preview-url-secret@2.1.16':
+    resolution: {integrity: sha512-w8N0x8JL4iJ5BZvt9X9pTiXQcSIvBsqtN9rYp7uD5X7JEOgm7heTCxfBYFJUj3Pv5n8Z8W4d872AXZBI5stB6Q==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@sanity/client': ^7.12.0
+      '@sanity/icons': '*'
+      sanity: '*'
+    peerDependenciesMeta:
+      '@sanity/icons':
+        optional: true
+      sanity:
+        optional: true
+>>>>>>> Stashed changes
 
   '@sanity/runtime-cli@8.1.2':
     resolution: {integrity: sha512-js1IL1cGMVQmqaPfGY7Cn1JGbLdzidj2M5YZAMfUB7UCIL0IPqfUKYWnhcgYOXlnVCy0MgFgb6oKGB+GqEsBvQ==}
@@ -2276,8 +2449,13 @@ packages:
   '@types/lodash-es@4.17.12':
     resolution: {integrity: sha512-0NgftHUcV4v34VhXm8QBSftKVXtbkBG3ViCjs6+eJ5a6y6Mi/jiFGPc1sC7QK+9BFhWrURE3EOggmWaSxL9OzQ==}
 
+<<<<<<< Updated upstream
   '@types/lodash@4.17.17':
     resolution: {integrity: sha512-RRVJ+J3J+WmyOTqnz3PiBLA501eKwXl2noseKOrNo/6+XEHjTAxO4xHvxQB6QuNm+s4WRbn6rSiap8+EA+ykFQ==}
+=======
+  '@types/lodash@4.17.21':
+    resolution: {integrity: sha512-FOvQ0YPD5NOfPgMzJihoT+Za5pdkDJWcbpuj1DjaKZIr/gxodQjY/uWEFlTNqW2ugXHUiL8lRQgw63dzKHZdeQ==}
+>>>>>>> Stashed changes
 
   '@types/minimist@1.2.5':
     resolution: {integrity: sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==}
@@ -2294,6 +2472,7 @@ packages:
   '@types/pg-pool@2.0.6':
     resolution: {integrity: sha512-TaAUE5rq2VQYxab5Ts7WZhKNmuN78Q6PiFonTDdpbx8a1H0M1vhy3rhiMjl+e2iHmogyMw7jZF4FrE6eJUy5HQ==}
 
+<<<<<<< Updated upstream
   '@types/pg@8.15.4':
     resolution: {integrity: sha512-I6UNVBAoYbvuWkkU3oosC8yxqH21f4/Jc4DK71JLG3dT2mdlGe1z+ep/LQGXaKaOgcvUrsQoPRqfgtMcvZiJhg==}
 
@@ -2302,6 +2481,10 @@ packages:
 
   '@types/react@19.1.8':
     resolution: {integrity: sha512-AwAfQ2Wa5bCx9WP8nZL2uMZWod7J7/JSplxbTmBQ5ms6QpqNYm672H0Vu9ZVKVngQ+ii4R/byguVEUZQyeg44g==}
+=======
+  '@types/react@19.2.7':
+    resolution: {integrity: sha512-MWtvHrGZLFttgeEj28VXHxpmwYbor/ATPYbBfSFZEIRK0ecCFLl2Qo55z52Hss+UV9CRN7trSeq1zbgx7YDWWg==}
+>>>>>>> Stashed changes
 
   '@types/shallow-equals@1.0.3':
     resolution: {integrity: sha512-xZx/hZsf1p9J5lGN/nGTsuW/chJCdlyGxilwg1TS78rygBCU5bpY50zZiFcIimlnl0p41kAyaASsy0bqU7WyBA==}
@@ -2333,63 +2516,114 @@ packages:
   '@types/which@3.0.4':
     resolution: {integrity: sha512-liyfuo/106JdlgSchJzXEQCVArk0CvevqPote8F8HgWgJ3dRCcTHgJIsLDuee0kxk/mhbInzIZk3QWSZJ8R+2w==}
 
+<<<<<<< Updated upstream
   '@typescript-eslint/eslint-plugin@8.34.1':
     resolution: {integrity: sha512-STXcN6ebF6li4PxwNeFnqF8/2BNDvBupf2OPx2yWNzr6mKNGF7q49VM00Pz5FaomJyqvbXpY6PhO+T9w139YEQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       '@typescript-eslint/parser': ^8.34.1
+=======
+  '@typescript-eslint/eslint-plugin@8.48.1':
+    resolution: {integrity: sha512-X63hI1bxl5ohelzr0LY5coufyl0LJNthld+abwxpCoo6Gq+hSqhKwci7MUWkXo67mzgUK6YFByhmaHmUcuBJmA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      '@typescript-eslint/parser': ^8.48.1
+>>>>>>> Stashed changes
       eslint: ^8.57.0 || ^9.0.0
       typescript: '>=4.8.4 <5.9.0'
 
+<<<<<<< Updated upstream
   '@typescript-eslint/parser@8.34.1':
     resolution: {integrity: sha512-4O3idHxhyzjClSMJ0a29AcoK0+YwnEqzI6oz3vlRf3xw0zbzt15MzXwItOlnr5nIth6zlY2RENLsOPvhyrKAQA==}
+=======
+  '@typescript-eslint/parser@8.48.1':
+    resolution: {integrity: sha512-PC0PDZfJg8sP7cmKe6L3QIL8GZwU5aRvUFedqSIpw3B+QjRSUZeeITC2M5XKeMXEzL6wccN196iy3JLwKNvDVA==}
+>>>>>>> Stashed changes
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
       typescript: '>=4.8.4 <5.9.0'
 
+<<<<<<< Updated upstream
   '@typescript-eslint/project-service@8.34.1':
     resolution: {integrity: sha512-nuHlOmFZfuRwLJKDGQOVc0xnQrAmuq1Mj/ISou5044y1ajGNp2BNliIqp7F2LPQ5sForz8lempMFCovfeS1XoA==}
+=======
+  '@typescript-eslint/project-service@8.48.1':
+    resolution: {integrity: sha512-HQWSicah4s9z2/HifRPQ6b6R7G+SBx64JlFQpgSSHWPKdvCZX57XCbszg/bapbRsOEv42q5tayTYcEFpACcX1w==}
+>>>>>>> Stashed changes
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       typescript: '>=4.8.4 <5.9.0'
 
+<<<<<<< Updated upstream
   '@typescript-eslint/scope-manager@8.34.1':
     resolution: {integrity: sha512-beu6o6QY4hJAgL1E8RaXNC071G4Kso2MGmJskCFQhRhg8VOH/FDbC8soP8NHN7e/Hdphwp8G8cE6OBzC8o41ZA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@typescript-eslint/tsconfig-utils@8.34.1':
     resolution: {integrity: sha512-K4Sjdo4/xF9NEeA2khOb7Y5nY6NSXBnod87uniVYW9kHP+hNlDV8trUSFeynA2uxWam4gIWgWoygPrv9VMWrYg==}
+=======
+  '@typescript-eslint/scope-manager@8.48.1':
+    resolution: {integrity: sha512-rj4vWQsytQbLxC5Bf4XwZ0/CKd362DkWMUkviT7DCS057SK64D5lH74sSGzhI6PDD2HCEq02xAP9cX68dYyg1w==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@typescript-eslint/tsconfig-utils@8.48.1':
+    resolution: {integrity: sha512-k0Jhs4CpEffIBm6wPaCXBAD7jxBtrHjrSgtfCjUvPp9AZ78lXKdTR8fxyZO5y4vWNlOvYXRtngSZNSn+H53Jkw==}
+>>>>>>> Stashed changes
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       typescript: '>=4.8.4 <5.9.0'
 
+<<<<<<< Updated upstream
   '@typescript-eslint/type-utils@8.34.1':
     resolution: {integrity: sha512-Tv7tCCr6e5m8hP4+xFugcrwTOucB8lshffJ6zf1mF1TbU67R+ntCc6DzLNKM+s/uzDyv8gLq7tufaAhIBYeV8g==}
+=======
+  '@typescript-eslint/type-utils@8.48.1':
+    resolution: {integrity: sha512-1jEop81a3LrJQLTf/1VfPQdhIY4PlGDBc/i67EVWObrtvcziysbLN3oReexHOM6N3jyXgCrkBsZpqwH0hiDOQg==}
+>>>>>>> Stashed changes
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
       typescript: '>=4.8.4 <5.9.0'
 
+<<<<<<< Updated upstream
   '@typescript-eslint/types@8.34.1':
     resolution: {integrity: sha512-rjLVbmE7HR18kDsjNIZQHxmv9RZwlgzavryL5Lnj2ujIRTeXlKtILHgRNmQ3j4daw7zd+mQgy+uyt6Zo6I0IGA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@typescript-eslint/typescript-estree@8.34.1':
     resolution: {integrity: sha512-rjCNqqYPuMUF5ODD+hWBNmOitjBWghkGKJg6hiCHzUvXRy6rK22Jd3rwbP2Xi+R7oYVvIKhokHVhH41BxPV5mA==}
+=======
+  '@typescript-eslint/types@8.48.1':
+    resolution: {integrity: sha512-+fZ3LZNeiELGmimrujsDCT4CRIbq5oXdHe7chLiW8qzqyPMnn1puNstCrMNVAqwcl2FdIxkuJ4tOs/RFDBVc/Q==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@typescript-eslint/typescript-estree@8.48.1':
+    resolution: {integrity: sha512-/9wQ4PqaefTK6POVTjJaYS0bynCgzh6ClJHGSBj06XEHjkfylzB+A3qvyaXnErEZSaxhIo4YdyBgq6j4RysxDg==}
+>>>>>>> Stashed changes
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       typescript: '>=4.8.4 <5.9.0'
 
+<<<<<<< Updated upstream
   '@typescript-eslint/utils@8.34.1':
     resolution: {integrity: sha512-mqOwUdZ3KjtGk7xJJnLbHxTuWVn3GO2WZZuM+Slhkun4+qthLdXx32C8xIXbO1kfCECb3jIs3eoxK3eryk7aoQ==}
+=======
+  '@typescript-eslint/utils@8.48.1':
+    resolution: {integrity: sha512-fAnhLrDjiVfey5wwFRwrweyRlCmdz5ZxXz2G/4cLn0YDLjTapmN4gcCsTBR1N2rWnZSDeWpYtgLDsJt+FpmcwA==}
+>>>>>>> Stashed changes
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
       typescript: '>=4.8.4 <5.9.0'
 
+<<<<<<< Updated upstream
   '@typescript-eslint/visitor-keys@8.34.1':
     resolution: {integrity: sha512-xoh5rJ+tgsRKoXnkBPFRLZ7rjKM0AfVbC68UZ/ECXoDbfggb9RbEySN359acY1vS3qZ0jVTVWzbtfapwm5ztxw==}
+=======
+  '@typescript-eslint/visitor-keys@8.48.1':
+    resolution: {integrity: sha512-BmxxndzEWhE4TIEEMBs8lP3MBWN3jFPs/p6gPm/wkv02o41hI6cq9AuSmGAaTTHPtA1FTi2jBre4A9rm5ZmX+Q==}
+>>>>>>> Stashed changes
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@ungap/structured-clone@1.3.0':
@@ -2490,8 +2724,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@vercel/analytics@1.5.0':
-    resolution: {integrity: sha512-MYsBzfPki4gthY5HnYN7jgInhAZ7Ac1cYDoRWFomwGHWEX7odTEzbtg9kf/QSo7XEsEAqlQugA6gJ2WS2DEa3g==}
+  '@vercel/analytics@1.6.1':
+    resolution: {integrity: sha512-oH9He/bEM+6oKlv3chWuOOcp8Y6fo6/PSro8hEkgCW3pu9/OiCXiUpRUogDh3Fs3LH2sosDrx8CxeOLBEE+afg==}
     peerDependencies:
       '@remix-run/react': ^2
       '@sveltejs/kit': ^1 || ^2
@@ -2516,8 +2750,16 @@ packages:
       vue-router:
         optional: true
 
+<<<<<<< Updated upstream
   '@vercel/speed-insights@1.2.0':
     resolution: {integrity: sha512-y9GVzrUJ2xmgtQlzFP2KhVRoCglwfRQgjyfY607aU0hh0Un6d0OUyrJkjuAlsV18qR4zfoFPs/BiIj9YDS6Wzw==}
+=======
+  '@vercel/edge@1.2.2':
+    resolution: {integrity: sha512-1+y+f6rk0Yc9ss9bRDgz/gdpLimwoRteKHhrcgHvEpjbP1nyT3ByqEMWm2BTcpIO5UtDmIFXc8zdq4LR190PDA==}
+
+  '@vercel/speed-insights@1.3.1':
+    resolution: {integrity: sha512-PbEr7FrMkUrGYvlcLHGkXdCkxnylCWePx7lPxxq36DNdfo9mcUjLOmqOyPDHAOgnfqgGGdmE3XI9L/4+5fr+vQ==}
+>>>>>>> Stashed changes
     peerDependencies:
       '@sveltejs/kit': ^1 || ^2
       next: '>= 13'
@@ -2841,6 +3083,13 @@ packages:
     resolution: {integrity: sha512-ir1UPr3dkwexU7FdV8qBBbNDRUhMmIekYMFZfi+C/sLNnRESKPl23nB9b2pltqfOQNnGzsDdId90AEtG5tCx4A==}
     engines: {node: '>=6.0.0'}
 
+<<<<<<< Updated upstream
+=======
+  baseline-browser-mapping@2.9.0:
+    resolution: {integrity: sha512-Mh++g+2LPfzZToywfE1BUzvZbfOY52Nil0rn9H1CPC5DJ7fX+Vir7nToBeoiSbB1zTNeGYbELEvJESujgGrzXw==}
+    hasBin: true
+
+>>>>>>> Stashed changes
   before-after-hook@2.2.3:
     resolution: {integrity: sha512-NzUnlZexiaH/46WDhANlyR2bXRopNg4F/zuSA3OpZnllCUgRaOF2znDioDWrmbNVsuZk6l9pMquQB38cfBZwkQ==}
 
@@ -2873,8 +3122,13 @@ packages:
   browserify-zlib@0.1.4:
     resolution: {integrity: sha512-19OEpq7vWgsH6WkvkBJQDFvJS1uPcbFOQ4v9CU839dO+ZZXUZO6XpE6hNCqvlIIj+4fZvRiJ6DsAQ382GwiyTQ==}
 
+<<<<<<< Updated upstream
   browserslist@4.25.0:
     resolution: {integrity: sha512-PJ8gYKeS5e/whHBh8xrwYK+dAvEj7JXtz6uTucnMRB8OiGTsKccFekoRrjajPBHV8oOY+2tI4uxeceSimKwMFA==}
+=======
+  browserslist@4.28.1:
+    resolution: {integrity: sha512-ZC5Bd0LgJXgwGqUknZY/vkUQ04r8NXnJZ3yYi4vDmSiZmC/pdSN0NbNRPxZpbtO4uAfDUAFffO8IZoM3Gj8IkA==}
+>>>>>>> Stashed changes
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
@@ -2941,8 +3195,13 @@ packages:
   camelize@1.0.1:
     resolution: {integrity: sha512-dU+Tx2fsypxTgtLoE36npi3UqcjSSMNYfkqgmoEhtZrraP5VWq0K7FkWVTYa8eMPtnU/G2txVsfdCJTn9uzpuQ==}
 
+<<<<<<< Updated upstream
   caniuse-lite@1.0.30001723:
     resolution: {integrity: sha512-1R/elMjtehrFejxwmexeXAtae5UO9iSyFn6G/I806CYC/BLyyBk1EPhrKBkWhy6wM6Xnm47dSJQec+tLJ39WHw==}
+=======
+  caniuse-lite@1.0.30001759:
+    resolution: {integrity: sha512-Pzfx9fOKoKvevQf8oCXoyNRQ5QyxJj+3O0Rqx2V5oxT61KGx8+n6hV/IUyJeifUci2clnmmKVpvtiqRzgiWjSw==}
+>>>>>>> Stashed changes
 
   cardinal@2.1.1:
     resolution: {integrity: sha512-JSr5eOgoEymtYHBjNWyjrMqet9Am2miJhlfKNdqLp6zoeAh0KN5dRAcxlecj5mAJrmQomgiOBj35xHLrFjqBpw==}
@@ -3357,8 +3616,13 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
 
+<<<<<<< Updated upstream
   electron-to-chromium@1.5.169:
     resolution: {integrity: sha512-q7SQx6mkLy0GTJK9K9OiWeaBMV4XQtBSdf6MJUzDB/H/5tFXfIiX38Lci1Kl6SsgiEhz1SQI1ejEOU5asWEhwQ==}
+=======
+  electron-to-chromium@1.5.263:
+    resolution: {integrity: sha512-DrqJ11Knd+lo+dv+lltvfMDLU27g14LMdH2b0O3Pio4uk0x+z7OR+JrmyacTPN2M8w3BrZ7/RTwG3R9B7irPlg==}
+>>>>>>> Stashed changes
 
   emoji-regex@10.4.0:
     resolution: {integrity: sha512-EC+0oUMY1Rqm4O6LLrgjtYDvcVYTy7chDnM4Q7030tP4Kwj3u/pR6gP9ygnp2CJMK5Gq+9Q2oqmrFJAz01DXjw==}
@@ -3591,8 +3855,8 @@ packages:
     resolution: {integrity: sha512-IzUmBGPR3+oUG9dUeXynyNmf91/3zUSJg1lCktzKw47OXuhco54U3r9B7O4XX+Rb1Itm9OZ2b0RkTs10bICOxA==}
     engines: {node: '>=12.0.0'}
 
-  eventsource@4.0.0:
-    resolution: {integrity: sha512-fvIkb9qZzdMxgZrEQDyll+9oJsyaVvY92I2Re+qK0qEJ+w5s0X3dtz+M0VAPOjP1gtU3iqWyjQ0G3nvd5CLZ2g==}
+  eventsource@4.1.0:
+    resolution: {integrity: sha512-2GuF51iuHX6A9xdTccMTsNb7VO0lHZihApxhvQzJB5A03DvHDd2FQepodbMaztPBmBcE/ox7o2gqaxGhYB9LhQ==}
     engines: {node: '>=20.0.0'}
 
   execa@2.1.0:
@@ -3754,8 +4018,13 @@ packages:
       react-dom:
         optional: true
 
+<<<<<<< Updated upstream
   framer-motion@12.18.1:
     resolution: {integrity: sha512-6o4EDuRPLk4LSZ1kRnnEOurbQ86MklVk+Y1rFBUKiF+d2pCdvMjWVu0ZkyMVCTwl5UyTH2n/zJEJx+jvTYuxow==}
+=======
+  framer-motion@12.23.25:
+    resolution: {integrity: sha512-gUHGl2e4VG66jOcH0JHhuJQr6ZNwrET9g31ZG0xdXzT0CznP7fHX4P8Bcvuc4MiUB90ysNnWX2ukHRIggkl6hQ==}
+>>>>>>> Stashed changes
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0 || ^19.0.0
@@ -3869,10 +4138,18 @@ packages:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
     hasBin: true
 
+<<<<<<< Updated upstream
   glob@11.0.3:
     resolution: {integrity: sha512-2Nim7dha1KVkaiF4q6Dj+ngPPMdfvLJEOpZk/jKiUAkqKebpGAWQXAq9z1xu9HKu5lWfqw/FASuccEjyznjPaA==}
-    engines: {node: 20 || >=22}
+=======
+  glob@10.5.0:
+    resolution: {integrity: sha512-DfXN8DfhJ7NH3Oe7cFmu3NCu1wKbkReJ8TorzSAFbSKrlNaQSKfIzqYqVY8zlbs2NLBbWpRiU52GX2PbaBVNkg==}
     hasBin: true
+
+  glob@13.0.0:
+    resolution: {integrity: sha512-tvZgpqk6fz4BaNZ66ZsRaZnbHvP/jG3uKJvAZOwEVUL4RTA5nJeeLYfyN9/VA8NX/V3IBG+hkeuGpKjvELkVhA==}
+>>>>>>> Stashed changes
+    engines: {node: 20 || >=22}
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
@@ -3914,8 +4191,13 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
+<<<<<<< Updated upstream
   groq-js@1.17.0:
     resolution: {integrity: sha512-aFotRl41jeRY4jg5G+Bjbsn/GmrKYa6amDQc+YiZP7Wg6pNfVtfF8Q/a99VGdT5PCzzQ7wM9YI8CKJaW4SQlKQ==}
+=======
+  groq-js@1.22.0:
+    resolution: {integrity: sha512-AKdkUorjSJ0nwCrGP/CMsGnzXgmz+UweL02BUS4skYTI5WHk5hxwUJV1elV97NczsLlV8+euCeQFkzwaWmIhMA==}
+>>>>>>> Stashed changes
     engines: {node: '>= 14'}
 
   groq@3.93.0:
@@ -4308,9 +4590,15 @@ packages:
     resolution: {integrity: sha512-WhB9zCku7EGTj/HQQRz5aUQEUeoQZH2bWcltRErOpymJ4boYE6wL9Tbr23krRPSZ+C5zqNSrSw+Cc7sZZ4b7vg==}
     engines: {node: '>=0.10.0'}
 
+<<<<<<< Updated upstream
   isomorphic-dompurify@2.25.0:
     resolution: {integrity: sha512-bcpJzu9DOjN21qaCVpcoCwUX1ytpvA6EFqCK5RNtPg5+F0Jz9PX50jl6jbEicBNeO87eDDfC7XtPs4zjDClZJg==}
     engines: {node: '>=18'}
+=======
+  isomorphic-dompurify@2.33.0:
+    resolution: {integrity: sha512-pXGR3rAHAXb5Bvr56pc5aV0Lh8laubLo7/60F+soOzDFmwks6MtgDhL7p46VoxLnwgIsjgmVhQpUt4mUlL/XEw==}
+    engines: {node: '>=20.19.5'}
+>>>>>>> Stashed changes
 
   iterator.prototype@1.1.5:
     resolution: {integrity: sha512-H0dkQoCa3b2VEeKQBOxFph+JAbcrQdE7KC0UkqwpLmv2EC4P41QXP+rqo9wYodACiG5/WM5s9oDApTU8utwj9g==}
@@ -4323,12 +4611,17 @@ packages:
   jackspeak@3.4.3:
     resolution: {integrity: sha512-OGlZQpz2yfahA/Rd1Y8Cd9SIEsqvXkLVoSw/cgwhnhFMDbsQFeZYoJJ7bIZBS9BcamUW96asq/npPWugM+RQBw==}
 
+<<<<<<< Updated upstream
   jackspeak@4.1.1:
     resolution: {integrity: sha512-zptv57P3GpL+O0I7VdMJNBZCu+BPHVQUk55Ft8/QCJjTVxrnJHuVuX/0Bl2A6/+2oyR/ZMEuFKwmzqqZ/U5nPQ==}
     engines: {node: 20 || >=22}
 
   jake@10.9.2:
     resolution: {integrity: sha512-2P4SQ0HrLQ+fw6llpLnOaGAvN2Zu6778SJMrCUwns4fOoG9ayrTiZk3VV8sCPkVZF8ab0zksVpS8FDY5pRCNBA==}
+=======
+  jake@10.9.4:
+    resolution: {integrity: sha512-wpHYzhxiVQL+IV05BLE2Xn34zW1S223hvjtqk0+gsPrwd/8JNLXJgZZM/iPFsYc1xyphF+6M6EvdE5E9MBGkDA==}
+>>>>>>> Stashed changes
     engines: {node: '>=10'}
     hasBin: true
 
@@ -4526,8 +4819,13 @@ packages:
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
+<<<<<<< Updated upstream
   lru-cache@11.1.0:
     resolution: {integrity: sha512-QIXZUBJUx+2zHUdQujWejBkcD9+cs94tLn0+YL8UrCh+D5sCXZ4c7LaEH48pNwRY3MLDgqUFyhlCyjJPf1WP0A==}
+=======
+  lru-cache@11.2.4:
+    resolution: {integrity: sha512-B5Y16Jr9LB9dHVkh6ZevG+vAbOsNOYCX+sXvFWFu7B3Iz5mijW3zdbMyhsh8ANd2mSWBYdJgnqi+mL7/LrOPYg==}
+>>>>>>> Stashed changes
     engines: {node: 20 || >=22}
 
   lru-cache@5.1.1:
@@ -4574,6 +4872,24 @@ packages:
   mdn-data@2.0.30:
     resolution: {integrity: sha512-GaqWWShW4kv/G9IEucWScBx9G1/vsFZZJUO+tD26M8J8z3Kw5RDQjaoZe03YAClgeS/SWPOcb4nkFBTEi5DUEA==}
 
+<<<<<<< Updated upstream
+=======
+  mdn-data@2.12.2:
+    resolution: {integrity: sha512-IEn+pegP1aManZuckezWCO+XZQDplx1366JoVhTpMpBB1sPey/SbveZQUosKiKiGYjg1wH4pMlNgXbCiYgihQA==}
+
+  media-chrome@4.11.1:
+    resolution: {integrity: sha512-+2niDc4qOwlpFAjwxg1OaizK/zKV6y7QqGm4nBFEVlSaG0ZBgOmfc4IXAPiirZqAlZGaFFUaMqCl1SpGU0/naA==}
+
+  media-chrome@4.14.0:
+    resolution: {integrity: sha512-IEdFb4blyF15vLvQzLIn6USJBv7Kf2ne+TfLQKBYI5Z0f9VEBVZz5MKy4Uhi0iA9lStl2S9ENIujJRuJIa5OiA==}
+
+  media-chrome@4.16.1:
+    resolution: {integrity: sha512-qtFlsy0lNDVCyVo//ZCAfRPKwgehfOYp6rThZzDUuZ5ypv41yqUfAxK+P9TOs+XSVWXATPTT2WRV0fbW0BH4vQ==}
+
+  media-tracks@0.3.4:
+    resolution: {integrity: sha512-5SUElzGMYXA7bcyZBL1YzLTxH9Iyw1AeYNJxzByqbestrrtB0F3wfiWUr7aROpwodO4fwnxOt78Xjb3o3ONNQg==}
+
+>>>>>>> Stashed changes
   mendoza@3.0.4:
     resolution: {integrity: sha512-kGlLhn1HF57oUK9DzJpqiqxHS9KJ0JcFRtNKBM8l970nepx3/GKs1uAIlBfq5mjmndk7IGa4vQ2ofcqMKMPTiA==}
     engines: {node: '>=14.18'}
@@ -4609,9 +4925,9 @@ packages:
     resolution: {integrity: sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==}
     engines: {node: '>= 0.6'}
 
-  mime-types@3.0.1:
-    resolution: {integrity: sha512-xRc4oEhT6eaBpU1XF7AjpOFD+xQmXNB5OVKwp4tqCuBpHLS/ZbBDrc07mYTDqVMg6PfxUjjNp85O6Cd2Z/5HWA==}
-    engines: {node: '>= 0.6'}
+  mime-types@3.0.2:
+    resolution: {integrity: sha512-Lbgzdk0h4juoQ9fCKXW4by0UJqj+nOOrI9MJ1sSj4nI8aI2eo1qmvQEie4VD1glsS250n15LsWsYtCugiStS5A==}
+    engines: {node: '>=18'}
 
   mimic-fn@2.1.0:
     resolution: {integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==}
@@ -4698,8 +5014,27 @@ packages:
   motion-dom@12.18.1:
     resolution: {integrity: sha512-dR/4EYT23Snd+eUSLrde63Ws3oXQtJNw/krgautvTfwrN/2cHfCZMdu6CeTxVfRRWREW3Fy1f5vobRDiBb/q+w==}
 
+<<<<<<< Updated upstream
   motion-utils@12.18.1:
     resolution: {integrity: sha512-az26YDU4WoDP0ueAkUtABLk2BIxe28d8NH1qWT8jPGhPyf44XTdDUh8pDk9OPphaSrR9McgpcJlgwSOIw/sfkA==}
+=======
+  motion-utils@12.23.6:
+    resolution: {integrity: sha512-eAWoPgr4eFEOFfg2WjIsMoqJTW6Z8MTUCgn/GZ3VRpClWBdnbjryiA3ZSNLyxCTmCQx4RmYX6jX1iWHbenUPNQ==}
+
+  motion@12.23.25:
+    resolution: {integrity: sha512-Fk5Y1kcgxYiTYOUjmwfXQAP7tP+iGqw/on1UID9WEL/6KpzxPr9jY2169OsjgZvXJdpraKXy0orkjaCVIl5fgQ==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+>>>>>>> Stashed changes
 
   ms@2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
@@ -4752,9 +5087,15 @@ packages:
       sanity: ^3.25
       styled-components: ^5.2 || ^6.0
 
+<<<<<<< Updated upstream
   next@15.3.3:
     resolution: {integrity: sha512-JqNj29hHNmCLtNvd090SyRbXJiivQ+58XjCcrC50Crb5g5u2zi7Y2YivbsEfzk6AtVI80akdOQbaMZwWB1Hthw==}
     engines: {node: ^18.18.0 || ^19.8.0 || >= 20.0.0}
+=======
+  next@16.0.7:
+    resolution: {integrity: sha512-3mBRJyPxT4LOxAJI6IsXeFtKfiJUbjCLgvXO02fV8Wy/lIhPvP94Fe7dGhUgHXcQy4sSuYwQNcOLhIfOm0rL0A==}
+    engines: {node: '>=20.9.0'}
+>>>>>>> Stashed changes
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
@@ -5159,8 +5500,13 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
+<<<<<<< Updated upstream
   prettier@3.5.3:
     resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+=======
+  prettier@3.7.4:
+    resolution: {integrity: sha512-v6UNi1+3hSlVvv8fSaoUbggEM5VErKmmpGA7Pl3HF8V6uKY7rvClBOJlH6yNwQtfTueNkGVpOv/mtWL9L4bgRA==}
+>>>>>>> Stashed changes
     engines: {node: '>=14'}
     hasBin: true
 
@@ -5251,8 +5597,8 @@ packages:
   react-fast-compare@3.2.2:
     resolution: {integrity: sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==}
 
-  react-focus-lock@2.13.6:
-    resolution: {integrity: sha512-ehylFFWyYtBKXjAO9+3v8d0i+cnc1trGS0vlTGhzFW1vbFXVUTmR8s2tt/ZQG8x5hElg6rhENlLG1H3EZK0Llg==}
+  react-focus-lock@2.13.7:
+    resolution: {integrity: sha512-20lpZHEQrXPb+pp1tzd4ULL6DyO5D2KnR0G69tTDdydrmNhU7pdFmbQUYVyHUgp+xN29IuFR0PVuhOmvaZL9Og==}
     peerDependencies:
       '@types/react': '*'
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
@@ -5260,8 +5606,13 @@ packages:
       '@types/react':
         optional: true
 
+<<<<<<< Updated upstream
   react-hook-form@7.58.1:
     resolution: {integrity: sha512-Lml/KZYEEFfPhUVgE0RdCVpnC4yhW+PndRhbiTtdvSlQTL8IfVR+iQkBjLIvmmc6+GGoVeM11z37ktKFPAb0FA==}
+=======
+  react-hook-form@7.67.0:
+    resolution: {integrity: sha512-E55EOwKJHHIT/I6J9DmQbCWToAYSw9nN5R57MZw9rMtjh+YQreMDxRLfdjfxQbiJ3/qbg3Z02wGzBX4M+5fMtQ==}
+>>>>>>> Stashed changes
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18 || ^19
@@ -5453,8 +5804,13 @@ packages:
     resolution: {integrity: sha512-l0OE8wL34P4nJH/H2ffoaniAokM2qSmrtXHmlpvYr5AVVX8msAyW0l8NVJFDxlSK4u3Uh/f41cQheDVdnYijwQ==}
     hasBin: true
 
+<<<<<<< Updated upstream
   rimraf@6.0.1:
     resolution: {integrity: sha512-9dkvaxAsk/xNXSJzMgFqqMCuFgt2+KsOFek3TMLfo8NCPfWpBmqwyNn5Y+NX56QUYfCtsyhF3ayiboEoUmJk/A==}
+=======
+  rimraf@6.1.2:
+    resolution: {integrity: sha512-cFCkPslJv7BAXJsYlK1dZsbP8/ZNLkCAQ0bi1hf5EKX2QHegmDFEFA6QhuYJlk7UDdc+02JjO80YSOrWPpw06g==}
+>>>>>>> Stashed changes
     engines: {node: 20 || >=22}
     hasBin: true
 
@@ -5811,8 +6167,16 @@ packages:
       babel-plugin-macros:
         optional: true
 
+<<<<<<< Updated upstream
   sucrase@3.35.0:
     resolution: {integrity: sha512-8EbVDiu9iN/nESwxeSxDKe0dunta1GOlHufmSSXxMD2z2/tMZpDMpvXQGsc+ajGo8y2uYUmixaSRUc/QPoQ0GA==}
+=======
+  stylis@4.3.2:
+    resolution: {integrity: sha512-bhtUjWd/z6ltJiQwg0dUfxEJ+W+jdqQd8TbWLWyeIJHlnsqmGLRFFd8e5mA0AZi/zx90smXRlN66YMTcaSFifg==}
+
+  sucrase@3.35.1:
+    resolution: {integrity: sha512-DhuTmvZWux4H1UOnWMB3sk0sbaCVOoQZjv8u1rDoTV0HTdGem9hkAZtl4JZy8P2z4Bg0nT+YMeOFyVr4zcG5Tw==}
+>>>>>>> Stashed changes
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
 
@@ -5922,11 +6286,19 @@ packages:
     resolution: {integrity: sha512-tX5e7OM1HnYr2+a2C/4V0htOcSQcoSTH9KgJnVvNm5zm/cyEWKJ7j7YutsH9CxMdtOkkLFy2AHrMci9IM8IPZQ==}
     engines: {node: '>=12.0.0'}
 
+<<<<<<< Updated upstream
   tldts-core@6.1.86:
     resolution: {integrity: sha512-Je6p7pkk+KMzMv2XXKmAE3McmolOQFdxkKw0R8EYNr7sELW46JqnNeTX8ybPiQgvg1ymCoF8LXs5fzFaZvJPTA==}
 
   tldts@6.1.86:
     resolution: {integrity: sha512-WMi/OQ2axVTf/ykqCQgXiIct+mSQDFdH2fkwhPwgEwvJ1kSzZRiinb0zF2Xb8u4+OqPChmyI6MEu4EezNJz+FQ==}
+=======
+  tldts-core@7.0.19:
+    resolution: {integrity: sha512-lJX2dEWx0SGH4O6p+7FPwYmJ/bu1JbcGJ8RLaG9b7liIgZ85itUVEPbMtWRVrde/0fnDPEPHW10ZsKW3kVsE9A==}
+
+  tldts@7.0.19:
+    resolution: {integrity: sha512-8PWx8tvC4jDB39BQw1m4x8y5MH1BcQ5xHeL2n7UVFulMPH/3Q0uiamahFJ3lXA0zO2SUyRXuVVbWSDmstlt9YA==}
+>>>>>>> Stashed changes
     hasBin: true
 
   tmp@0.0.33:
@@ -6113,11 +6485,16 @@ packages:
   unplugin@1.0.1:
     resolution: {integrity: sha512-aqrHaVBWW1JVKBHmGo33T5TxeL0qWzfvjWokObHA9bYmN7eNDkwOxmLjhioHl9878qDFMAaT51XNroRyuz7WxA==}
 
+<<<<<<< Updated upstream
   unrs-resolver@1.9.0:
     resolution: {integrity: sha512-wqaRu4UnzBD2ABTC1kLfBjAqIDZ5YUTr/MLGa7By47JV1bJDSW7jq/ZSLigB7enLe7ubNaJhtnBXgrc/50cEhg==}
 
   update-browserslist-db@1.1.3:
     resolution: {integrity: sha512-UxhIZQ+QInVdunkDAaiazvvT/+fXL5Osr0JZlJulepYu6Jd7qJtDZjlur0emRlT71EN3ScPoE7gvsuIKKNavKw==}
+=======
+  update-browserslist-db@1.2.0:
+    resolution: {integrity: sha512-Dn+NlSF/7+0lVSEZ57SYQg6/E44arLzsVOGgrElBn/BlG1B8WKdbLppOocFrXwRNTkNlgdGNaBgH1o0lggDPiw==}
+>>>>>>> Stashed changes
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
@@ -6427,8 +6804,13 @@ packages:
     resolution: {integrity: sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==}
     engines: {node: '>=18'}
 
+<<<<<<< Updated upstream
   yaml@2.8.0:
     resolution: {integrity: sha512-4lLa/EcQCB0cJkyts+FpIRx5G/llPxfP6VQU5KByHEhLxY3IJCH0f0Hy1MHI8sClTvsIb8qwRJ6R/ZdlDJ/leQ==}
+=======
+  yaml@2.8.2:
+    resolution: {integrity: sha512-mplynKqc1C2hTVYxd0PU2xQAc22TI1vShAYGksCCfxbn/dFwnHTNi1bvYsBTkhdUNtGIf5xNOg938rrSSYvS9A==}
+>>>>>>> Stashed changes
     engines: {node: '>= 14.6'}
     hasBin: true
 
@@ -6466,8 +6848,13 @@ packages:
   zod@3.25.67:
     resolution: {integrity: sha512-idA2YXwpCdqUSKRCACDE6ItZD9TZzy3OZMtpfLoh6oPR47lipysRrJfjzMqFxQ3uJuUPyUeWe1r9vLH33xO/Qw==}
 
+<<<<<<< Updated upstream
   zustand@5.0.5:
     resolution: {integrity: sha512-mILtRfKW9xM47hqxGIxCv12gXusoY/xTSHBYApXozR0HmQv299whhBeeAcRy+KrPPybzosvJBCOmVjq6x12fCg==}
+=======
+  zustand@5.0.9:
+    resolution: {integrity: sha512-ALBtUj0AfjJt3uNRQoL1tL2tMvj6Gp/6e39dnfT6uzpelGru8v1tPOGBzayOWbPJvujM8JojDk3E1LxeFisBNg==}
+>>>>>>> Stashed changes
     engines: {node: '>=12.20.0'}
     peerDependencies:
       '@types/react': '>=18.0.0'
@@ -6486,6 +6873,11 @@ packages:
 
 snapshots:
 
+<<<<<<< Updated upstream
+=======
+  '@acemir/cssom@0.9.24': {}
+
+>>>>>>> Stashed changes
   '@actions/core@1.11.1':
     dependencies:
       '@actions/exec': 1.1.1
@@ -6527,12 +6919,44 @@ snapshots:
       '@csstools/css-tokenizer': 3.0.4
       lru-cache: 10.4.3
 
+<<<<<<< Updated upstream
+=======
+  '@asamuzakjp/css-color@4.1.0':
+    dependencies:
+      '@csstools/css-calc': 2.1.4(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)
+      '@csstools/css-color-parser': 3.1.0(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)
+      '@csstools/css-parser-algorithms': 3.0.5(@csstools/css-tokenizer@3.0.4)
+      '@csstools/css-tokenizer': 3.0.4
+      lru-cache: 11.2.4
+
+>>>>>>> Stashed changes
   '@asamuzakjp/dom-selector@2.0.2':
     dependencies:
       bidi-js: 1.0.3
       css-tree: 2.3.1
       is-potential-custom-element-name: 1.0.1
 
+<<<<<<< Updated upstream
+=======
+  '@asamuzakjp/dom-selector@6.7.5':
+    dependencies:
+      '@asamuzakjp/nwsapi': 2.3.9
+      bidi-js: 1.0.3
+      css-tree: 3.1.0
+      is-potential-custom-element-name: 1.0.1
+      lru-cache: 11.2.4
+
+  '@asamuzakjp/nwsapi@2.3.9': {}
+
+  '@aws-lite/client@0.21.10':
+    dependencies:
+      aws4: 1.13.2
+
+  '@aws-lite/s3@0.1.22': {}
+
+  '@aws-lite/ssm@0.2.5': {}
+
+>>>>>>> Stashed changes
   '@babel/code-frame@7.27.1':
     dependencies:
       '@babel/helper-validator-identifier': 7.27.1
@@ -6577,7 +7001,11 @@ snapshots:
     dependencies:
       '@babel/compat-data': 7.27.5
       '@babel/helper-validator-option': 7.27.1
+<<<<<<< Updated upstream
       browserslist: 4.25.0
+=======
+      browserslist: 4.28.1
+>>>>>>> Stashed changes
       lru-cache: 5.1.1
       semver: 6.3.1
 
@@ -7280,6 +7708,11 @@ snapshots:
     dependencies:
       '@csstools/css-tokenizer': 3.0.4
 
+<<<<<<< Updated upstream
+=======
+  '@csstools/css-syntax-patches-for-csstree@1.0.20': {}
+
+>>>>>>> Stashed changes
   '@csstools/css-tokenizer@3.0.4': {}
 
   '@date-fns/tz@1.2.0': {}
@@ -7742,17 +8175,63 @@ snapshots:
 
   '@napi-rs/wasm-runtime@0.2.11':
     dependencies:
+<<<<<<< Updated upstream
       '@emnapi/core': 1.4.3
       '@emnapi/runtime': 1.4.3
       '@tybys/wasm-util': 0.9.0
     optional: true
 
   '@next/env@15.3.3': {}
+=======
+      mux-embed: 5.9.0
+
+  '@mux/mux-player-react@3.9.2(@types/react@19.2.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@mux/mux-player': 3.9.2(react@18.3.1)
+      '@mux/playback-core': 0.31.4
+      prop-types: 15.8.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    optionalDependencies:
+      '@types/react': 19.2.7
+
+  '@mux/mux-player@3.9.2(react@18.3.1)':
+    dependencies:
+      '@mux/mux-video': 0.28.2
+      '@mux/playback-core': 0.31.4
+      media-chrome: 4.16.1(react@18.3.1)
+      player.style: 0.3.0(react@18.3.1)
+    transitivePeerDependencies:
+      - react
+
+  '@mux/mux-video@0.28.2':
+    dependencies:
+      '@mux/mux-data-google-ima': 0.2.8
+      '@mux/playback-core': 0.31.4
+      castable-video: 1.1.11
+      custom-media-element: 1.4.5
+      media-tracks: 0.3.4
+
+  '@mux/playback-core@0.31.4':
+    dependencies:
+      hls.js: 1.6.15
+      mux-embed: 5.14.0
+
+  '@napi-rs/wasm-runtime@0.2.12':
+    dependencies:
+      '@emnapi/core': 1.7.1
+      '@emnapi/runtime': 1.7.1
+      '@tybys/wasm-util': 0.10.1
+    optional: true
+
+  '@next/env@16.0.7': {}
+>>>>>>> Stashed changes
 
   '@next/eslint-plugin-next@14.2.30':
     dependencies:
       glob: 10.3.10
 
+<<<<<<< Updated upstream
   '@next/swc-darwin-arm64@15.3.3':
     optional: true
 
@@ -7775,6 +8254,30 @@ snapshots:
     optional: true
 
   '@next/swc-win32-x64-msvc@15.3.3':
+=======
+  '@next/swc-darwin-arm64@16.0.7':
+    optional: true
+
+  '@next/swc-darwin-x64@16.0.7':
+    optional: true
+
+  '@next/swc-linux-arm64-gnu@16.0.7':
+    optional: true
+
+  '@next/swc-linux-arm64-musl@16.0.7':
+    optional: true
+
+  '@next/swc-linux-x64-gnu@16.0.7':
+    optional: true
+
+  '@next/swc-linux-x64-musl@16.0.7':
+    optional: true
+
+  '@next/swc-win32-arm64-msvc@16.0.7':
+    optional: true
+
+  '@next/swc-win32-x64-msvc@16.0.7':
+>>>>>>> Stashed changes
     optional: true
 
   '@nodelib/fs.scandir@2.1.5':
@@ -8134,6 +8637,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
+<<<<<<< Updated upstream
   '@portabletext/block-tools@1.1.30(@sanity/types@3.93.0(@types/react@19.1.8)(debug@4.4.1))(@types/react@19.1.8)':
     dependencies:
       '@sanity/types': 3.93.0(@types/react@19.1.8)(debug@4.4.1)
@@ -8150,6 +8654,25 @@ snapshots:
       '@sanity/types': 3.93.0(@types/react@19.1.8)(debug@4.4.1)
       '@xstate/react': 5.0.5(@types/react@19.1.8)(react@18.3.1)(xstate@5.19.4)
       debug: 4.4.1(supports-color@5.5.0)
+=======
+  '@portabletext/block-tools@1.1.38(@sanity/types@3.99.0(@types/react@19.2.7))(@types/react@19.2.7)':
+    dependencies:
+      '@sanity/types': 3.99.0(@types/react@19.2.7)(debug@4.4.3)
+      '@types/react': 19.2.7
+      get-random-values-esm: 1.0.2
+      lodash: 4.17.21
+
+  '@portabletext/editor@1.58.0(@sanity/schema@3.99.0(@types/react@19.2.7)(debug@4.4.3))(@sanity/types@3.99.0(@types/react@19.2.7))(@types/react@19.2.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.2)':
+    dependencies:
+      '@portabletext/block-tools': 1.1.38(@sanity/types@3.99.0(@types/react@19.2.7))(@types/react@19.2.7)
+      '@portabletext/keyboard-shortcuts': 1.1.0
+      '@portabletext/patches': 1.1.5
+      '@portabletext/to-html': 2.0.17
+      '@sanity/schema': 3.99.0(@types/react@19.2.7)(debug@4.4.3)
+      '@sanity/types': 3.99.0(@types/react@19.2.7)(debug@4.4.3)
+      '@xstate/react': 6.0.0(@types/react@19.2.7)(react@18.3.1)(xstate@5.24.0)
+      debug: 4.4.3(supports-color@8.1.1)
+>>>>>>> Stashed changes
       get-random-values-esm: 1.0.2
       immer: 10.1.1
       lodash: 4.17.21
@@ -8301,6 +8824,7 @@ snapshots:
       nanoid: 3.3.11
       rxjs: 7.8.2
 
+<<<<<<< Updated upstream
   '@sanity/cli@3.93.0(@types/node@24.0.3)(@types/react@19.1.8)(react@18.3.1)(terser@5.44.0)(typescript@5.8.3)(yaml@2.8.0)':
     dependencies:
       '@babel/traverse': 7.27.4(supports-color@5.5.0)
@@ -8310,9 +8834,21 @@ snapshots:
       '@sanity/telemetry': 0.8.1(react@18.3.1)
       '@sanity/template-validator': 2.4.3
       '@sanity/util': 3.93.0(@types/react@19.1.8)(debug@4.4.1)
+=======
+  '@sanity/cli@3.99.0(@types/node@24.10.1)(@types/react@19.2.7)(react@18.3.1)(typescript@5.9.3)(yaml@2.8.2)':
+    dependencies:
+      '@babel/traverse': 7.28.5
+      '@sanity/client': 7.13.1(debug@4.4.3)
+      '@sanity/codegen': 3.99.0
+      '@sanity/runtime-cli': 9.2.0(@types/node@24.10.1)(debug@4.4.3)(typescript@5.9.3)(yaml@2.8.2)
+      '@sanity/telemetry': 0.8.1(react@18.3.1)
+      '@sanity/template-validator': 2.4.3
+      '@sanity/util': 3.99.0(@types/react@19.2.7)(debug@4.4.3)
+>>>>>>> Stashed changes
       chalk: 4.1.2
       debug: 4.4.1(supports-color@5.5.0)
       decompress: 4.2.1
+<<<<<<< Updated upstream
       esbuild: 0.25.5
       esbuild-register: 3.6.0(esbuild@0.25.5)
       get-it: 8.6.9(debug@4.4.1)
@@ -8320,6 +8856,15 @@ snapshots:
       pkg-dir: 5.0.0
       prettier: 3.5.3
       semver: 7.7.2
+=======
+      esbuild: 0.25.6
+      esbuild-register: 3.6.0(esbuild@0.25.6)
+      get-it: 8.6.10(debug@4.4.3)
+      groq-js: 1.22.0
+      pkg-dir: 5.0.0
+      prettier: 3.7.4
+      semver: 7.7.3
+>>>>>>> Stashed changes
       validate-npm-package-name: 3.0.0
     transitivePeerDependencies:
       - '@types/node'
@@ -8347,7 +8892,11 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
+<<<<<<< Updated upstream
   '@sanity/client@7.6.0(debug@4.4.1)':
+=======
+  '@sanity/client@7.13.1(debug@4.4.3)':
+>>>>>>> Stashed changes
     dependencies:
       '@sanity/eventsource': 5.0.2
       get-it: 8.6.9(debug@4.4.1)
@@ -8368,8 +8917,13 @@ snapshots:
       '@babel/types': 7.27.6
       debug: 4.4.1(supports-color@5.5.0)
       globby: 11.1.0
+<<<<<<< Updated upstream
       groq: 3.93.0
       groq-js: 1.17.0
+=======
+      groq: 3.99.0
+      groq-js: 1.22.0
+>>>>>>> Stashed changes
       json5: 2.2.3
       tsconfig-paths: 4.2.0
       zod: 3.25.67
@@ -8386,7 +8940,11 @@ snapshots:
       uuid: 11.1.0
       xstate: 5.19.4
 
+<<<<<<< Updated upstream
   '@sanity/descriptors@1.0.0':
+=======
+  '@sanity/descriptors@1.3.0':
+>>>>>>> Stashed changes
     dependencies:
       sha256-uint8array: 0.10.7
 
@@ -8407,10 +8965,17 @@ snapshots:
       event-source-polyfill: 1.0.31
       eventsource: 2.0.2
 
+<<<<<<< Updated upstream
   '@sanity/export@3.45.0(@types/react@19.1.8)':
     dependencies:
       '@sanity/client': 6.29.1(debug@4.4.1)
       '@sanity/util': 3.68.3(@types/react@19.1.8)(debug@4.4.1)
+=======
+  '@sanity/export@3.45.3(@types/react@19.2.7)':
+    dependencies:
+      '@sanity/client': 6.29.1(debug@4.4.3)
+      '@sanity/util': 3.68.3(@types/react@19.2.7)(debug@4.4.3)
+>>>>>>> Stashed changes
       archiver: 7.0.1
       debug: 4.4.1(supports-color@5.5.0)
       get-it: 8.6.9(debug@4.4.1)
@@ -8418,15 +8983,22 @@ snapshots:
       lodash: 4.17.21
       mississippi: 4.0.0
       p-queue: 2.4.2
+<<<<<<< Updated upstream
       rimraf: 6.0.1
       split2: 4.2.0
       tar: 7.4.3
       yaml: 2.8.0
+=======
+      rimraf: 6.1.2
+      split2: 4.2.0
+      tar: 7.5.2
+      yaml: 2.8.2
+>>>>>>> Stashed changes
     transitivePeerDependencies:
       - '@types/react'
       - supports-color
 
-  '@sanity/generate-help-url@3.0.0': {}
+  '@sanity/generate-help-url@3.0.1': {}
 
   '@sanity/icons@2.11.8(react@18.3.1)':
     dependencies:
@@ -8444,11 +9016,19 @@ snapshots:
 
   '@sanity/image-url@1.1.0': {}
 
+<<<<<<< Updated upstream
   '@sanity/import@3.38.2(@types/react@19.1.8)':
     dependencies:
       '@sanity/asset-utils': 2.2.1
       '@sanity/generate-help-url': 3.0.0
       '@sanity/mutator': 3.93.0(@types/react@19.1.8)
+=======
+  '@sanity/import@3.38.3(@types/react@19.2.7)':
+    dependencies:
+      '@sanity/asset-utils': 2.3.0
+      '@sanity/generate-help-url': 3.0.1
+      '@sanity/mutator': 3.99.0(@types/react@19.2.7)
+>>>>>>> Stashed changes
       '@sanity/uuid': 3.0.2
       debug: 4.4.1(supports-color@5.5.0)
       file-url: 2.0.2
@@ -8463,7 +9043,11 @@ snapshots:
       p-map: 1.2.0
       peek-stream: 1.1.3
       pretty-ms: 7.0.1
+<<<<<<< Updated upstream
       rimraf: 6.0.1
+=======
+      rimraf: 6.1.2
+>>>>>>> Stashed changes
       split2: 4.2.0
       tar-fs: 2.1.3
       tinyglobby: 0.2.14
@@ -8476,11 +9060,19 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
+<<<<<<< Updated upstream
   '@sanity/insert-menu@1.1.12(@emotion/is-prop-valid@1.3.1)(@sanity/types@3.93.0(@types/react@19.1.8)(debug@4.4.1))(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))':
     dependencies:
       '@sanity/icons': 3.7.0(react@18.3.1)
       '@sanity/types': 3.93.0(@types/react@19.1.8)(debug@4.4.1)
       '@sanity/ui': 2.16.0(@emotion/is-prop-valid@1.3.1)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))
+=======
+  '@sanity/insert-menu@1.1.13(@emotion/is-prop-valid@1.2.2)(@sanity/types@3.99.0(@types/react@19.2.7))(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
+    dependencies:
+      '@sanity/icons': 3.7.4(react@18.3.1)
+      '@sanity/types': 3.99.0(@types/react@19.2.7)(debug@4.4.3)
+      '@sanity/ui': 2.16.22(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+>>>>>>> Stashed changes
       lodash: 4.17.21
       react: 18.3.1
       react-compiler-runtime: 19.1.0-rc.2(react@18.3.1)
@@ -8499,24 +9091,42 @@ snapshots:
     dependencies:
       '@sanity/comlink': 3.0.5
 
+<<<<<<< Updated upstream
   '@sanity/migrate@3.93.0(@types/react@19.1.8)':
     dependencies:
       '@sanity/client': 7.6.0(debug@4.4.1)
       '@sanity/mutate': 0.12.4(debug@4.4.1)
       '@sanity/types': 3.93.0(@types/react@19.1.8)(debug@4.4.1)
       '@sanity/util': 3.93.0(@types/react@19.1.8)(debug@4.4.1)
+=======
+  '@sanity/migrate@3.99.0(@types/react@19.2.7)':
+    dependencies:
+      '@sanity/client': 7.13.1(debug@4.4.3)
+      '@sanity/mutate': 0.12.6(debug@4.4.3)
+      '@sanity/types': 3.99.0(@types/react@19.2.7)(debug@4.4.3)
+      '@sanity/util': 3.99.0(@types/react@19.2.7)(debug@4.4.3)
+>>>>>>> Stashed changes
       arrify: 2.0.1
       debug: 4.4.1(supports-color@5.5.0)
       fast-fifo: 1.3.2
+<<<<<<< Updated upstream
       groq-js: 1.17.0
       p-map: 7.0.3
+=======
+      groq-js: 1.22.0
+      p-map: 7.0.4
+>>>>>>> Stashed changes
     transitivePeerDependencies:
       - '@types/react'
       - supports-color
 
   '@sanity/mutate@0.12.4(debug@4.4.1)':
     dependencies:
+<<<<<<< Updated upstream
       '@sanity/client': 6.29.1(debug@4.4.1)
+=======
+      '@sanity/client': 7.13.1(debug@4.4.3)
+>>>>>>> Stashed changes
       '@sanity/diff-match-patch': 3.2.0
       '@sanity/uuid': 3.0.2
       hotscript: 1.0.13
@@ -8527,10 +9137,17 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
+<<<<<<< Updated upstream
   '@sanity/mutator@3.93.0(@types/react@19.1.8)':
     dependencies:
       '@sanity/diff-match-patch': 3.2.0
       '@sanity/types': 3.93.0(@types/react@19.1.8)(debug@4.4.1)
+=======
+  '@sanity/mutator@3.99.0(@types/react@19.2.7)':
+    dependencies:
+      '@sanity/diff-match-patch': 3.2.0
+      '@sanity/types': 3.99.0(@types/react@19.2.7)(debug@4.4.3)
+>>>>>>> Stashed changes
       '@sanity/uuid': 3.0.2
       debug: 4.4.1(supports-color@5.5.0)
       lodash: 4.17.21
@@ -8538,14 +9155,22 @@ snapshots:
       - '@types/react'
       - supports-color
 
+<<<<<<< Updated upstream
   '@sanity/presentation-comlink@1.0.21(@sanity/client@7.6.0(debug@4.4.1))(@sanity/types@3.93.0(@types/react@19.1.8)(debug@4.4.1))':
     dependencies:
       '@sanity/client': 7.6.0(debug@4.4.1)
       '@sanity/comlink': 3.0.5
       '@sanity/visual-editing-types': 1.1.0(@sanity/client@7.6.0(debug@4.4.1))(@sanity/types@3.93.0(@types/react@19.1.8)(debug@4.4.1))
+=======
+  '@sanity/presentation-comlink@1.0.33(@sanity/client@7.13.1)(@sanity/types@3.99.0(@types/react@19.2.7))':
+    dependencies:
+      '@sanity/comlink': 3.1.1
+      '@sanity/visual-editing-types': 1.1.8(@sanity/client@7.13.1)(@sanity/types@3.99.0(@types/react@19.2.7))
+>>>>>>> Stashed changes
     transitivePeerDependencies:
       - '@sanity/types'
 
+<<<<<<< Updated upstream
   '@sanity/preview-kit-compat@1.4.4(@sanity/client@7.6.0)(react@18.3.1)':
     dependencies:
       '@sanity/client': 7.6.0(debug@4.4.1)
@@ -8555,6 +9180,17 @@ snapshots:
     dependencies:
       '@sanity/client': 7.6.0(debug@4.4.1)
       '@sanity/preview-kit-compat': 1.4.4(@sanity/client@7.6.0)(react@18.3.1)
+=======
+  '@sanity/preview-kit-compat@1.4.4(@sanity/client@7.13.1)(react@18.3.1)':
+    dependencies:
+      '@sanity/client': 7.13.1(debug@4.4.3)
+      react: 18.3.1
+
+  '@sanity/preview-kit@5.0.20(@sanity/client@7.13.1)(react@18.3.1)':
+    dependencies:
+      '@sanity/client': 7.13.1(debug@4.4.3)
+      '@sanity/preview-kit-compat': 1.4.4(@sanity/client@7.13.1)(react@18.3.1)
+>>>>>>> Stashed changes
       '@vercel/stega': 0.1.0
       lru-cache: 10.2.0
       mendoza: 3.0.4
@@ -8563,6 +9199,7 @@ snapshots:
     optionalDependencies:
       react: 18.3.1
 
+<<<<<<< Updated upstream
   '@sanity/preview-url-secret@2.1.11(@sanity/client@7.6.0(debug@4.4.1))':
     dependencies:
       '@sanity/client': 7.6.0(debug@4.4.1)
@@ -8587,6 +9224,38 @@ snapshots:
       vite: 6.3.5(@types/node@24.0.3)(jiti@2.4.2)(terser@5.44.0)(yaml@2.8.0)
       vite-tsconfig-paths: 5.1.4(typescript@5.8.3)(vite@6.3.5(@types/node@24.0.3)(jiti@2.4.2)(terser@5.44.0)(yaml@2.8.0))
       ws: 8.18.2
+=======
+  '@sanity/preview-url-secret@2.1.16(@sanity/client@7.13.1)(@sanity/icons@3.7.4(react@18.3.1))(sanity@3.99.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.10.1)(@types/react@19.2.7)(immer@10.2.0)(jiti@2.6.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3)(yaml@2.8.2))':
+    dependencies:
+      '@sanity/client': 7.13.1(debug@4.4.3)
+      '@sanity/uuid': 3.0.2
+    optionalDependencies:
+      '@sanity/icons': 3.7.4(react@18.3.1)
+      sanity: 3.99.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.10.1)(@types/react@19.2.7)(immer@10.2.0)(jiti@2.6.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3)(yaml@2.8.2)
+
+  '@sanity/runtime-cli@9.2.0(@types/node@24.10.1)(debug@4.4.3)(typescript@5.9.3)(yaml@2.8.2)':
+    dependencies:
+      '@architect/hydrate': 4.0.10
+      '@architect/inventory': 4.0.9
+      '@oclif/core': 4.8.0
+      '@oclif/plugin-help': 6.2.36
+      '@sanity/client': 7.13.1(debug@4.4.3)
+      adm-zip: 0.5.16
+      array-treeify: 0.1.5
+      cardinal: 2.1.1
+      chalk: 5.6.2
+      eventsource: 4.1.0
+      find-up: 7.0.0
+      groq-js: 1.22.0
+      inquirer: 12.11.1(@types/node@24.10.1)
+      jiti: 2.6.1
+      mime-types: 3.0.2
+      ora: 8.2.0
+      tar-stream: 3.1.7
+      vite: 6.4.1(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2)
+      vite-tsconfig-paths: 5.1.4(typescript@5.9.3)(vite@6.4.1(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2))
+      ws: 8.18.3
+>>>>>>> Stashed changes
       xdg-basedir: 5.1.0
     transitivePeerDependencies:
       - '@types/node'
@@ -8604,6 +9273,7 @@ snapshots:
       - utf-8-validate
       - yaml
 
+<<<<<<< Updated upstream
   '@sanity/schema@3.93.0(@types/react@19.1.8)(debug@4.4.1)':
     dependencies:
       '@sanity/descriptors': 1.0.0
@@ -8611,6 +9281,15 @@ snapshots:
       '@sanity/types': 3.93.0(@types/react@19.1.8)(debug@4.4.1)
       arrify: 2.0.1
       groq-js: 1.17.0
+=======
+  '@sanity/schema@3.99.0(@types/react@19.2.7)(debug@4.4.3)':
+    dependencies:
+      '@sanity/descriptors': 1.3.0
+      '@sanity/generate-help-url': 3.0.1
+      '@sanity/types': 3.99.0(@types/react@19.2.7)(debug@4.4.3)
+      arrify: 2.0.1
+      groq-js: 1.22.0
+>>>>>>> Stashed changes
       humanize-list: 1.0.1
       leven: 3.1.0
       lodash: 4.17.21
@@ -8620,18 +9299,31 @@ snapshots:
       - debug
       - supports-color
 
+<<<<<<< Updated upstream
   '@sanity/sdk@0.0.0-alpha.25(@types/react@19.1.8)(debug@4.4.1)(immer@10.1.1)(react@18.3.1)(use-sync-external-store@1.5.0(react@18.3.1))':
+=======
+  '@sanity/sdk@0.0.0-alpha.25(@types/react@19.2.7)(debug@4.4.3)(immer@10.2.0)(react@18.3.1)(use-sync-external-store@1.6.0(react@18.3.1))':
+>>>>>>> Stashed changes
     dependencies:
       '@sanity/client': 6.29.1(debug@4.4.1)
       '@sanity/comlink': 3.0.5
       '@sanity/diff-match-patch': 3.2.0
+<<<<<<< Updated upstream
       '@sanity/mutate': 0.12.4(debug@4.4.1)
       '@sanity/types': 3.93.0(@types/react@19.1.8)(debug@4.4.1)
+=======
+      '@sanity/mutate': 0.12.6(debug@4.4.3)
+      '@sanity/types': 3.99.0(@types/react@19.2.7)(debug@4.4.3)
+>>>>>>> Stashed changes
       '@types/lodash-es': 4.17.12
       lodash-es: 4.17.21
       reselect: 5.1.1
       rxjs: 7.8.2
+<<<<<<< Updated upstream
       zustand: 5.0.5(@types/react@19.1.8)(immer@10.1.1)(react@18.3.1)(use-sync-external-store@1.5.0(react@18.3.1))
+=======
+      zustand: 5.0.9(@types/react@19.2.7)(immer@10.2.0)(react@18.3.1)(use-sync-external-store@1.6.0(react@18.3.1))
+>>>>>>> Stashed changes
     transitivePeerDependencies:
       - '@types/react'
       - debug
@@ -8650,6 +9342,7 @@ snapshots:
     dependencies:
       '@actions/core': 1.11.1
       '@actions/github': 6.0.1
+<<<<<<< Updated upstream
       yaml: 2.8.0
 
   '@sanity/types@3.68.3(@types/react@19.1.8)(debug@4.4.1)':
@@ -8663,6 +9356,22 @@ snapshots:
     dependencies:
       '@sanity/client': 7.6.0(debug@4.4.1)
       '@types/react': 19.1.8
+=======
+      yaml: 2.8.2
+
+  '@sanity/types@3.68.3(@types/react@19.2.7)(debug@4.4.3)':
+    dependencies:
+      '@sanity/client': 6.29.1(debug@4.4.3)
+      '@types/react': 19.2.7
+    transitivePeerDependencies:
+      - debug
+
+  '@sanity/types@3.99.0(@types/react@19.2.7)(debug@4.4.3)':
+    dependencies:
+      '@sanity/client': 7.13.1(debug@4.4.3)
+      '@sanity/media-library-types': 1.0.1
+      '@types/react': 19.2.7
+>>>>>>> Stashed changes
     transitivePeerDependencies:
       - debug
 
@@ -8684,9 +9393,15 @@ snapshots:
       '@floating-ui/react-dom': 2.1.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@juggle/resize-observer': 3.4.0
       '@sanity/color': 3.0.6
+<<<<<<< Updated upstream
       '@sanity/icons': 3.7.0(react@18.3.1)
       csstype: 3.1.3
       framer-motion: 12.18.1(@emotion/is-prop-valid@1.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+=======
+      '@sanity/icons': 3.7.4(react@18.3.1)
+      csstype: 3.2.3
+      motion: 12.23.25(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+>>>>>>> Stashed changes
       react: 18.3.1
       react-compiler-runtime: 19.1.0-rc.2(react@18.3.1)
       react-dom: 18.3.1(react@18.3.1)
@@ -8697,10 +9412,17 @@ snapshots:
     transitivePeerDependencies:
       - '@emotion/is-prop-valid'
 
+<<<<<<< Updated upstream
   '@sanity/util@3.68.3(@types/react@19.1.8)(debug@4.4.1)':
     dependencies:
       '@sanity/client': 6.29.1(debug@4.4.1)
       '@sanity/types': 3.68.3(@types/react@19.1.8)(debug@4.4.1)
+=======
+  '@sanity/util@3.68.3(@types/react@19.2.7)(debug@4.4.3)':
+    dependencies:
+      '@sanity/client': 6.29.1(debug@4.4.3)
+      '@sanity/types': 3.68.3(@types/react@19.2.7)(debug@4.4.3)
+>>>>>>> Stashed changes
       get-random-values-esm: 1.0.2
       moment: 2.30.1
       rxjs: 7.8.2
@@ -8708,12 +9430,21 @@ snapshots:
       - '@types/react'
       - debug
 
+<<<<<<< Updated upstream
   '@sanity/util@3.93.0(@types/react@19.1.8)(debug@4.4.1)':
     dependencies:
       '@date-fns/tz': 1.2.0
       '@date-fns/utc': 2.1.0
       '@sanity/client': 7.6.0(debug@4.4.1)
       '@sanity/types': 3.93.0(@types/react@19.1.8)(debug@4.4.1)
+=======
+  '@sanity/util@3.99.0(@types/react@19.2.7)(debug@4.4.3)':
+    dependencies:
+      '@date-fns/tz': 1.4.1
+      '@date-fns/utc': 2.1.1
+      '@sanity/client': 7.13.1(debug@4.4.3)
+      '@sanity/types': 3.99.0(@types/react@19.2.7)(debug@4.4.3)
+>>>>>>> Stashed changes
       date-fns: 4.1.0
       get-random-values-esm: 1.0.2
       rxjs: 7.8.2
@@ -8726,6 +9457,7 @@ snapshots:
       '@types/uuid': 8.3.4
       uuid: 8.3.2
 
+<<<<<<< Updated upstream
   '@sanity/visual-editing-types@1.1.0(@sanity/client@7.6.0(debug@4.4.1))(@sanity/types@3.93.0(@types/react@19.1.8)(debug@4.4.1))':
     dependencies:
       '@sanity/client': 7.6.0(debug@4.4.1)
@@ -8733,6 +9465,15 @@ snapshots:
       '@sanity/types': 3.93.0(@types/react@19.1.8)(debug@4.4.1)
 
   '@sanity/visual-editing@1.2.2(next@15.3.3(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
+=======
+  '@sanity/visual-editing-types@1.1.8(@sanity/client@7.13.1)(@sanity/types@3.99.0(@types/react@19.2.7))':
+    dependencies:
+      '@sanity/client': 7.13.1(debug@4.4.3)
+    optionalDependencies:
+      '@sanity/types': 3.99.0(@types/react@19.2.7)(debug@4.4.3)
+
+  '@sanity/visual-editing@1.2.2(next@16.0.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
+>>>>>>> Stashed changes
     dependencies:
       '@vercel/stega': 0.1.0
       react: 18.3.1
@@ -8740,7 +9481,11 @@ snapshots:
       react-is: 18.2.0
       scroll-into-view-if-needed: 3.1.0
     optionalDependencies:
+<<<<<<< Updated upstream
       next: 15.3.3(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+=======
+      next: 16.0.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+>>>>>>> Stashed changes
 
   '@sanity/webhook@2.0.0':
     dependencies:
@@ -8990,6 +9735,7 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
+<<<<<<< Updated upstream
   '@tailwindcss/aspect-ratio@0.4.2(tailwindcss@3.4.17)':
     dependencies:
       tailwindcss: 3.4.17
@@ -9000,12 +9746,28 @@ snapshots:
       tailwindcss: 3.4.17
 
   '@tailwindcss/typography@0.5.16(tailwindcss@3.4.17)':
+=======
+  '@tailwindcss/aspect-ratio@0.4.2(tailwindcss@3.4.18(yaml@2.8.2))':
+    dependencies:
+      tailwindcss: 3.4.18(yaml@2.8.2)
+
+  '@tailwindcss/forms@0.5.10(tailwindcss@3.4.18(yaml@2.8.2))':
+    dependencies:
+      mini-svg-data-uri: 1.4.4
+      tailwindcss: 3.4.18(yaml@2.8.2)
+
+  '@tailwindcss/typography@0.5.19(tailwindcss@3.4.18(yaml@2.8.2))':
+>>>>>>> Stashed changes
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
+<<<<<<< Updated upstream
       tailwindcss: 3.4.17
+=======
+      tailwindcss: 3.4.18(yaml@2.8.2)
+>>>>>>> Stashed changes
 
   '@tanstack/react-table@8.21.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -9085,9 +9847,15 @@ snapshots:
 
   '@types/lodash-es@4.17.12':
     dependencies:
+<<<<<<< Updated upstream
       '@types/lodash': 4.17.17
 
   '@types/lodash@4.17.17': {}
+=======
+      '@types/lodash': 4.17.21
+
+  '@types/lodash@4.17.21': {}
+>>>>>>> Stashed changes
 
   '@types/minimist@1.2.5': {}
 
@@ -9103,9 +9871,15 @@ snapshots:
 
   '@types/pg-pool@2.0.6':
     dependencies:
+<<<<<<< Updated upstream
       '@types/pg': 8.15.4
 
   '@types/pg@8.15.4':
+=======
+      '@types/react': 19.2.7
+
+  '@types/react@19.2.7':
+>>>>>>> Stashed changes
     dependencies:
       '@types/node': 24.0.3
       pg-protocol: 1.10.3
@@ -9144,6 +9918,7 @@ snapshots:
 
   '@types/which@3.0.4': {}
 
+<<<<<<< Updated upstream
   '@typescript-eslint/eslint-plugin@8.34.1(@typescript-eslint/parser@8.34.1(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.1
@@ -9152,6 +9927,16 @@ snapshots:
       '@typescript-eslint/type-utils': 8.34.1(eslint@8.57.1)(typescript@5.8.3)
       '@typescript-eslint/utils': 8.34.1(eslint@8.57.1)(typescript@5.8.3)
       '@typescript-eslint/visitor-keys': 8.34.1
+=======
+  '@typescript-eslint/eslint-plugin@8.48.1(@typescript-eslint/parser@8.48.1(eslint@8.57.1)(typescript@5.9.3))(eslint@8.57.1)(typescript@5.9.3)':
+    dependencies:
+      '@eslint-community/regexpp': 4.12.2
+      '@typescript-eslint/parser': 8.48.1(eslint@8.57.1)(typescript@5.9.3)
+      '@typescript-eslint/scope-manager': 8.48.1
+      '@typescript-eslint/type-utils': 8.48.1(eslint@8.57.1)(typescript@5.9.3)
+      '@typescript-eslint/utils': 8.48.1(eslint@8.57.1)(typescript@5.9.3)
+      '@typescript-eslint/visitor-keys': 8.48.1
+>>>>>>> Stashed changes
       eslint: 8.57.1
       graphemer: 1.4.0
       ignore: 7.0.5
@@ -9161,6 +9946,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+<<<<<<< Updated upstream
   '@typescript-eslint/parser@8.34.1(eslint@8.57.1)(typescript@5.8.3)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.34.1
@@ -9168,11 +9954,21 @@ snapshots:
       '@typescript-eslint/typescript-estree': 8.34.1(typescript@5.8.3)
       '@typescript-eslint/visitor-keys': 8.34.1
       debug: 4.4.1(supports-color@5.5.0)
+=======
+  '@typescript-eslint/parser@8.48.1(eslint@8.57.1)(typescript@5.9.3)':
+    dependencies:
+      '@typescript-eslint/scope-manager': 8.48.1
+      '@typescript-eslint/types': 8.48.1
+      '@typescript-eslint/typescript-estree': 8.48.1(typescript@5.9.3)
+      '@typescript-eslint/visitor-keys': 8.48.1
+      debug: 4.4.3(supports-color@8.1.1)
+>>>>>>> Stashed changes
       eslint: 8.57.1
       typescript: 5.8.3
     transitivePeerDependencies:
       - supports-color
 
+<<<<<<< Updated upstream
   '@typescript-eslint/project-service@8.34.1(typescript@5.8.3)':
     dependencies:
       '@typescript-eslint/tsconfig-utils': 8.34.1(typescript@5.8.3)
@@ -9188,20 +9984,47 @@ snapshots:
       '@typescript-eslint/visitor-keys': 8.34.1
 
   '@typescript-eslint/tsconfig-utils@8.34.1(typescript@5.8.3)':
+=======
+  '@typescript-eslint/project-service@8.48.1(typescript@5.9.3)':
+    dependencies:
+      '@typescript-eslint/tsconfig-utils': 8.48.1(typescript@5.9.3)
+      '@typescript-eslint/types': 8.48.1
+      debug: 4.4.3(supports-color@8.1.1)
+      typescript: 5.9.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@typescript-eslint/scope-manager@8.48.1':
+    dependencies:
+      '@typescript-eslint/types': 8.48.1
+      '@typescript-eslint/visitor-keys': 8.48.1
+
+  '@typescript-eslint/tsconfig-utils@8.48.1(typescript@5.9.3)':
+>>>>>>> Stashed changes
     dependencies:
       typescript: 5.8.3
 
+<<<<<<< Updated upstream
   '@typescript-eslint/type-utils@8.34.1(eslint@8.57.1)(typescript@5.8.3)':
     dependencies:
       '@typescript-eslint/typescript-estree': 8.34.1(typescript@5.8.3)
       '@typescript-eslint/utils': 8.34.1(eslint@8.57.1)(typescript@5.8.3)
       debug: 4.4.1(supports-color@5.5.0)
+=======
+  '@typescript-eslint/type-utils@8.48.1(eslint@8.57.1)(typescript@5.9.3)':
+    dependencies:
+      '@typescript-eslint/types': 8.48.1
+      '@typescript-eslint/typescript-estree': 8.48.1(typescript@5.9.3)
+      '@typescript-eslint/utils': 8.48.1(eslint@8.57.1)(typescript@5.9.3)
+      debug: 4.4.3(supports-color@8.1.1)
+>>>>>>> Stashed changes
       eslint: 8.57.1
       ts-api-utils: 2.1.0(typescript@5.8.3)
       typescript: 5.8.3
     transitivePeerDependencies:
       - supports-color
 
+<<<<<<< Updated upstream
   '@typescript-eslint/types@8.34.1': {}
 
   '@typescript-eslint/typescript-estree@8.34.1(typescript@5.8.3)':
@@ -9226,14 +10049,45 @@ snapshots:
       '@typescript-eslint/scope-manager': 8.34.1
       '@typescript-eslint/types': 8.34.1
       '@typescript-eslint/typescript-estree': 8.34.1(typescript@5.8.3)
+=======
+  '@typescript-eslint/types@8.48.1': {}
+
+  '@typescript-eslint/typescript-estree@8.48.1(typescript@5.9.3)':
+    dependencies:
+      '@typescript-eslint/project-service': 8.48.1(typescript@5.9.3)
+      '@typescript-eslint/tsconfig-utils': 8.48.1(typescript@5.9.3)
+      '@typescript-eslint/types': 8.48.1
+      '@typescript-eslint/visitor-keys': 8.48.1
+      debug: 4.4.3(supports-color@8.1.1)
+      minimatch: 9.0.5
+      semver: 7.7.3
+      tinyglobby: 0.2.15
+      ts-api-utils: 2.1.0(typescript@5.9.3)
+      typescript: 5.9.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@typescript-eslint/utils@8.48.1(eslint@8.57.1)(typescript@5.9.3)':
+    dependencies:
+      '@eslint-community/eslint-utils': 4.9.0(eslint@8.57.1)
+      '@typescript-eslint/scope-manager': 8.48.1
+      '@typescript-eslint/types': 8.48.1
+      '@typescript-eslint/typescript-estree': 8.48.1(typescript@5.9.3)
+>>>>>>> Stashed changes
       eslint: 8.57.1
       typescript: 5.8.3
     transitivePeerDependencies:
       - supports-color
 
+<<<<<<< Updated upstream
   '@typescript-eslint/visitor-keys@8.34.1':
     dependencies:
       '@typescript-eslint/types': 8.34.1
+=======
+  '@typescript-eslint/visitor-keys@8.48.1':
+    dependencies:
+      '@typescript-eslint/types': 8.48.1
+>>>>>>> Stashed changes
       eslint-visitor-keys: 4.2.1
 
   '@ungap/structured-clone@1.3.0': {}
@@ -9297,6 +10151,7 @@ snapshots:
   '@unrs/resolver-binding-win32-x64-msvc@1.9.0':
     optional: true
 
+<<<<<<< Updated upstream
   '@vercel/analytics@1.5.0(next@15.3.3(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
     optionalDependencies:
       next: 15.3.3(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -9305,11 +10160,27 @@ snapshots:
   '@vercel/speed-insights@1.2.0(next@15.3.3(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
     optionalDependencies:
       next: 15.3.3(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+=======
+  '@vercel/analytics@1.6.1(next@16.0.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
+    optionalDependencies:
+      next: 16.0.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+
+  '@vercel/edge@1.2.2': {}
+
+  '@vercel/speed-insights@1.3.1(next@16.0.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
+    optionalDependencies:
+      next: 16.0.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+>>>>>>> Stashed changes
       react: 18.3.1
 
   '@vercel/stega@0.1.0': {}
 
+<<<<<<< Updated upstream
   '@vitejs/plugin-react@4.5.2(vite@6.3.5(@types/node@24.0.3)(jiti@2.4.2)(terser@5.44.0)(yaml@2.8.0))':
+=======
+  '@vitejs/plugin-react@4.7.0(vite@6.4.1(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2))':
+>>>>>>> Stashed changes
     dependencies:
       '@babel/core': 7.27.4
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.27.4)
@@ -9317,6 +10188,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.11
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
+<<<<<<< Updated upstream
       vite: 6.3.5(@types/node@24.0.3)(jiti@2.4.2)(terser@5.44.0)(yaml@2.8.0)
     transitivePeerDependencies:
       - supports-color
@@ -9402,6 +10274,17 @@ snapshots:
       react: 18.3.1
       use-isomorphic-layout-effect: 1.2.1(@types/react@19.1.8)(react@18.3.1)
       use-sync-external-store: 1.5.0(react@18.3.1)
+=======
+      vite: 6.4.1(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2)
+    transitivePeerDependencies:
+      - supports-color
+
+  '@xstate/react@6.0.0(@types/react@19.2.7)(react@18.3.1)(xstate@5.24.0)':
+    dependencies:
+      react: 18.3.1
+      use-isomorphic-layout-effect: 1.2.1(@types/react@19.2.7)(react@18.3.1)
+      use-sync-external-store: 1.6.0(react@18.3.1)
+>>>>>>> Stashed changes
     optionalDependencies:
       xstate: 5.19.4
     transitivePeerDependencies:
@@ -9610,9 +10493,15 @@ snapshots:
 
   autoprefixer@10.4.21(postcss@8.5.6):
     dependencies:
+<<<<<<< Updated upstream
       browserslist: 4.25.0
       caniuse-lite: 1.0.30001723
       fraction.js: 4.3.7
+=======
+      browserslist: 4.28.1
+      caniuse-lite: 1.0.30001759
+      fraction.js: 5.3.4
+>>>>>>> Stashed changes
       normalize-range: 0.1.2
       picocolors: 1.1.1
       postcss: 8.5.6
@@ -9673,6 +10562,11 @@ snapshots:
 
   base64url@3.0.1: {}
 
+<<<<<<< Updated upstream
+=======
+  baseline-browser-mapping@2.9.0: {}
+
+>>>>>>> Stashed changes
   before-after-hook@2.2.3: {}
 
   bidi-js@1.0.3:
@@ -9711,12 +10605,22 @@ snapshots:
     dependencies:
       pako: 0.2.9
 
+<<<<<<< Updated upstream
   browserslist@4.25.0:
     dependencies:
       caniuse-lite: 1.0.30001723
       electron-to-chromium: 1.5.169
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.25.0)
+=======
+  browserslist@4.28.1:
+    dependencies:
+      baseline-browser-mapping: 2.9.0
+      caniuse-lite: 1.0.30001759
+      electron-to-chromium: 1.5.263
+      node-releases: 2.0.27
+      update-browserslist-db: 1.2.0(browserslist@4.28.1)
+>>>>>>> Stashed changes
 
   buffer-alloc-unsafe@1.1.0: {}
 
@@ -9780,7 +10684,11 @@ snapshots:
 
   camelize@1.0.1: {}
 
+<<<<<<< Updated upstream
   caniuse-lite@1.0.30001723: {}
+=======
+  caniuse-lite@1.0.30001759: {}
+>>>>>>> Stashed changes
 
   cardinal@2.1.1:
     dependencies:
@@ -9941,7 +10849,11 @@ snapshots:
 
   core-js-compat@3.43.0:
     dependencies:
+<<<<<<< Updated upstream
       browserslist: 4.25.0
+=======
+      browserslist: 4.28.1
+>>>>>>> Stashed changes
 
   core-util-is@1.0.3: {}
 
@@ -9995,6 +10907,15 @@ snapshots:
       '@asamuzakjp/css-color': 3.2.0
       rrweb-cssom: 0.8.0
 
+<<<<<<< Updated upstream
+=======
+  cssstyle@5.3.3:
+    dependencies:
+      '@asamuzakjp/css-color': 4.1.0
+      '@csstools/css-syntax-patches-for-csstree': 1.0.20
+      css-tree: 3.1.0
+
+>>>>>>> Stashed changes
   csstype@3.1.3: {}
 
   culori@3.3.0: {}
@@ -10221,7 +11142,11 @@ snapshots:
     dependencies:
       jake: 10.9.2
 
+<<<<<<< Updated upstream
   electron-to-chromium@1.5.169: {}
+=======
+  electron-to-chromium@1.5.263: {}
+>>>>>>> Stashed changes
 
   emoji-regex@10.4.0: {}
 
@@ -10392,6 +11317,7 @@ snapshots:
 
   eslint-config-next@14.2.30(eslint@8.57.1)(typescript@5.8.3):
     dependencies:
+<<<<<<< Updated upstream
       '@next/eslint-plugin-next': 14.2.30
       '@rushstack/eslint-patch': 1.11.0
       '@typescript-eslint/eslint-plugin': 8.34.1(@typescript-eslint/parser@8.34.1(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3)
@@ -10400,6 +11326,16 @@ snapshots:
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.31.0)(eslint@8.57.1)
       eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.34.1(eslint@8.57.1)(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.1)(eslint@8.57.1)
+=======
+      '@next/eslint-plugin-next': 14.2.33
+      '@rushstack/eslint-patch': 1.15.0
+      '@typescript-eslint/eslint-plugin': 8.48.1(@typescript-eslint/parser@8.48.1(eslint@8.57.1)(typescript@5.9.3))(eslint@8.57.1)(typescript@5.9.3)
+      '@typescript-eslint/parser': 8.48.1(eslint@8.57.1)(typescript@5.9.3)
+      eslint: 8.57.1
+      eslint-import-resolver-node: 0.3.9
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@8.57.1)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.48.1(eslint@8.57.1)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@8.57.1)
+>>>>>>> Stashed changes
       eslint-plugin-jsx-a11y: 6.10.2(eslint@8.57.1)
       eslint-plugin-react: 7.37.5(eslint@8.57.1)
       eslint-plugin-react-hooks: 5.0.0-canary-7118f5dd7-20230705(eslint@8.57.1)
@@ -10429,6 +11365,7 @@ snapshots:
       tinyglobby: 0.2.14
       unrs-resolver: 1.9.0
     optionalDependencies:
+<<<<<<< Updated upstream
       eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.34.1(eslint@8.57.1)(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.1)(eslint@8.57.1)
     transitivePeerDependencies:
       - supports-color
@@ -10438,13 +11375,28 @@ snapshots:
       debug: 3.2.7
     optionalDependencies:
       '@typescript-eslint/parser': 8.34.1(eslint@8.57.1)(typescript@5.8.3)
+=======
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.48.1(eslint@8.57.1)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@8.57.1)
+    transitivePeerDependencies:
+      - supports-color
+
+  eslint-module-utils@2.12.1(@typescript-eslint/parser@8.48.1(eslint@8.57.1)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1)(eslint@8.57.1):
+    dependencies:
+      debug: 3.2.7
+    optionalDependencies:
+      '@typescript-eslint/parser': 8.48.1(eslint@8.57.1)(typescript@5.9.3)
+>>>>>>> Stashed changes
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.31.0)(eslint@8.57.1)
     transitivePeerDependencies:
       - supports-color
 
+<<<<<<< Updated upstream
   eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.34.1(eslint@8.57.1)(typescript@5.8.3))(eslint-import-resolver-typescript@3.10.1)(eslint@8.57.1):
+=======
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.48.1(eslint@8.57.1)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@8.57.1):
+>>>>>>> Stashed changes
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9
@@ -10455,7 +11407,11 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
+<<<<<<< Updated upstream
       eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.34.1(eslint@8.57.1)(typescript@5.8.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1)(eslint@8.57.1)
+=======
+      eslint-module-utils: 2.12.1(@typescript-eslint/parser@8.48.1(eslint@8.57.1)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1)(eslint@8.57.1)
+>>>>>>> Stashed changes
       hasown: 2.0.2
       is-core-module: 2.16.1
       is-glob: 4.0.3
@@ -10467,7 +11423,11 @@ snapshots:
       string.prototype.trimend: 1.0.9
       tsconfig-paths: 3.15.0
     optionalDependencies:
+<<<<<<< Updated upstream
       '@typescript-eslint/parser': 8.34.1(eslint@8.57.1)(typescript@5.8.3)
+=======
+      '@typescript-eslint/parser': 8.48.1(eslint@8.57.1)(typescript@5.9.3)
+>>>>>>> Stashed changes
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -10609,7 +11569,7 @@ snapshots:
 
   eventsource@2.0.2: {}
 
-  eventsource@4.0.0:
+  eventsource@4.1.0:
     dependencies:
       eventsource-parser: 3.0.2
 
@@ -10772,7 +11732,11 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
+<<<<<<< Updated upstream
   framer-motion@12.18.1(@emotion/is-prop-valid@1.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+=======
+  framer-motion@12.23.25(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+>>>>>>> Stashed changes
     dependencies:
       motion-dom: 12.18.1
       motion-utils: 12.18.1
@@ -10914,6 +11878,7 @@ snapshots:
       package-json-from-dist: 1.0.1
       path-scurry: 1.11.1
 
+<<<<<<< Updated upstream
   glob@11.0.3:
     dependencies:
       foreground-child: 3.3.1
@@ -10922,6 +11887,22 @@ snapshots:
       minipass: 7.1.2
       package-json-from-dist: 1.0.1
       path-scurry: 2.0.0
+=======
+  glob@10.5.0:
+    dependencies:
+      foreground-child: 3.3.1
+      jackspeak: 3.4.3
+      minimatch: 9.0.5
+      minipass: 7.1.2
+      package-json-from-dist: 1.0.1
+      path-scurry: 1.11.1
+
+  glob@13.0.0:
+    dependencies:
+      minimatch: 10.1.1
+      minipass: 7.1.2
+      path-scurry: 2.0.1
+>>>>>>> Stashed changes
 
   glob@7.2.3:
     dependencies:
@@ -10972,7 +11953,11 @@ snapshots:
 
   graphemer@1.4.0: {}
 
+<<<<<<< Updated upstream
   groq-js@1.17.0:
+=======
+  groq-js@1.22.0:
+>>>>>>> Stashed changes
     dependencies:
       debug: 4.4.1(supports-color@5.5.0)
     transitivePeerDependencies:
@@ -11334,7 +12319,11 @@ snapshots:
 
   isobject@3.0.1: {}
 
+<<<<<<< Updated upstream
   isomorphic-dompurify@2.25.0:
+=======
+  isomorphic-dompurify@2.33.0:
+>>>>>>> Stashed changes
     dependencies:
       dompurify: 3.2.6
       jsdom: 26.1.0
@@ -11365,11 +12354,15 @@ snapshots:
     optionalDependencies:
       '@pkgjs/parseargs': 0.11.0
 
+<<<<<<< Updated upstream
   jackspeak@4.1.1:
     dependencies:
       '@isaacs/cliui': 8.0.2
 
   jake@10.9.2:
+=======
+  jake@10.9.4:
+>>>>>>> Stashed changes
     dependencies:
       async: 3.2.6
       chalk: 4.1.2
@@ -11431,9 +12424,17 @@ snapshots:
 
   jsdom@26.1.0:
     dependencies:
+<<<<<<< Updated upstream
       cssstyle: 4.4.0
       data-urls: 5.0.0
       decimal.js: 10.5.0
+=======
+      '@acemir/cssom': 0.9.24
+      '@asamuzakjp/dom-selector': 6.7.5
+      cssstyle: 5.3.3
+      data-urls: 6.0.0
+      decimal.js: 10.6.0
+>>>>>>> Stashed changes
       html-encoding-sniffer: 4.0.0
       http-proxy-agent: 7.0.2
       https-proxy-agent: 7.0.6
@@ -11578,7 +12579,11 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
+<<<<<<< Updated upstream
   lru-cache@11.1.0: {}
+=======
+  lru-cache@11.2.4: {}
+>>>>>>> Stashed changes
 
   lru-cache@5.1.1:
     dependencies:
@@ -11619,6 +12624,32 @@ snapshots:
 
   mdn-data@2.0.30: {}
 
+<<<<<<< Updated upstream
+=======
+  mdn-data@2.12.2: {}
+
+  media-chrome@4.11.1(react@18.3.1):
+    dependencies:
+      '@vercel/edge': 1.2.2
+      ce-la-react: 0.3.2(react@18.3.1)
+    transitivePeerDependencies:
+      - react
+
+  media-chrome@4.14.0(react@18.3.1):
+    dependencies:
+      ce-la-react: 0.3.2(react@18.3.1)
+    transitivePeerDependencies:
+      - react
+
+  media-chrome@4.16.1(react@18.3.1):
+    dependencies:
+      ce-la-react: 0.3.2(react@18.3.1)
+    transitivePeerDependencies:
+      - react
+
+  media-tracks@0.3.4: {}
+
+>>>>>>> Stashed changes
   mendoza@3.0.4: {}
 
   mendoza@3.0.8: {}
@@ -11655,7 +12686,7 @@ snapshots:
     dependencies:
       mime-db: 1.52.0
 
-  mime-types@3.0.1:
+  mime-types@3.0.2:
     dependencies:
       mime-db: 1.54.0
 
@@ -11736,7 +12767,20 @@ snapshots:
     dependencies:
       motion-utils: 12.18.1
 
+<<<<<<< Updated upstream
   motion-utils@12.18.1: {}
+=======
+  motion-utils@12.23.6: {}
+
+  motion@12.23.25(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      framer-motion: 12.23.25(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      tslib: 2.8.1
+    optionalDependencies:
+      '@emotion/is-prop-valid': 1.2.2
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+>>>>>>> Stashed changes
 
   ms@2.0.0: {}
 
@@ -11760,6 +12804,7 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
+<<<<<<< Updated upstream
   neo-async@2.6.2: {}
 
   next-sanity@7.1.4(@sanity/client@7.6.0)(@sanity/icons@3.7.0(react@18.3.1))(@sanity/types@3.93.0(@types/react@19.1.8)(debug@4.4.1))(@sanity/ui@2.16.0(@emotion/is-prop-valid@1.3.1)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)))(next@15.3.3(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(sanity@3.93.0(@emotion/is-prop-valid@1.3.1)(@types/node@24.0.3)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))(terser@5.44.0)(typescript@5.8.3)(yaml@2.8.0))(styled-components@5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)):
@@ -11786,11 +12831,36 @@ snapshots:
       '@swc/helpers': 0.5.15
       busboy: 1.6.0
       caniuse-lite: 1.0.30001723
+=======
+  next-sanity@7.1.4(@sanity/client@7.13.1)(@sanity/icons@3.7.4(react@18.3.1))(@sanity/types@3.99.0(@types/react@19.2.7))(@sanity/ui@2.16.22(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)))(next@16.0.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(sanity@3.99.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.10.1)(@types/react@19.2.7)(immer@10.2.0)(jiti@2.6.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3)(yaml@2.8.2))(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+    dependencies:
+      '@sanity/client': 7.13.1(debug@4.4.3)
+      '@sanity/icons': 3.7.4(react@18.3.1)
+      '@sanity/preview-kit': 5.0.20(@sanity/client@7.13.1)(react@18.3.1)
+      '@sanity/types': 3.99.0(@types/react@19.2.7)(debug@4.4.3)
+      '@sanity/ui': 2.16.22(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@sanity/visual-editing': 1.2.2(next@16.0.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@sanity/webhook': 4.0.0
+      groq: 3.99.0
+      next: 16.0.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      sanity: 3.99.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.10.1)(@types/react@19.2.7)(immer@10.2.0)(jiti@2.6.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3)(yaml@2.8.2)
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+    transitivePeerDependencies:
+      - '@remix-run/react'
+
+  next@16.0.7(@babel/core@7.28.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      '@next/env': 16.0.7
+      '@swc/helpers': 0.5.15
+      caniuse-lite: 1.0.30001759
+>>>>>>> Stashed changes
       postcss: 8.4.31
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       styled-jsx: 5.1.6(@babel/core@7.27.4)(react@18.3.1)
     optionalDependencies:
+<<<<<<< Updated upstream
       '@next/swc-darwin-arm64': 15.3.3
       '@next/swc-darwin-x64': 15.3.3
       '@next/swc-linux-arm64-gnu': 15.3.3
@@ -11801,6 +12871,17 @@ snapshots:
       '@next/swc-win32-x64-msvc': 15.3.3
       '@opentelemetry/api': 1.9.0
       sharp: 0.34.2
+=======
+      '@next/swc-darwin-arm64': 16.0.7
+      '@next/swc-darwin-x64': 16.0.7
+      '@next/swc-linux-arm64-gnu': 16.0.7
+      '@next/swc-linux-arm64-musl': 16.0.7
+      '@next/swc-linux-x64-gnu': 16.0.7
+      '@next/swc-linux-x64-musl': 16.0.7
+      '@next/swc-win32-arm64-msvc': 16.0.7
+      '@next/swc-win32-x64-msvc': 16.0.7
+      sharp: 0.34.5
+>>>>>>> Stashed changes
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
@@ -12046,7 +13127,11 @@ snapshots:
 
   path-scurry@2.0.0:
     dependencies:
+<<<<<<< Updated upstream
       lru-cache: 11.1.0
+=======
+      lru-cache: 11.2.4
+>>>>>>> Stashed changes
       minipass: 7.1.2
 
   path-to-regexp@6.3.0: {}
@@ -12127,12 +13212,20 @@ snapshots:
       camelcase-css: 2.0.1
       postcss: 8.5.6
 
+<<<<<<< Updated upstream
   postcss-load-config@4.0.2(postcss@8.5.6):
+=======
+  postcss-load-config@6.0.1(jiti@1.21.7)(postcss@8.5.6)(yaml@2.8.2):
+>>>>>>> Stashed changes
     dependencies:
       lilconfig: 3.1.3
       yaml: 2.8.0
     optionalDependencies:
       postcss: 8.5.6
+<<<<<<< Updated upstream
+=======
+      yaml: 2.8.2
+>>>>>>> Stashed changes
 
   postcss-nested@6.2.0(postcss@8.5.6):
     dependencies:
@@ -12181,7 +13274,11 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
+<<<<<<< Updated upstream
   prettier@3.5.3: {}
+=======
+  prettier@3.7.4: {}
+>>>>>>> Stashed changes
 
   pretty-ms@7.0.1:
     dependencies:
@@ -12266,19 +13363,32 @@ snapshots:
 
   react-fast-compare@3.2.2: {}
 
+<<<<<<< Updated upstream
   react-focus-lock@2.13.6(@types/react@19.1.8)(react@18.3.1):
+=======
+  react-focus-lock@2.13.7(@types/react@19.2.7)(react@18.3.1):
+>>>>>>> Stashed changes
     dependencies:
       '@babel/runtime': 7.27.6
       focus-lock: 1.3.6
       prop-types: 15.8.1
       react: 18.3.1
       react-clientside-effect: 1.2.8(react@18.3.1)
+<<<<<<< Updated upstream
       use-callback-ref: 1.3.3(@types/react@19.1.8)(react@18.3.1)
       use-sidecar: 1.1.3(@types/react@19.1.8)(react@18.3.1)
     optionalDependencies:
       '@types/react': 19.1.8
 
   react-hook-form@7.58.1(react@18.3.1):
+=======
+      use-callback-ref: 1.3.3(@types/react@19.2.7)(react@18.3.1)
+      use-sidecar: 1.1.3(@types/react@19.2.7)(react@18.3.1)
+    optionalDependencies:
+      '@types/react': 19.2.7
+
+  react-hook-form@7.67.0(react@18.3.1):
+>>>>>>> Stashed changes
     dependencies:
       react: 18.3.1
 
@@ -12501,9 +13611,15 @@ snapshots:
     dependencies:
       glob: 10.4.5
 
+<<<<<<< Updated upstream
   rimraf@6.0.1:
     dependencies:
       glob: 11.0.3
+=======
+  rimraf@6.1.2:
+    dependencies:
+      glob: 13.0.0
+>>>>>>> Stashed changes
       package-json-from-dist: 1.0.1
 
   rollup@4.43.0:
@@ -12579,7 +13695,11 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
+<<<<<<< Updated upstream
   sanity-plugin-asset-source-unsplash@1.1.2(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(sanity@3.93.0(@emotion/is-prop-valid@1.3.1)(@types/node@24.0.3)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))(terser@5.44.0)(typescript@5.8.3)(yaml@2.8.0))(styled-components@5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)):
+=======
+  sanity-plugin-asset-source-unsplash@1.1.2(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(sanity@3.99.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.10.1)(@types/react@19.2.7)(immer@10.2.0)(jiti@2.6.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3)(yaml@2.8.2))(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+>>>>>>> Stashed changes
     dependencies:
       '@sanity/incompatible-plugin': 1.0.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@sanity/ui': 1.9.3(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))
@@ -12587,34 +13707,57 @@ snapshots:
       react-infinite-scroll-component: 6.1.0(react@18.3.1)
       react-photo-album: 2.3.0(react@18.3.1)
       rxjs: 7.8.2
+<<<<<<< Updated upstream
       sanity: 3.93.0(@emotion/is-prop-valid@1.3.1)(@types/node@24.0.3)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))(terser@5.44.0)(typescript@5.8.3)(yaml@2.8.0)
       styled-components: 5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)
+=======
+      sanity: 3.99.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.10.1)(@types/react@19.2.7)(immer@10.2.0)(jiti@2.6.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3)(yaml@2.8.2)
+      styled-components: 6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+>>>>>>> Stashed changes
     transitivePeerDependencies:
       - react-dom
       - react-is
 
+<<<<<<< Updated upstream
   sanity@3.93.0(@emotion/is-prop-valid@1.3.1)(@types/node@24.0.3)(@types/react@19.1.8)(immer@10.1.1)(jiti@2.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))(terser@5.44.0)(typescript@5.8.3)(yaml@2.8.0):
+=======
+  sanity@3.99.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.10.1)(@types/react@19.2.7)(immer@10.2.0)(jiti@2.6.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3)(yaml@2.8.2):
+>>>>>>> Stashed changes
     dependencies:
       '@dnd-kit/core': 6.3.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@dnd-kit/modifiers': 6.0.1(@dnd-kit/core@6.3.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@dnd-kit/sortable': 7.0.2(@dnd-kit/core@6.3.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@dnd-kit/utilities': 3.2.2(react@18.3.1)
       '@juggle/resize-observer': 3.4.0
+<<<<<<< Updated upstream
       '@portabletext/block-tools': 1.1.30(@sanity/types@3.93.0(@types/react@19.1.8)(debug@4.4.1))(@types/react@19.1.8)
       '@portabletext/editor': 1.53.0(@sanity/schema@3.93.0(@types/react@19.1.8)(debug@4.4.1))(@sanity/types@3.93.0(@types/react@19.1.8)(debug@4.4.1))(@types/react@19.1.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.2)
       '@portabletext/react': 3.2.1(react@18.3.1)
       '@portabletext/toolkit': 2.0.17
+=======
+      '@mux/mux-player-react': 3.9.2(@types/react@19.2.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@portabletext/block-tools': 1.1.38(@sanity/types@3.99.0(@types/react@19.2.7))(@types/react@19.2.7)
+      '@portabletext/editor': 1.58.0(@sanity/schema@3.99.0(@types/react@19.2.7)(debug@4.4.3))(@sanity/types@3.99.0(@types/react@19.2.7))(@types/react@19.2.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.2)
+      '@portabletext/react': 3.2.4(react@18.3.1)
+      '@portabletext/toolkit': 2.0.18
+>>>>>>> Stashed changes
       '@rexxars/react-json-inspector': 9.0.1(react@18.3.1)
       '@sanity/asset-utils': 2.2.1
       '@sanity/bifur-client': 0.4.1
+<<<<<<< Updated upstream
       '@sanity/cli': 3.93.0(@types/node@24.0.3)(@types/react@19.1.8)(react@18.3.1)(terser@5.44.0)(typescript@5.8.3)(yaml@2.8.0)
       '@sanity/client': 7.6.0(debug@4.4.1)
+=======
+      '@sanity/cli': 3.99.0(@types/node@24.10.1)(@types/react@19.2.7)(react@18.3.1)(typescript@5.9.3)(yaml@2.8.2)
+      '@sanity/client': 7.13.1(debug@4.4.3)
+>>>>>>> Stashed changes
       '@sanity/color': 3.0.6
       '@sanity/comlink': 3.0.5
       '@sanity/diff': 3.93.0
       '@sanity/diff-match-patch': 3.2.0
       '@sanity/diff-patch': 5.0.0
       '@sanity/eventsource': 5.0.2
+<<<<<<< Updated upstream
       '@sanity/export': 3.45.0(@types/react@19.1.8)
       '@sanity/icons': 3.7.0(react@18.3.1)
       '@sanity/id-utils': 1.0.0
@@ -12633,6 +13776,27 @@ snapshots:
       '@sanity/types': 3.93.0(@types/react@19.1.8)(debug@4.4.1)
       '@sanity/ui': 2.16.0(@emotion/is-prop-valid@1.3.1)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@5.3.11(@babel/core@7.27.4)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1))
       '@sanity/util': 3.93.0(@types/react@19.1.8)(debug@4.4.1)
+=======
+      '@sanity/export': 3.45.3(@types/react@19.2.7)
+      '@sanity/icons': 3.7.4(react@18.3.1)
+      '@sanity/id-utils': 1.0.0
+      '@sanity/image-url': 1.2.0
+      '@sanity/import': 3.38.3(@types/react@19.2.7)
+      '@sanity/insert-menu': 1.1.13(@emotion/is-prop-valid@1.2.2)(@sanity/types@3.99.0(@types/react@19.2.7))(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@sanity/logos': 2.2.2(react@18.3.1)
+      '@sanity/media-library-types': 1.0.1
+      '@sanity/message-protocol': 0.13.3
+      '@sanity/migrate': 3.99.0(@types/react@19.2.7)
+      '@sanity/mutator': 3.99.0(@types/react@19.2.7)
+      '@sanity/presentation-comlink': 1.0.33(@sanity/client@7.13.1)(@sanity/types@3.99.0(@types/react@19.2.7))
+      '@sanity/preview-url-secret': 2.1.16(@sanity/client@7.13.1)(@sanity/icons@3.7.4(react@18.3.1))(sanity@3.99.0(@emotion/is-prop-valid@1.2.2)(@types/node@24.10.1)(@types/react@19.2.7)(immer@10.2.0)(jiti@2.6.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3)(yaml@2.8.2))
+      '@sanity/schema': 3.99.0(@types/react@19.2.7)(debug@4.4.3)
+      '@sanity/sdk': 0.0.0-alpha.25(@types/react@19.2.7)(debug@4.4.3)(immer@10.2.0)(react@18.3.1)(use-sync-external-store@1.6.0(react@18.3.1))
+      '@sanity/telemetry': 0.8.1(react@18.3.1)
+      '@sanity/types': 3.99.0(@types/react@19.2.7)(debug@4.4.3)
+      '@sanity/ui': 2.16.22(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@sanity/util': 3.99.0(@types/react@19.2.7)(debug@4.4.3)
+>>>>>>> Stashed changes
       '@sanity/uuid': 3.0.2
       '@sentry/react': 8.55.0(react@18.3.1)
       '@tanstack/react-table': 8.21.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -12643,8 +13807,13 @@ snapshots:
       '@types/tar-stream': 3.1.4
       '@types/use-sync-external-store': 1.5.0
       '@types/which': 3.0.4
+<<<<<<< Updated upstream
       '@vitejs/plugin-react': 4.5.2(vite@6.3.5(@types/node@24.0.3)(jiti@2.4.2)(terser@5.44.0)(yaml@2.8.0))
       '@xstate/react': 5.0.5(@types/react@19.1.8)(react@18.3.1)(xstate@5.19.4)
+=======
+      '@vitejs/plugin-react': 4.7.0(vite@6.4.1(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2))
+      '@xstate/react': 6.0.0(@types/react@19.2.7)(react@18.3.1)(xstate@5.24.0)
+>>>>>>> Stashed changes
       archiver: 7.0.1
       arrify: 2.0.1
       async-mutex: 0.4.1
@@ -12662,18 +13831,30 @@ snapshots:
       execa: 2.1.0
       exif-component: 1.0.1
       fast-deep-equal: 3.1.3
+<<<<<<< Updated upstream
       form-data: 4.0.3
       framer-motion: 12.18.1(@emotion/is-prop-valid@1.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       get-it: 8.6.9(debug@4.4.1)
       get-random-values-esm: 1.0.2
       groq-js: 1.17.0
+=======
+      form-data: 4.0.5
+      framer-motion: 12.23.25(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      get-it: 8.6.10(debug@4.4.3)
+      get-random-values-esm: 1.0.2
+      groq-js: 1.22.0
+>>>>>>> Stashed changes
       gunzip-maybe: 1.4.2
       history: 5.3.0
       i18next: 23.16.8
       import-fresh: 3.3.1
       is-hotkey-esm: 1.0.0
       is-tar: 1.0.0
+<<<<<<< Updated upstream
       isomorphic-dompurify: 2.25.0
+=======
+      isomorphic-dompurify: 2.33.0
+>>>>>>> Stashed changes
       jsdom: 23.2.0
       jsdom-global: 3.0.2(jsdom@23.2.0)
       json-lexer: 1.2.0
@@ -12703,7 +13884,11 @@ snapshots:
       react-compiler-runtime: 19.1.0-rc.2(react@18.3.1)
       react-dom: 18.3.1(react@18.3.1)
       react-fast-compare: 3.2.2
+<<<<<<< Updated upstream
       react-focus-lock: 2.13.6(@types/react@19.1.8)(react@18.3.1)
+=======
+      react-focus-lock: 2.13.7(@types/react@19.2.7)(react@18.3.1)
+>>>>>>> Stashed changes
       react-i18next: 14.0.2(i18next@23.16.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-is: 18.3.1
       react-refractor: 2.2.0(react@18.3.1)
@@ -12731,7 +13916,11 @@ snapshots:
       use-hot-module-reload: 2.0.0(react@18.3.1)
       use-sync-external-store: 1.5.0(react@18.3.1)
       uuid: 11.1.0
+<<<<<<< Updated upstream
       vite: 6.3.5(@types/node@24.0.3)(jiti@2.4.2)(terser@5.44.0)(yaml@2.8.0)
+=======
+      vite: 6.4.1(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2)
+>>>>>>> Stashed changes
       which: 5.0.0
       xstate: 5.19.4
       yargs: 17.7.2
@@ -13117,14 +14306,18 @@ snapshots:
     optionalDependencies:
       '@babel/core': 7.27.4
 
-  sucrase@3.35.0:
+  sucrase@3.35.1:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.8
       commander: 4.1.1
+<<<<<<< Updated upstream
       glob: 10.4.5
+=======
+>>>>>>> Stashed changes
       lines-and-columns: 1.2.4
       mz: 2.7.0
       pirates: 4.0.7
+      tinyglobby: 0.2.15
       ts-interface-checker: 0.1.13
 
   supports-color@5.5.0:
@@ -13143,7 +14336,13 @@ snapshots:
 
   symbol-tree@3.2.4: {}
 
+<<<<<<< Updated upstream
   tailwindcss@3.4.17:
+=======
+  symlink-or-copy@1.3.1: {}
+
+  tailwindcss@3.4.18(yaml@2.8.2):
+>>>>>>> Stashed changes
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -13161,12 +14360,21 @@ snapshots:
       picocolors: 1.1.1
       postcss: 8.5.6
       postcss-import: 15.1.0(postcss@8.5.6)
+<<<<<<< Updated upstream
       postcss-js: 4.0.1(postcss@8.5.6)
       postcss-load-config: 4.0.2(postcss@8.5.6)
       postcss-nested: 6.2.0(postcss@8.5.6)
       postcss-selector-parser: 6.1.2
       resolve: 1.22.10
       sucrase: 3.35.0
+=======
+      postcss-js: 4.1.0(postcss@8.5.6)
+      postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.6)(yaml@2.8.2)
+      postcss-nested: 6.2.0(postcss@8.5.6)
+      postcss-selector-parser: 6.1.2
+      resolve: 1.22.11
+      sucrase: 3.35.1
+>>>>>>> Stashed changes
     transitivePeerDependencies:
       - ts-node
 
@@ -13271,11 +14479,19 @@ snapshots:
       fdir: 6.4.6(picomatch@4.0.2)
       picomatch: 4.0.2
 
+<<<<<<< Updated upstream
   tldts-core@6.1.86: {}
 
   tldts@6.1.86:
     dependencies:
       tldts-core: 6.1.86
+=======
+  tldts-core@7.0.19: {}
+
+  tldts@7.0.19:
+    dependencies:
+      tldts-core: 7.0.19
+>>>>>>> Stashed changes
 
   tmp@0.0.33:
     dependencies:
@@ -13296,9 +14512,13 @@ snapshots:
 
   tough-cookie@5.1.2:
     dependencies:
+<<<<<<< Updated upstream
       tldts: 6.1.86
 
   tr46@0.0.3: {}
+=======
+      tldts: 7.0.19
+>>>>>>> Stashed changes
 
   tr46@5.1.1:
     dependencies:
@@ -13457,6 +14677,7 @@ snapshots:
       webpack-sources: 3.3.3
       webpack-virtual-modules: 0.5.0
 
+<<<<<<< Updated upstream
   unrs-resolver@1.9.0:
     dependencies:
       napi-postinstall: 0.2.4
@@ -13484,6 +14705,11 @@ snapshots:
   update-browserslist-db@1.1.3(browserslist@4.25.0):
     dependencies:
       browserslist: 4.25.0
+=======
+  update-browserslist-db@1.2.0(browserslist@4.28.1):
+    dependencies:
+      browserslist: 4.28.1
+>>>>>>> Stashed changes
       escalade: 3.2.0
       picocolors: 1.1.1
 
@@ -13498,12 +14724,20 @@ snapshots:
 
   urlpattern-polyfill@10.1.0: {}
 
+<<<<<<< Updated upstream
   use-callback-ref@1.3.3(@types/react@19.1.8)(react@18.3.1):
+=======
+  use-callback-ref@1.3.3(@types/react@19.2.7)(react@18.3.1):
+>>>>>>> Stashed changes
     dependencies:
       react: 18.3.1
       tslib: 2.8.1
     optionalDependencies:
+<<<<<<< Updated upstream
       '@types/react': 19.1.8
+=======
+      '@types/react': 19.2.7
+>>>>>>> Stashed changes
 
   use-device-pixel-ratio@1.1.2(react@18.3.1):
     dependencies:
@@ -13521,6 +14755,7 @@ snapshots:
     dependencies:
       react: 18.3.1
 
+<<<<<<< Updated upstream
   use-isomorphic-layout-effect@1.2.1(@types/react@19.1.8)(react@18.3.1):
     dependencies:
       react: 18.3.1
@@ -13528,12 +14763,25 @@ snapshots:
       '@types/react': 19.1.8
 
   use-sidecar@1.1.3(@types/react@19.1.8)(react@18.3.1):
+=======
+  use-isomorphic-layout-effect@1.2.1(@types/react@19.2.7)(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+    optionalDependencies:
+      '@types/react': 19.2.7
+
+  use-sidecar@1.1.3(@types/react@19.2.7)(react@18.3.1):
+>>>>>>> Stashed changes
     dependencies:
       detect-node-es: 1.1.0
       react: 18.3.1
       tslib: 2.8.1
     optionalDependencies:
+<<<<<<< Updated upstream
       '@types/react': 19.1.8
+=======
+      '@types/react': 19.2.7
+>>>>>>> Stashed changes
 
   use-sync-external-store@1.2.0(react@18.3.1):
     dependencies:
@@ -13562,18 +14810,30 @@ snapshots:
     dependencies:
       builtins: 1.0.3
 
+<<<<<<< Updated upstream
   vite-tsconfig-paths@5.1.4(typescript@5.8.3)(vite@6.3.5(@types/node@24.0.3)(jiti@2.4.2)(terser@5.44.0)(yaml@2.8.0)):
+=======
+  vite-tsconfig-paths@5.1.4(typescript@5.9.3)(vite@6.4.1(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2)):
+>>>>>>> Stashed changes
     dependencies:
       debug: 4.4.1(supports-color@5.5.0)
       globrex: 0.1.2
       tsconfck: 3.1.6(typescript@5.8.3)
     optionalDependencies:
+<<<<<<< Updated upstream
       vite: 6.3.5(@types/node@24.0.3)(jiti@2.4.2)(terser@5.44.0)(yaml@2.8.0)
+=======
+      vite: 6.4.1(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2)
+>>>>>>> Stashed changes
     transitivePeerDependencies:
       - supports-color
       - typescript
 
+<<<<<<< Updated upstream
   vite@6.3.5(@types/node@24.0.3)(jiti@2.4.2)(terser@5.44.0)(yaml@2.8.0):
+=======
+  vite@6.4.1(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2):
+>>>>>>> Stashed changes
     dependencies:
       esbuild: 0.25.5
       fdir: 6.4.6(picomatch@4.0.2)
@@ -13584,9 +14844,14 @@ snapshots:
     optionalDependencies:
       '@types/node': 24.0.3
       fsevents: 2.3.3
+<<<<<<< Updated upstream
       jiti: 2.4.2
       terser: 5.44.0
       yaml: 2.8.0
+=======
+      jiti: 2.6.1
+      yaml: 2.8.2
+>>>>>>> Stashed changes
 
   void-elements@3.1.0: {}
 
@@ -13771,7 +15036,11 @@ snapshots:
 
   yallist@5.0.0: {}
 
+<<<<<<< Updated upstream
   yaml@2.8.0: {}
+=======
+  yaml@2.8.2: {}
+>>>>>>> Stashed changes
 
   yargs-parser@20.2.9: {}
 
@@ -13806,9 +15075,16 @@ snapshots:
 
   zod@3.25.67: {}
 
+<<<<<<< Updated upstream
   zustand@5.0.5(@types/react@19.1.8)(immer@10.1.1)(react@18.3.1)(use-sync-external-store@1.5.0(react@18.3.1)):
     optionalDependencies:
       '@types/react': 19.1.8
       immer: 10.1.1
+=======
+  zustand@5.0.9(@types/react@19.2.7)(immer@10.2.0)(react@18.3.1)(use-sync-external-store@1.6.0(react@18.3.1)):
+    optionalDependencies:
+      '@types/react': 19.2.7
+      immer: 10.2.0
+>>>>>>> Stashed changes
       react: 18.3.1
       use-sync-external-store: 1.5.0(react@18.3.1)

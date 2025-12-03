@@ -2,6 +2,11 @@ import { visionTool } from '@sanity/vision'
 import { defineConfig } from 'sanity'
 import { deskTool } from 'sanity/desk'
 import { unsplashImageAsset } from 'sanity-plugin-asset-source-unsplash'
+<<<<<<< Updated upstream
+=======
+import { vercelDeployTool } from 'sanity-plugin-vercel-deploy'
+import { workflowManager } from '@multidots/sanity-plugin-workflow-manager'
+>>>>>>> Stashed changes
 
 import { resolveProductionUrl } from './resolveProductionUrl'
 import { author } from './schemas/author'
@@ -22,9 +27,17 @@ import { nominating } from './schemas/nominating'
 import { associates } from './schemas/associates'
 import { members } from './schemas/members'
 
+<<<<<<< Updated upstream
 const title = process.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE || 'EMDAC with Sanity.io'
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET
+=======
+// Environment variables are loaded automatically by Vite from .env.development
+// The copyEnv.js script transforms NEXT_PUBLIC_SANITY_* to SANITY_STUDIO_* format
+const title = import.meta.env.SANITY_STUDIO_PROJECT_TITLE || 'EMDAC'
+const projectId = import.meta.env.SANITY_STUDIO_PROJECT_ID || '9rsoog7g'
+const dataset = import.meta.env.SANITY_STUDIO_DATASET || 'production'
+>>>>>>> Stashed changes
 
 export default defineConfig({
   basePath: '/',
@@ -62,5 +75,23 @@ export default defineConfig({
     // Vision lets you query your content with GROQ in the studio
     // https://www.sanity.io/docs/the-vision-plugin
     visionTool(),
+<<<<<<< Updated upstream
+=======
+    // Vercel Deploy tool for deploying from Sanity Studio
+    vercelDeployTool(),
+    // Workflow Manager for advanced content workflow management
+    workflowManager({
+      schemaTypes: [
+        'post',
+        'documents',
+        'evidence',
+        'legislative',
+        'meetings',
+        'minutes',
+        'positions',
+        'protocols'
+      ]
+    }),
+>>>>>>> Stashed changes
   ],
 })
