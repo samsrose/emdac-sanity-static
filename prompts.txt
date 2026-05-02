@@ -12,4 +12,20 @@ User Prompt 3: "getting error: 'Configuration must contain `projectId`'"
 
 Restructured: "Fix Sanity Studio v3 environment variable loading issue where projectId is undefined. Transform NEXT_PUBLIC_SANITY_* environment variables to SANITY_STUDIO_* prefix format that Vite-based Sanity Studio v3 expects. Update the copyEnv.js script to perform this transformation and ensure import.meta.env can access the required configuration values."
 
+2026-05-02 - SOLID rebuild
 
+User Prompt 4: "inspect project for SOLID practices"
+
+Restructured: "Audit the codebase for adherence to SOLID principles, identifying violations across SRP, OCP, LSP, ISP, and DIP. Surface concrete examples (overloaded modules, copy-paste components, leaky abstractions, untyped boundaries) and prioritise findings by impact."
+
+User Prompt 5: "Rebuild with SOLID principles for efficiency"
+
+Restructured: "Plan and execute a refactor that addresses the SOLID audit findings. Confirm scope (full App Router + TypeScript rewrite vs incremental), delivery model (single PR vs split), and any out-of-scope choices (e.g., keep Sanity schemas as-is) before implementation."
+
+User Prompt 6: "update the codebase to follow better principles"
+
+Restructured: "Execute the agreed-upon SOLID rebuild on the current branch: critical safety fixes first, then the TypeScript + repository foundation, generic UI components replacing the duplicated *Item files, full App Router migration with typed routes and route handlers, and removal of the superseded /pages tree. Verify with `pnpm run build`."
+
+User Prompt 7: "optimize code for performance"
+
+Restructured: "Apply targeted performance optimizations on top of the rebuilt App Router codebase: shrink the client JavaScript bundle (split server vs client components, gate heavy integrations behind env flags, enable package import tree-shaking), correct responsive image sizing, restore Sanity CDN usage for server-side reads, add preconnect hints for the image CDN, and remove redundant work. Verify with `pnpm run build` and ensure no behavioural regressions."

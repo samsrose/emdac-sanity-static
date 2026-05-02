@@ -9,7 +9,25 @@ module.exports = {
       { hostname: 'picsum.photos' },
       { hostname: 'localhost' },
     ],
+    // 1 year — image URLs are content-addressed by Sanity, so they're safe to cache aggressively.
+    minimumCacheTTL: 60 * 60 * 24 * 365,
+    // Match the `sizes` attributes used in the codebase to avoid generating
+    // unused image variants.
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    imageSizes: [16, 32, 64, 96, 128, 256, 384],
   },
+  // Auto-tree-shake barrel files for the most common heavy imports.
+  // For date-fns this can shave 50–100KB off client bundles.
+  experimental: {
+    optimizePackageImports: [
+      '@heroicons/react',
+      'date-fns',
+      'classnames',
+    ],
+  },
+  // The legacy `pages/` Sentry test API and example page were removed; the
+  // Sentry tunnelRoute remains opt-in via the wrapper below.
+  poweredByHeader: false,
 }
 
 
