@@ -99,3 +99,40 @@ export type CommitteeCategory =
   | "legislativec"
   | "medicaladvisory"
   | "nominating";
+
+/**
+ * Bundle returned by the composite /committees query — officers plus the
+ * roster for each committee category, fetched in a single round trip.
+ */
+export interface CommitteesPageData {
+  officers: Officer[];
+  scopeofpractice: CommitteeMember[];
+  legislativec: CommitteeMember[];
+  medicaladvisory: CommitteeMember[];
+  nominating: CommitteeMember[];
+}
+
+/**
+ * Bundle returned by the composite /directory query.
+ */
+export interface DirectoryPageData {
+  members: DirectoryPerson[];
+  associates: DirectoryPerson[];
+}
+
+/**
+ * Bundle returned by the composite /documents query — one entry per
+ * resource category, all six fetched in a single round trip.
+ */
+export type DocumentsPageData = Record<ResourceCategory, Resource[]>;
+
+/**
+ * Lean projection used by `generateMetadata` for `/posts/[slug]`. Drops
+ * the portable-text body, slug, dates, author, and CTA fields that never
+ * appear in <head>.
+ */
+export interface PostMeta {
+  title: string;
+  excerpt?: string;
+  coverImage?: SanityImageRef;
+}

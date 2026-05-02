@@ -13,3 +13,9 @@ A short, append-only summary. Detailed change notes live in `changes/`.
             See changes/2026-05-02-perf-optimizations.md (Navbar split,
             sizes-aware images, Sanity CDN server-side, preconnect,
             optimizePackageImports, Sentry Replay opt-in).
+
+2026-05-02 - Sanity data fetching efficiency.
+            See changes/2026-05-02-sanity-data-efficiency.md (composite
+            GROQ queries: 6 -> 1 fetch on /documents, 5 -> 1 on
+            /committees, 2 -> 1 on /directory; lean postMeta projection;
+            perspective:published on the public client).

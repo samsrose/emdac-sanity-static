@@ -1,10 +1,10 @@
 import { DirectoryCard } from "@/components/ui/DirectoryCard";
-import { getAssociates, getMembers } from "@/lib/repositories/directory";
+import { getDirectoryPageData } from "@/lib/repositories/directory";
 
 export const revalidate = 30;
 
 export default async function DirectoryPage() {
-  const [members, associates] = await Promise.all([getMembers(), getAssociates()]);
+  const { members, associates } = await getDirectoryPageData();
 
   return (
     <>

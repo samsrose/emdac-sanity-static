@@ -1,7 +1,8 @@
 import "server-only";
 import { getClient, overlayDrafts } from "../sanity/server";
-import { resourceQuery } from "../sanity/queries";
+import { documentsPageQuery, resourceQuery } from "../sanity/queries";
 import type {
+  DocumentsPageData,
   Resource,
   ResourceCategory,
   ResourceCategoryConfig,
@@ -14,6 +15,25 @@ export async function getResources(
 ): Promise<Resource[]> {
   const data = await getClient(preview).fetch<Resource[]>(resourceQuery(category));
   return overlayDrafts(data);
+}
+
+/**
+ * Single round trip for the entire /documents route — returns all six
+ * resource categories in one fetch instead of `Promise.all` of six
+ * separate queries.
+ */
+export async function getDocumentsPageData({
+  preview = false,
+}: ReadOptions = {}): Promise<DocumentsPageData> {
+  const data = await getClient(preview).fetch<DocumentsPageData>(documentsPageQuery);
+  return {
+    documents: overlayDrafts(data.documents),
+    evidence: overlayDrafts(data.evidence),
+    legislative: overlayDrafts(data.legislative),
+    minutes: overlayDrafts(data.minutes),
+    positions: overlayDrafts(data.positions),
+    protocols: overlayDrafts(data.protocols),
+  };
 }
 
 /**

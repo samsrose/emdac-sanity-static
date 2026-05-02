@@ -3,7 +3,11 @@ import type { Metadata } from "next";
 import { PostBody } from "@/components/ui/PostBody";
 import { PostCard } from "@/components/ui/PostCard";
 import { urlForImage } from "@/lib/sanity/client";
-import { getPostBundle, getPostSlugs } from "@/lib/repositories/posts";
+import {
+  getPostBundle,
+  getPostMeta,
+  getPostSlugs,
+} from "@/lib/repositories/posts";
 
 export const revalidate = 30;
 export const dynamicParams = true;
@@ -19,18 +23,18 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const { post } = await getPostBundle(slug);
-  if (!post) return {};
+  const meta = await getPostMeta(slug);
+  if (!meta) return {};
 
-  const ogImage = post.coverImage?.asset?._ref
-    ? urlForImage(post.coverImage).width(1200).height(627).fit("crop").url()
+  const ogImage = meta.coverImage?.asset?._ref
+    ? urlForImage(meta.coverImage).width(1200).height(627).fit("crop").url()
     : undefined;
 
   return {
-    title: post.title,
-    description: post.excerpt,
+    title: meta.title,
+    description: meta.excerpt,
     openGraph: ogImage
-      ? { title: post.title, description: post.excerpt, images: [ogImage] }
+      ? { title: meta.title, description: meta.excerpt, images: [ogImage] }
       : undefined,
   };
 }

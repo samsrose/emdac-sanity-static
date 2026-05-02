@@ -29,3 +29,7 @@ Restructured: "Execute the agreed-upon SOLID rebuild on the current branch: crit
 User Prompt 7: "optimize code for performance"
 
 Restructured: "Apply targeted performance optimizations on top of the rebuilt App Router codebase: shrink the client JavaScript bundle (split server vs client components, gate heavy integrations behind env flags, enable package import tree-shaking), correct responsive image sizing, restore Sanity CDN usage for server-side reads, add preconnect hints for the image CDN, and remove redundant work. Verify with `pnpm run build` and ensure no behavioural regressions."
+
+User Prompt 8: "refactor components for best data efficiency in getting data from sanity"
+
+Restructured: "Refactor the App Router pages and Sanity repository layer to minimise round trips and payload size: replace per-category Promise.all fan-outs with single composite GROQ object projections, add a lean projection for post metadata generation, and configure the public Sanity client with perspective:published so drafts are filtered server-side. Keep both composite and granular repository methods. Preserve current ISR behaviour. Verify with pnpm run build."

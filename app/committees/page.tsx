@@ -1,5 +1,5 @@
 import { CommitteeGrid, OfficerGrid } from "@/components/ui/CommitteeGrid";
-import { getCommittee, getOfficers } from "@/lib/repositories/committees";
+import { getCommitteesPageData } from "@/lib/repositories/committees";
 import type { CommitteeCategory } from "@/lib/types/sanity";
 
 export const revalidate = 30;
@@ -17,10 +17,7 @@ const COMMITTEES: CommitteeSection[] = [
 ];
 
 export default async function CommitteesPage() {
-  const [officers, ...committees] = await Promise.all([
-    getOfficers(),
-    ...COMMITTEES.map((c) => getCommittee(c.category)),
-  ]);
+  const data = await getCommitteesPageData();
 
   return (
     <>
@@ -37,14 +34,14 @@ export default async function CommitteesPage() {
         <h2 className="text-white text-3xl font-bold pt-8 pb-4 text-left px-2">
           Officers
         </h2>
-        <OfficerGrid officers={officers} />
+        <OfficerGrid officers={data.officers} />
 
-        {COMMITTEES.map((section, index) => (
+        {COMMITTEES.map((section) => (
           <section key={section.category}>
             <h2 className="text-white text-3xl font-bold pt-8 pb-4 text-left px-2">
               {section.title}
             </h2>
-            <CommitteeGrid members={committees[index] ?? []} />
+            <CommitteeGrid members={data[section.category]} />
           </section>
         ))}
       </div>
