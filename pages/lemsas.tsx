@@ -1,0 +1,157 @@
+import React from "react";
+import Link from "next/link";
+import response from "../components/map/response";
+
+type LemsaCounty = (typeof response)[number];
+type LemsaEntry = LemsaCounty["data"][number];
+
+const data = response;
+
+const datas = {
+  Officers: [
+    { name: "Kathy Staats, MD", role: "Central California EMS" },
+    { name: "Dustin Ballard, MD", role: "Mountain Valley EMS" },
+    { name: "Zita Konick, MD", role: "Inland County EMS" },
+    { name: "Daniel Shepherd, MD", role: "North Coast EMS" },
+    { name: "Nichole Bosson, MD", role: "Northern California EMS" },
+    { name: "John Rose, MD", role: "Sierra-Sacramento EMS" },
+  ],
+  "County-based EMS Agencies": [
+    "Ken Miller",
+    "Kevin Mackey",
+    "Kimberly Freeman",
+    "Atilla Uner",
+    "Nichole Bosson",
+    "Eric Rudnick",
+    "Marc Gautreau",
+  ],
+};
+
+export default function Lemsas() {
+  return (
+    <>
+      <div className="flex flex-wrap sm:mx-auto pt-12 pb-12 px-2 bg-gray-900">
+        <div className="my-8 max-w-xl pr-4 text-center mx-auto">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-200 font-heading">
+            California LEMSAs
+          </h2>
+          <span className="text-red-500 text-xl font-normal">
+            Expand each county for more information
+          </span>
+        </div>
+      </div>
+      <section className="text-gray-100 body-font lg:w-2/3 w-full px-4 mb-24 relative container-fluid px-4 mx-auto h-full flex">
+        <ul className="w-full">
+          <CountyMobile data={response} />
+        </ul>
+      </section>
+    </>
+  );
+}
+
+interface TooltipProps {
+  title: string;
+  children: React.ReactNode;
+  tooltipDirection?: string;
+}
+
+function Tooltip({ title, children, tooltipDirection }: TooltipProps) {
+  return (
+    <>
+  <div className={`tooltip tooltip-right`} data-tip={`${title}`}>
+    {children}
+  </div>
+  </>
+  )
+}
+
+interface DropdownProps {
+  title?: string;
+  backgroundFill?: string;
+  name?: string;
+  position?: string;
+  locale?: string;
+  uri: string;
+  index?: number;
+  className?: string;
+}
+
+function Dropdown({
+  title,
+  backgroundFill,
+  name,
+  position,
+  locale,
+  uri,
+  index,
+}: DropdownProps) {
+  return (
+    <>
+      <div
+        key={index}
+        className="collapse rounded my-1"
+        style={{ backgroundColor: `${backgroundFill}` }}
+      >
+        <input type="checkbox" />
+        <div className="collapse-title text-md font-medium flex align-center justify-between">
+          <span className="mt-1 text-lg">{title}</span>
+        </div>
+        <div className="collapse-content">
+          {/* <p className="text-md">Error parsing lemsa data</p> */}
+          {/* <p className="text-md">{position}</p> */}
+          {/* <p className="text-md mb-2">{name}</p> */}
+          <Tooltip tooltipDirection="right" title="Click to open link in new window">
+            <Link href={uri} target="_blank" className="pb-1 text-sm border-b border-b-2">
+              View agency website
+            </Link>
+          </Tooltip>
+        </div>
+      </div>
+    </>
+  );
+}
+
+interface CountyItemProps {
+  data: LemsaEntry[];
+  index?: number;
+}
+
+const CountyItem = ({ data }: CountyItemProps) => {
+  const { id, name, countyName, position, locale, uri } = data as unknown as LemsaEntry;
+  const loopData = data.map((item, index) => {
+    return (
+      <Dropdown
+        key={index}
+        backgroundFill={item.fill}
+        className={
+          item.fill === "#ddd"
+            ? `p-1 my-1 rounded hover:cursor-pointer text-black`
+            : `p-1 my-1 rounded hover:cursor-pointer text-white`
+        }
+        title={item.countyName}
+        name={item.name}
+        position={item.position}
+        locale={item.locale}
+        uri={item.uri}
+      />
+    );
+  });
+  return <>{loopData}</>;
+};
+
+function CountyMobile(props: { data?: LemsaCounty[] }) {
+  const titles = data.map((item, index) => {
+    return (
+      <div
+        key={index}
+        className="border border-1 border-gray-500 rounded p-4 grid grid-cols-2 my-4"
+      >
+        <h4 className="text-xl font-medium p-4">{item.name}</h4>
+        <div>
+          <CountyItem index={index} data={item.data} />
+        </div>
+      </div>
+    );
+  });
+  return <>{titles}</>;
+}

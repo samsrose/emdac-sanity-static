@@ -1,0 +1,67 @@
+import { useRouter } from 'next/router'
+import { urlForImage } from '../lib/sanity'
+import ErrorPage from 'next/error'
+import Layout from './Layout'
+import Header from './header'
+import PostTitle from './post-title'
+import Head from 'next/head'
+import { CMS_NAME } from '../lib/constants'
+// import PostHeader from './post-header'
+import PostBody from './post-body'
+import SectionSeparator from './section-separator'
+import MoreStories from './more-stories'
+import BlogSections from './blog-sections'
+import { PostData } from '../lib/types'
+
+interface PostProps {
+  data?: PostData
+  preview?: boolean
+}
+
+export default function Post({ data = {}, preview = false }: PostProps) {
+  const router = useRouter()
+
+  const { post, morePosts } = data
+  const slug = post?.slug
+
+  if (!router.isFallback && !slug) {
+    return <ErrorPage statusCode={404} />
+  }
+
+  return (
+    <Layout preview={preview}>
+      <>
+        {router.isFallback ? (
+          <PostTitle>Loading…</PostTitle>
+        ) : (
+          <>
+            <article>
+              <Head>
+                {post!.coverImage?.asset?._ref && (
+                  <meta
+                    key="ogImage"
+                    property="og:image"
+                    content={urlForImage(post!.coverImage!)
+                      .width(1200)
+                      .height(627)
+                      .fit('crop')
+                      .url()}
+                  />
+                )}
+              </Head>
+              {/* <PostHeader
+                title={post.title}
+                coverImage={post.coverImage}
+                date={post.date}
+                author={post.author}
+              /> */}
+              <BlogSections date={post!.date} title={post!.title} content={post!.content} buttonLink={post!.buttonLink} buttonName={post!.buttonName} />
+              {/* <PostBody content={post.content} buttonLink={post.buttonLink} /> */}
+            </article>
+            {morePosts!.length > 0 && <MoreStories posts={morePosts!} buttonName={post!.buttonName} buttonLink={post!.buttonLink} />}
+          </>
+        )}
+      </>
+    </Layout>
+  )
+}
