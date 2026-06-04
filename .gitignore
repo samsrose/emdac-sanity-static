@@ -18,6 +18,12 @@
 .env.staging.local
 .env.test.local
 
+SENTRY_INTEGRATION_GUIDE.md
+
+pnpm-lock.yaml
+prompts.txt
+
+
 # testing
 /coverage
 
