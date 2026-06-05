@@ -1,3 +1,4 @@
+import React from 'react'
 import { EnvelopeIcon } from '@heroicons/react/20/solid'
 import Link from "next/link"
 import { Member } from "../lib/types"
@@ -36,5 +37,5 @@ export default function IsMemberDirectory({ data }: IsMemberDirectoryProps) {
         </li>
         ))}
       </>
-    )
+      )
   }
